@@ -51,10 +51,10 @@
     },
     "DecoratorComponent": [
       {
-        "Text": "A",
-        "Color": "#FF0E07",
-        "Icon": "ActiveProbe",
-        "Importance": 20
+        "Text": "W",
+        "Color": "#248000",
+        "Icon": "ComponentGearIcons_ECM",
+        "Importance": 30
       }
     ]
   },

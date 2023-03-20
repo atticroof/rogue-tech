@@ -1,7 +1,8 @@
 {
   "MechTags": {
     "items": [
-      "unit_superheavy",
+      "unit_superheavy_tier2",
+      "unit_superheavy_mech",
       "unit_chassis_orca",
       "unit_optional_superheavys",
       "unit_tonnage_200",
@@ -40,7 +41,7 @@
   },
   "ChassisID": "chassisdef_orca_OC-1X",
   "Description": {
-    "Cost": 938036,
+    "Cost": 1265155,
     "Rarity": 10,
     "Purchasable": true,
     "Manufacturer": null,
@@ -51,7 +52,7 @@
     "Details": "The Orca was constructed as a secret project. Its development occurred under such total secrecy, that even 'an unfortunate delivery driver who slipped through security due to a lapse and was caught filming a livefire test with his personal device' was only released from custody 5 years later.\n\n<b><color=#e62e00>Quirk: Distracting</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.42</color></b>",
     "Icon": "orca"
   },
-  "simGameMechPartCost": 938036,
+  "simGameMechPartCost": 1265155,
   "Locations": [
     {
       "Location": "Head",
