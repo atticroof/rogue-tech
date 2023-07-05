@@ -12,12 +12,7 @@
       "Long": "AdvUAV",
       "Full": "Advanced UAV: Makes Enemies Easier to Spot by {0} within {1} meters. Yellow Circle."
     },
-    {
-      "Bonus": "ActualUAV",
-      "Short": "UAV",
-      "Long": "UAV Launch",
-      "Full": "Deploys a recon UAV under your control."
-    },
+
     {
       "Bonus": "Carapace",
       "Short": "Black Carapace",
@@ -106,7 +101,19 @@
       "Bonus": "SearchLight",
       "Short": "SearchLight",
       "Long": "SearchLight",
-      "Full": "Bonus of {0} to sensor detection within {1} meters. Orange Circle. Provides additional sensor information."
+      "Full": "SearchLight illuminate an {1} meters area, making targets easier to see and hit. It also blinds them, reducing accuracy by {0}. Does not stack. Orange Circle."
+    },
+    {
+      "Bonus": "SearchLightEffect",
+      "Short": "SearchLight",
+      "Long": "SearchLight",
+      "Full": "In visual conditions {0} SearchLight makes target {1} easier to see and {2} easier to hit"
+    },
+    {
+      "Bonus": "SearchLightSelf",
+      "Short": "SearchLight",
+      "Long": "SearchLight",
+      "Full": "In visual conditions {0} SearchLight makes this unit {1} easier to see and {2} easier to hit"
     },
     {
       "Bonus": "CQBVisor",
@@ -184,6 +191,12 @@
       "Bonus": "LanceResolve2",
       "Short": "{0} Company Resolve",
       "Long": "{0} Company Resolve",
+      "Full": "{0} Resolve per Round for each Company unit. Stacks 3 times maximum."
+    },
+    {
+      "Bonus": "LanceResolve3",
+      "Short": "{0} Company Resolve",
+      "Long": "{0} Company Resolve",
       "Full": "{0} Resolve per Round for each Company unit."
     },
     {
@@ -259,10 +272,22 @@
       "Full": "{0} Visibility"
     },
     {
+      "Bonus": "VisibilityPerHit",
+      "Short": "{0} Vis/Hit",
+      "Long": "{0} Visibility per Hit",
+      "Full": "{0} Visibility pPer Hit. Stackable."
+    },
+    {
       "Bonus": "Signature",
       "Short": "{0} Sig",
       "Long": "{0} Signature",
       "Full": "{0} sensor signature."
+    },
+    {
+      "Bonus": "SignaturePerHit",
+      "Short": "{0} Sig/Hit",
+      "Long": "{0} Signature Per Hit",
+      "Full": "{0} Sensor Signature per Hit. Stackable."
     },
     {
       "Bonus": "StealthSensors",
@@ -272,6 +297,12 @@
     },
     {
       "Bonus": "StealthReserved",
+      "Short": "{0} Slots",
+      "Long": "{0} Slots Reserved",
+      "Full": "Reserves {0} slots per Location except Head and CT."
+    },
+    {
+      "Bonus": "StealthReservedCT",
       "Short": "{0} Slots",
       "Long": "{0} Slots Reserved",
       "Full": "Reserves {0} slots per Location except Head."
@@ -301,10 +332,22 @@
       "Full": "Passive Sensor Probes: Counters ECM/Stealth by {0}."
     },
     {
+      "Bonus": "ActiveProbe",
+      "Short": "S{0} Probe",
+      "Long": "Strength {0} Active Probe",
+      "Full": "Passive Sensor Probes when Active: Counters ECM/Stealth by {0}."
+    },
+    {
       "Bonus": "AdvancedSensors",
       "Short": "{0} Adv.S.",
       "Long": "{0} Adv.Sensors",
       "Full": "Bonus of {0} to sensor detection: provides additional target information."
+    },
+    {
+      "Bonus": "ActiveAdvancedSensors",
+      "Short": "{0} Adv.S.",
+      "Long": "{0} Adv.Sensors",
+      "Full": "Bonus of {0} to sensor detection when Active: provides additional target information."
     },
     {
       "Bonus": "ECM",

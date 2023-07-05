@@ -36,12 +36,10 @@
       "noisejammer_85",
       "Redshift_20",
       "Ghost_50",
-      "Deva_70",
       "Kheper_55",
       "Preta_45",
       "malak_30",
       "cyclops_30",
-      "cyclops_90",
       "arcticwolf_40",
       "arcticwolfomni_40",
       "arcticwolfii_40",
@@ -58,25 +56,24 @@
       "raven_40",
       "ravenii_40",
       "Ostscout_35",
+      "ostscoutiic_35",
       "Gun_20",
       "gun-large-squad_100",
       "Vulcan II_40",
       "NightHawk_35",
       "COM-QS_25",
       "VLK-QS_30",
-      "blackheart_70",
-      "hecatoncheires_65",
       "hermes_30",
       "hermesii_40",
-      "gunslinger_85",
       "battlecobrawob_40",
-      "doomcourser_70",
       "raijin_50",
       "raijinii_50",
       "waukheonlam_55",
       "Hephaestus_30",
       "CentipedeSC_20",
-      "bishamon_45"
+      "bishamon_45",
+      "eagle_25",
+      "cricket_30"
     ],
     "idType": "AssemblyVariant",
     "altMaps": [],
@@ -92,7 +89,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_Scout_Probe",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Scout: Active Probe"
             },
             "durationData": {
               "duration": -1,
@@ -104,12 +101,7 @@
               "statName": "LV_PROBE_CARRIER",
               "operation": "Int_Add",
               "modValue": "1",
-              "modType": "System.Int32",
-              "targetAmmoCategory": "NotSet",
-              "targetCollection": "NotSet",
-              "targetWeaponCategory": "NotSet",
-              "targetWeaponSubType": "NotSet",
-              "targetWeaponType": "NotSet"
+              "modType": "System.Int32"
             },
             "targetingData": {
               "effectTargetType": "Creator",
@@ -124,7 +116,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_Scout_Sensors",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Scout: Increased Sensor Range"
             },
             "durationData": {
               "duration": -1,
@@ -136,12 +128,7 @@
               "statName": "SensorDistanceAbsolute",
               "operation": "Float_Multiply",
               "modValue": "1.15",
-              "modType": "System.Single",
-              "targetAmmoCategory": "NotSet",
-              "targetCollection": "NotSet",
-              "targetWeaponCategory": "NotSet",
-              "targetWeaponSubType": "NotSet",
-              "targetWeaponType": "NotSet"
+              "modType": "System.Single"
             },
             "targetingData": {
               "effectTargetType": "Creator",
@@ -156,7 +143,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_Scout_Sight",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Scout: Increased Vision Range"
             },
             "durationData": {
               "duration": -1,
@@ -168,12 +155,7 @@
               "statName": "SpotterDistanceAbsolute",
               "operation": "Float_Multiply",
               "modValue": "1.15",
-              "modType": "System.Single",
-              "targetAmmoCategory": "NotSet",
-              "targetCollection": "NotSet",
-              "targetWeaponCategory": "NotSet",
-              "targetWeaponSubType": "NotSet",
-              "targetWeaponType": "NotSet"
+              "modType": "System.Single"
             },
             "targetingData": {
               "effectTargetType": "Creator",

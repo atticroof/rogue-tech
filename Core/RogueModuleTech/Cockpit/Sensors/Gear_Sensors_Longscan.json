@@ -3,9 +3,6 @@
     "Category": [
       {
         "CategoryID": "CockpitSensors"
-      },
-      {
-        "CategoryID": "Probe"
       }
     ],
     "BonusDescriptions": [
@@ -17,22 +14,14 @@
       "not_broken"
     ],
     "IBLS": {
-      "StorageSize": 1
-    },
-    "DecoratorComponent": [
-      {
-        "Text": "A",
-        "Color": "#FF0E07",
-        "Icon": "ComponentGearIcons_PROBE",
-        "Importance": 20
-      }
-    ]
+      "StorageSize": 2
+    }
   },
   "StatName": null,
   "RelativeModifier": 0,
   "AbsoluteModifier": 0,
   "Description": {
-    "Cost": 150000,
+    "Cost": 350000,
     "Rarity": 5,
     "Purchasable": true,
     "Manufacturer": "Exeter",
@@ -49,7 +38,7 @@
   "ComponentSubType": "NotSet",
   "PrefabIdentifier": "",
   "BattleValue": 0,
-  "InventorySize": 1,
+  "InventorySize": 2,
   "Tonnage": 1,
   "AllowedLocations": "Head",
   "DisallowedLocations": "All",
@@ -62,10 +51,7 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
@@ -73,7 +59,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "LV_PROBE_CARRIER",
-        "Name": "Active Probe (Passive)",
+        "Name": "Sensor Longscan: Active Probe",
         "Details": "Reduces effectiveness of stealthed and ECM shielded units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -92,10 +78,7 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
@@ -103,7 +86,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "LV_ADVANCED_SENSORS",
-        "Name": "Advanced Sensors",
+        "Name": "Sensor Longscan: Increased Advanced Sensor Strength",
         "Details": "Provides detailed information on enemy units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -122,20 +105,14 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "BAProbe",
-        "Name": "HP-CockpitSensors-Sensor",
+        "Name": "Sensor Longscan: Increased Sensor Range",
         "Details": "Increased Sight/Sensors",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },

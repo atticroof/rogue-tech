@@ -20,7 +20,7 @@
   },
   "ChassisID": "vehiclechassisdef_NACON",
   "Description": {
-    "Cost": 2395305,
+    "Cost": 2538305,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Nacon Armored Scout",
@@ -125,7 +125,7 @@
     },
     {
       "MountedLocation": "Front",
-      "ComponentDefID": "Gear_Sensors_Improved_Clan",
+      "ComponentDefID": "Gear_Sensors_Identify",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

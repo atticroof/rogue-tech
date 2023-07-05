@@ -95,6 +95,14 @@
         },
         {
             "Type": "TurretChassisDef",
+            "Path": "Turrets/ChemLaser/TurretChassis"
+        },
+        {
+            "Type": "TurretDef",
+            "Path": "Turrets/ChemLaser/Turret"
+        },
+        {
+            "Type": "TurretChassisDef",
             "Path": "Turrets/DualGun/TurretChassis"
         },
         {
@@ -140,6 +148,14 @@
         {
             "Type": "TurretDef",
             "Path": "Turrets/LBX/Turret"
+        },
+        {
+            "Type": "TurretChassisDef",
+            "Path": "Turrets/ImprovedClan/TurretChassis"
+        },
+        {
+            "Type": "TurretDef",
+            "Path": "Turrets/ImprovedClan/Turret"
         },
         {
             "Type": "TurretChassisDef",

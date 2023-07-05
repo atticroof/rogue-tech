@@ -2,6 +2,7 @@
   "VehicleTags": {
     "items": [
       "mr-resize-1.50",
+      "unit_release",
       "unit_vehicle",
       "unit_light",
       "unit_wheels",
@@ -34,7 +35,7 @@
   },
   "ChassisID": "vehiclechassisdef_COBRA_ARV",
   "Description": {
-    "Cost": 352452,
+    "Cost": 464952,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Cobra ARV",
@@ -139,7 +140,7 @@
     },
     {
       "MountedLocation": "Front",
-      "ComponentDefID": "Default_Vehicle_Sensors",
+      "ComponentDefID": "Gear_Sensors_Identify",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

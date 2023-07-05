@@ -28,22 +28,20 @@
       "EWARScan: 310, 2, 15",
       "CapacitorBoom: 40"
     ],
-    "ActivatableComponent": {
-      "CanNotBeActivatedManualy": true,
-      "NoUniqueCheck": true,
-      "ActivationMessage": "Ping",
-      "DeactivationMessage": "",
-      "statusEffects": [],
-      "offlineStatusEffects": []
-    },
-    "ComponentExplosion": {
-      "ExplosionDamage": 40,
-      "StabilityDamage": 20,
-      "HeatDamage": 10
-    },
     "Flags": [
       "not_broken"
     ],
+    "ActivatableComponent": {
+      "CanNotBeActivatedManualy": true,
+      "ActivationMessage": "Ping",
+      "DeactivationMessage": "",
+      "NoUniqueCheck": true
+    },
+    "ComponentExplosion": {
+      "ExplosionDamage": 40,
+      "HeatDamage": 10,
+      "StabilityDamage": 20
+    },
     "IBLS": {
       "StorageSize": 5
     },
@@ -68,9 +66,6 @@
       }
     ]
   },
-  "StatName": null,
-  "RelativeModifier": 0,
-  "AbsoluteModifier": 0,
   "Description": {
     "Cost": 1230000,
     "Rarity": 6,
@@ -88,6 +83,8 @@
   "ComponentType": "Upgrade",
   "ComponentSubType": "Prototype_ElectronicWarfare",
   "PrefabIdentifier": "",
+  "RelativeModifier": 0,
+  "AbsoluteModifier": 0,
   "BattleValue": 100,
   "InventorySize": 5,
   "Tonnage": 5,
@@ -108,13 +105,6 @@
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
       "IsPositiveToAlly": true,
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -123,28 +113,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3i_network_bonus",
-            "Name": "C3i Sensors Bonus",
+            "Name": "Warfare Suite MKII / Aura C3 network: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3i_network_bonus",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.06",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -153,28 +140,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3i_network_bonus",
-            "Name": "C3i Vision Bonus",
+            "Name": "Warfare Suite MKII / Aura C3 network: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3i_network_bonus",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.03",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -183,28 +167,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3i_network_bonus",
-            "Name": "C3i Sensor Check Bonus",
+            "Name": "Warfare Suite MKII / Aura C3 network: Increased Allies Advanced Sensor Strength",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3i_network_bonus",
             "statName": "LV_ADVANCED_SENSORS",
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -213,28 +194,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3i_network_bonus_probe",
-            "Name": "C3i Probe bonus",
+            "Name": "Warfare Suite MKII / Aura C3 network: Active Probe",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3i_network_bonus",
             "statName": "LV_PROBE_CARRIER",
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -242,49 +220,32 @@
       "Id": "MINEDETECTIONAURA",
       "Name": "Minesweeper",
       "ReticleColor": "white",
-      "LineType": "Dots",
-      "isSpining": false,
-      "MinefieldDetector": true,
-      "HideOnNotSelected": true,
       "Range": 240,
       "RemoveOnSensorLock": false,
       "State": "Persistent",
       "ApplySelf": true,
+      "HideOnNotSelected": true,
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
-      "IsPositiveToAlly": false,
       "IsNegativeToEnemy": false,
-      "ownerVFX": [],
-      "targetVFX": [],
-      "removeOwnerVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
-      "statusEffects": []
+      "IsPositiveToAlly": false,
+      "MinefieldDetector": true,
+      "LineType": "Dots",
+      "isSpining": false
     },
     {
       "Id": "ECM_Aura",
       "Name": "ECM",
       "ReticleColor": "#a31aff",
       "Range": 180,
-      "HideOnNotSelected": false,
       "RemoveOnSensorLock": false,
       "State": "Persistent",
       "ApplySelf": false,
+      "HideOnNotSelected": false,
       "AllyStealthAffection": "PositiveOne",
       "EnemyStealthAffection": "None",
-      "IsPositiveToAlly": true,
       "IsNegativeToEnemy": false,
-      "ownerVFX": [],
-      "targetVFX": [],
-      "removeOwnerVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
+      "IsPositiveToAlly": true,
       "statusEffects": [
         {
           "durationData": {
@@ -294,15 +255,15 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "LV_ECM_SHIELD",
-            "Name": "ECM Buff",
+            "Name": "Warfare Suite MKII / Aura ECM: Increased Allies ECM Shield",
             "Details": "Ally ECM Shield",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -311,8 +272,7 @@
             "operation": "Int_Add",
             "modValue": "3",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -321,22 +281,14 @@
       "Name": "ECCM",
       "ReticleColor": "#a31aff",
       "Range": 180,
-      "HideOnNotSelected": true,
       "RemoveOnSensorLock": false,
       "State": "Persistent",
       "ApplySelf": false,
+      "HideOnNotSelected": true,
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "Nullify",
-      "IsPositiveToAlly": false,
       "IsNegativeToEnemy": true,
-      "ownerVFX": [],
-      "targetVFX": [],
-      "removeOwnerVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
+      "IsPositiveToAlly": false,
       "statusEffects": [
         {
           "durationData": {
@@ -346,15 +298,15 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "LV_ECCM_SHIELD",
-            "Name": "ECCM Debuff",
+            "Name": "Warfare Suite MKII / Aura ECCM: Decreased Enemies ECM Shield",
             "Details": "ECCM Shield Reduction",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -363,8 +315,7 @@
             "operation": "Int_Add",
             "modValue": "-2",
             "modType": "System.Int32"
-          },
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -373,16 +324,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3",
-            "Name": "ECM Disrupts C3",
+            "Name": "Warfare Suite MKII / Aura ECCM: ECM Disrupts C3",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -391,9 +341,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -402,16 +350,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3i",
-            "Name": "ECM Disrupts C3i",
+            "Name": "Warfare Suite MKII / Aura ECCM: ECM Disrupts C3i",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -420,9 +367,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -431,16 +376,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3n",
-            "Name": "ECM Disrupts C3 Nova",
+            "Name": "Warfare Suite MKII / Aura ECCM: ECM Disrupts C3 Nova",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -449,9 +393,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -460,16 +402,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3AI",
-            "Name": "ECM Disrupts C3 AI",
+            "Name": "Warfare Suite MKII / Aura ECCM: ECM Disrupts C3 AI",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -478,9 +419,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         }
       ]
     }
@@ -498,9 +437,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3i",
-        "Name": "C3i network",
+        "Name": "Warfare Suite MKII: C3i network",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -509,8 +449,7 @@
         "operation": "Float_Add",
         "modValue": "3",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -524,19 +463,20 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3_AI",
-        "Name": "C3 AI",
+        "Name": "Warfare Suite MKII: C3 AI",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
       "statisticData": {
+        "abilifierId": "C3_network_AI",
         "statName": "ADD_ENCOUNTER_TAG_C3AI_network",
         "operation": "Float_Add",
         "modValue": "3",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "targetingData": {
@@ -568,9 +508,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "MineFieldDetection",
-        "Name": "Active Probe (Passive)",
+        "Name": "Warfare Suite MKII: Increased Minefield Detection",
         "Details": "Detects Minefields",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -579,8 +520,7 @@
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -594,9 +534,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_PROBE_CARRIER",
-        "Name": "Active Probe (Passive)",
+        "Name": "Warfare Suite MKII: Active Probe",
         "Details": "Reduces effectiveness of stealthed and ECM shielded units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -605,8 +546,7 @@
         "operation": "Int_Add",
         "modValue": "2",
         "modType": "System.Int32"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -620,9 +560,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_ADVANCED_SENSORS",
-        "Name": "Advanced Sensors",
+        "Name": "Warfare Suite MKII: Increased Advanced Sensor Strength",
         "Details": "Provides detailed information on enemy units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -631,8 +572,7 @@
         "operation": "Int_Add",
         "modValue": "2",
         "modType": "System.Int32"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -646,13 +586,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AdvancedProbeSensor",
-        "Name": "Probe Sensor",
+        "Name": "Warfare Suite MKII: Increased Sensor Range",
         "Details": "Increased Sight/Sensors/Health.",
         "Icon": "uixSvgIcon_equipment_Comms"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "SensorDistanceAbsolute",
         "operation": "Float_Multiply",
@@ -672,13 +612,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AdvancedProbeSight",
-        "Name": "Probe Sight",
+        "Name": "Warfare Suite MKII: Increased Vision Range",
         "Details": "Increases spotting distance by 50m.",
         "Icon": "uixSvgIcon_equipment_Comms"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "SpotterDistanceAbsolute",
         "operation": "Float_Multiply",
@@ -698,13 +638,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "ECMPassiveShield",
-        "Name": "ECMPassiveShield",
+        "Name": "Warfare Suite MKII: Increased ECM Shield",
         "Details": "Passive ECM Protection",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "LV_ECM_SHIELD",
         "operation": "Int_Add",
@@ -724,13 +664,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "ECMPassiveJam",
-        "Name": "ECMPassiveJam",
+        "Name": "Warfare Suite MKII: Decreased ECM Jamming",
         "Details": "Passive Jamming Protection",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "LV_ECM_JAMMED",
         "operation": "Int_Add",
@@ -741,7 +681,7 @@
     {
       "durationData": {
         "duration": -1,
-        "stackLimit": 1
+        "stackLimit": -1
       },
       "targetingData": {
         "effectTriggerType": "Passive",
@@ -751,9 +691,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_Shares_Vision",
-        "Name": "Vision Sharing",
+        "Name": "Warfare Suite MKII: Shared Vision",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -762,8 +703,7 @@
         "operation": "Set",
         "modValue": "true",
         "modType": "System.Boolean"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

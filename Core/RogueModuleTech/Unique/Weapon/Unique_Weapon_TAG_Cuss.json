@@ -37,24 +37,26 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 0,
   "Damage": 1,
+  "HeatDamage": 0,
+  "Instability": 0,
+  "DamageVariance": 0,
+  "AccuracyModifier": -1,
+  "EvasivePipsIgnored": 1,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 1,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": -1,
   "CriticalChanceMultiplier": 0,
   "APArmorShardsMod": 0.1,
   "APMaxArmorThickness": 1.2,
   "APCriticalChanceMultiplier": 0.002,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 1,
-  "Instability": 0,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "NotUseInMelee": true,
+  "AttackRecoil": 1,
   "WeaponEffectID": "WeaponEffect-Weapon_TAG",
   "Description": {
     "Cost": 210000,
@@ -82,34 +84,24 @@
   "statusEffects": [
     {
       "durationData": {
-        "duration": 7,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": true,
+        "duration": 168,
         "stackLimit": 1,
-        "clearedWhenAttacked": false
+        "ticksOnMovements": true,
+        "stackId": "PainterEffectStack"
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "PainterEffect",
-        "Name": "Eat Dirt",
+        "Name": "Unique TAG: Target Acquired",
         "Details": "This target was TAG'ed. +1 to hit.",
         "Icon": "uixSvgIcon_artillery"
       },
-      "nature": "Debuff",
       "statisticData": {
         "statName": "LV_TAG",
         "operation": "Set",
@@ -119,33 +111,23 @@
     },
     {
       "durationData": {
-        "duration": 7,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": true,
-        "stackLimit": 1
+        "duration": 168,
+        "stackLimit": 1,
+        "ticksOnMovements": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
-        "Id": "PainterEffect2",
-        "Name": "SUCKAH!",
+        "Id": "PainterEffect-Visibility",
+        "Name": "Unique TAG: Increased Target Visual Signature",
         "Details": "Hurling Insults hurts you",
         "Icon": "uixSvgIcon_artillery"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "SpottingVisibilityMultiplier",
         "operation": "Float_Multiply",
@@ -155,34 +137,25 @@
     },
     {
       "durationData": {
-        "duration": 7,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": true,
-        "stackLimit": 1
+        "duration": 168,
+        "stackLimit": 1,
+        "ticksOnMovements": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
         "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false,
         "hideApplicationFloatie": true
       },
       "effectType": "VFXEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "StatusEffect-TAG-IndicatorVFX",
         "Name": "TAG MARKED",
         "Details": "Visual indicator of the TAG effect",
         "Icon": "uixSvgIcon_status_sensorsImpaired"
       },
-      "nature": "Debuff",
       "vfxData": {
         "vfxName": "vfxPrfPrtl_TAGmarker_loop",
         "attachToImpactPoint": true,
@@ -190,7 +163,7 @@
         "isAttached": true,
         "facesAttacker": false,
         "isOneShot": false,
-        "duration": -1.0
+        "duration": -1
       }
     }
   ],

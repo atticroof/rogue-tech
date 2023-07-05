@@ -27,7 +27,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_iATMExport_EvasivePipsIgnored",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity iATM Expert: Increased Evasive Pips Ignore"
             },
             "durationData": {
               "duration": -1,
@@ -36,6 +36,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_iATMExport",
               "statName": "EvasivePipsIgnored",
               "operation": "Float_Add",
               "modValue": "1.0",
@@ -54,7 +55,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_iATMExport_Accuracy",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity iATM Expert: Improved Accuracy"
             },
             "durationData": {
               "duration": -1,
@@ -63,6 +64,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_iATMExport",
               "statName": "AccuracyModifier",
               "operation": "Float_Add",
               "modValue": "-2.0",
@@ -81,7 +83,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_iATMExport_HeatGenerated",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity iATM Expert: Decreased Heat Generated"
             },
             "durationData": {
               "duration": -1,
@@ -90,6 +92,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_iATMExport",
               "statName": "HeatGenerated",
               "operation": "Float_Multiply",
               "modValue": "0.8",

@@ -2,11 +2,10 @@
   "VehicleTags": {
     "items": [
       "skip_heatcheck",
-      "mr-resize-2.18",
+      "mr-resize-2.0",
       "unit_command",
       "unit_superheavy_vehicle",
       "unit_immune_shutdownonhit",
-      "unit_immune_bracetofire",
       "unit_noconvoy",
       "unit_thumper",
       "republic",
@@ -46,8 +45,10 @@
       "FroncReaches",
       "EscorpionImperio",
       "ClanWolfInExile",
+      "clanwidowmaker",
       "GreenGhosts",
       "RimWorldsRepublic",
+      "clanwolverine",
       "TerranHegemony",
       "SLDF",
       "AmarisEmpire",
@@ -104,7 +105,7 @@
   },
   "ChassisID": "vehiclechassisdef_VACHIR_SUPERHEAVY_TANK",
   "Description": {
-    "Cost": 69639853,
+    "Cost": 69716853,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Vachir Qorchi",

@@ -15,7 +15,9 @@
       "NoBiome_lunarVacuum",
       "NoBiome_martianVacuum",
       "unit_noconvoy",
+      "clanwidowmaker",
       "OrienteProtectorate",
+      "clanwolverine",
       "TerranHegemony",
       "SLDF",
       "RimWorldsRepublic",
@@ -118,7 +120,7 @@
   },
   "ChassisID": "vehiclechassisdef_LONGTOM_B",
   "Description": {
-    "Cost": 3417166,
+    "Cost": 3817166,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Longtom LT-MOB-25b",

@@ -9,6 +9,12 @@
       "C3Slave",
       "C3Bonus: C3 master, +3%, +2%, +1"
     ],
+    "Flags": [
+      "not_broken"
+    ],
+    "IBLS": {
+      "StorageSize": 1
+    },
     "DecoratorComponent": [
       {
         "Text": "S",
@@ -16,17 +22,8 @@
         "Icon": "ComponentGearIcons_HEXAGON",
         "Importance": 50
       }
-    ],
-    "Flags": [
-      "not_broken"
-    ],
-    "IBLS": {
-      "StorageSize": 1
-    }
+    ]
   },
-  "StatName": null,
-  "RelativeModifier": 0,
-  "AbsoluteModifier": 0,
   "Description": {
     "Cost": 250000,
     "Rarity": 4,
@@ -44,6 +41,8 @@
   "ComponentType": "Upgrade",
   "ComponentSubType": "NotSet",
   "PrefabIdentifier": "",
+  "RelativeModifier": 0,
+  "AbsoluteModifier": 0,
   "BattleValue": 0,
   "InventorySize": 1,
   "Tonnage": 1,
@@ -64,13 +63,6 @@
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
       "IsPositiveToAlly": true,
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -79,28 +71,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_slave_bonus",
-            "Name": "C3 Slave Sensors Bonus",
+            "Name": "C3 Slave Aura: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_slave_bonus",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.03",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -109,28 +98,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_slave_bonus",
-            "Name": "C3 Slave Vision Bonus",
+            "Name": "C3 Slave Aura: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_slave_bonus",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.02",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -139,28 +125,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_slave_bonus",
-            "Name": "C3 Slave Sensor Check Bonus",
+            "Name": "C3 Slave Aura: Increased Allies Advanced Sensor Strength",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_slave_bonus",
             "statName": "LV_ADVANCED_SENSORS",
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     }
@@ -178,24 +161,25 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3_AI",
-        "Name": "C3 AI",
+        "Name": "C3 Slave: C3 AI",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
       "statisticData": {
+        "abilifierId": "C3_network_AI",
         "statName": "ADD_ENCOUNTER_TAG_C3AI_network",
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
         "duration": -1,
-        "stackLimit": 1
+        "stackLimit": -1
       },
       "targetingData": {
         "effectTriggerType": "Passive",
@@ -205,9 +189,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_Shares_Vision",
-        "Name": "Vision Sharing",
+        "Name": "C3 Slave: Shared Vision",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -216,8 +201,7 @@
         "operation": "Set",
         "modValue": "true",
         "modType": "System.Boolean"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

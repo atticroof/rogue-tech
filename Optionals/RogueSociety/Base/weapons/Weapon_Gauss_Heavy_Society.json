@@ -18,14 +18,14 @@
       "WeaponAttachmentCompatible: Recoil Damper",
       "WeaponExplosionInertAmmo: 64, 32, 16"
     ],
+    "Flags": [
+      "not_broken"
+    ],
     "ComponentExplosion": {
       "ExplosionDamagePerAmmo": 64.0,
       "HeatDamagePerAmmo": 32.0,
       "StabilityDamagePerAmmo": 16.0
     },
-    "Flags": [
-      "not_broken"
-    ],
     "IBLS": {
       "StorageSize": 8
     }
@@ -44,26 +44,27 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 6,
   "Damage": 128,
+  "HeatDamage": 0,
+  "Instability": 32,
+  "DamageVariance": 0,
+  "AccuracyModifier": -1,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 3,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": -1,
   "CriticalChanceMultiplier": 2,
   "APArmorShardsMod": 0.5,
   "APMaxArmorThickness": 384,
   "APCriticalChanceMultiplier": 2,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 3,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 18,
-  "Instability": 32,
-  "FlatJammingChance": 0.15,
+  "ImprovedBallistic": true,
+  "IndirectFireCapable": false,
   "GunneryJammingMult": 0.01,
   "GunneryJammingBase": 1,
+  "FlatJammingChance": 0.15,
+  "AttackRecoil": 18,
   "ProjectileScale": {
     "x": 1.3,
     "y": 1.3,
@@ -92,13 +93,12 @@
   "Tonnage": 17,
   "AllowedLocations": "Torso",
   "DisallowedLocations": "Arms",
-  "ImprovedBallistic": true,
   "CriticalComponent": false,
   "statusEffects": [
     {
       "durationData": {
         "duration": 1,
-        "stackLimit": 5
+        "stackLimit": -1
       },
       "targetingData": {
         "effectTriggerType": "OnWeaponFire",
@@ -106,19 +106,19 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WeaponEffect-SelfknockdownCheck_OnFire",
-        "Name": "Tubthumping",
+        "Name": "Heavy Gauss Rifle (S): Increased Self Knockdown on Fire",
         "Details": "Tubthumping",
         "Icon": "uixSvgIcon_run_n_gun"
       },
       "statisticData": {
         "statName": "SelfknockdownCheck_OnFire",
         "operation": "Float_Add",
-        "modValue": "0.35",
+        "modValue": "0.38",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

@@ -4,7 +4,6 @@
     "Name": "Acid Mortar Ammo",
     "UIName": "Acid",
     "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
-    "Icon": null,
     "Cost": 0,
     "Rarity": 0,
     "Purchasable": false
@@ -13,44 +12,37 @@
   "Category": "MORTAR",
   "HeatGenerated": 0,
   "HeatGeneratedModifier": 1,
-  "CriticalDamageModifier": 1,
   "ArmorDamageModifier": 1.7,
   "ISDamageModifier": 0.5,
+  "CriticalDamageModifier": 1,
   "AOECapable": true,
   "AOERange": 45,
   "AOEDamage": 2,
+  "AOEHeatDamage": 0.01,
   "AOEInstability": 1,
-  "MinMissRadius": 15,
-  "MaxMissRadius": 75,
   "AOEEffectsFalloff": true,
   "AlwaysIndirectVisuals": true,
+  "MinMissRadius": 15,
+  "MaxMissRadius": 75,
   "statusEffects": [
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
         "extendDurationOnTrigger": 2,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_Acid_Mortar_DMG",
-        "Name": "Acid",
+        "Name": "Acid Mortar: Increased Target Damage Taken",
         "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
         "Icon": "uixSvgIcon_biome_Heated"
       },
@@ -59,35 +51,26 @@
         "operation": "Float_Add",
         "modValue": "0.005",
         "modType": "System.Single"
-      },
-      "nature": "Debuff"
+      }
     },
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
         "extendDurationOnTrigger": 2,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_Acid_Mortar_DMG",
-        "Name": "Acid",
+        "Name": "Acid Mortar: Increased Target AoE Damage Taken",
         "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
         "Icon": "uixSvgIcon_biome_Heated"
       },
@@ -96,8 +79,7 @@
         "operation": "Float_Add",
         "modValue": "0.005",
         "modType": "System.Single"
-      },
-      "nature": "Debuff"
+      }
     }
   ]
 }

@@ -6,7 +6,7 @@
       "unit_assault",
       "unit_tracks",
       "unit_release",
-      "unit_lance_support",
+      "unit_lance_tank",
       "unit_lance_assassin",
       "unit_advanced",
       "unit_legendary",
@@ -37,7 +37,7 @@
   },
   "ChassisID": "vehiclechassisdef_Baras_0",
   "Description": {
-    "Cost": 35595344,
+    "Cost": 35651594,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Baras Prime MBT",

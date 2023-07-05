@@ -8,6 +8,7 @@
       "unit_vtol",
       "apply_bomb_drag_tag",
       "unit_release",
+      "unit_vehicle_apc",
       "unit_lance_support",
       "unit_lance_vanguard",
       "unit_generic",
@@ -34,7 +35,7 @@
   },
   "ChassisID": "vehiclechassisdef_Ripper",
   "Description": {
-    "Cost": 351795,
+    "Cost": 326461,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Ripper VTOL",

@@ -10,6 +10,7 @@
       "unit_vtol",
       "apply_bomb_drag_tag",
       "unit_release",
+      "unit_vehicle_apc",
       "unit_lance_assassin",
       "unit_bracket_med",
       "unit_resupply",
@@ -22,7 +23,7 @@
   },
   "ChassisID": "vehiclechassisdef_Anhur_Transport_REVIVAL",
   "Description": {
-    "Cost": 1471602,
+    "Cost": 1711602,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Anhur Trans. (Rev)",

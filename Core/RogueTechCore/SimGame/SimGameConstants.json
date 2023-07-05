@@ -197,11 +197,14 @@
       "argoUpgrade_mechBay1",
       "argoUpgrade_medBay1",
       "argoUpgrade_pod1",
-      "argoUpgrade_structure0"
+      "argoUpgrade_structure0",
+      "argoUpgrade_MRBConsole"
     ],
     "MechMothballTime": 0,
     "CompanyEventStartingChance": -2.5,
     "CompanyEventIncreaseRate": 0.5,
+    "DeadEventStartingChance": -2.5,
+    "DeadEventIncreaseRate": 0.5,
     "MoraleEventStartingChance": -15.0,
     "MoraleEventIncreaseRate": 0.0,
     "StartingReputation": 0,
@@ -490,7 +493,8 @@
       "argoUpgrade_mechBay1",
       "argoUpgrade_medBay1",
       "argoUpgrade_pod1",
-      "argoUpgrade_structure0"
+      "argoUpgrade_structure0",
+      "argoUpgrade_MRBConsole"
     ]
   },
   "Progression": {
@@ -826,7 +830,8 @@
       "argoUpgrade_mechBay1",
       "argoUpgrade_medBay1",
       "argoUpgrade_pod1",
-      "argoUpgrade_structure0"
+      "argoUpgrade_structure0",
+      "argoUpgrade_MRBConsole"
     ],
     "LoathedMaxContractDifficulty": 50,
     "HatedMaxContractDifficulty": 50,

@@ -21,22 +21,26 @@
       "NoAA",
       "MineClearanceBoom: 1",
       "1shot",
+      "AmmoCost: 150",
       "WeaponExplosionNoAmmo: 35, 35, 35"
     ],
-    "ComponentExplosion": {
-      "ExplosionDamagePerAmmo": 35.0,
-      "HeatDamagePerAmmo": 35.0,
-      "StabilityDamagePerAmmo": 35.0
+    "AmmoCost": {
+      "PerUnitCost": 150
     },
     "Flags": [
       "not_broken",
       "not_destroyed"
     ],
-    "IBLS": {
-      "StorageSize": 3
+    "ComponentExplosion": {
+      "ExplosionDamagePerAmmo": 35,
+      "HeatDamagePerAmmo": 35,
+      "StabilityDamagePerAmmo": 35
     },
     "InternalAmmoTonnage": {
       "InternalAmmoTons": 0.1
+    },
+    "IBLS": {
+      "StorageSize": 3
     }
   },
   "Category": "Energy",
@@ -53,45 +57,50 @@
   "StartingAmmoCapacity": 1,
   "HeatGenerated": 30,
   "Damage": 5,
+  "HeatDamage": 30,
+  "Instability": 20,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 1,
+  "evasivePipsMods": {
+    "RefireModifier": 0.3333,
+    "AccuracyModifier": -0.2333
+  },
+  "RefireModifier": 2,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 1,
-  "DamageVariance": 0,
-  "HeatDamage": 30,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 0.5,
   "APArmorShardsMod": 0.2,
   "APMaxArmorThickness": 6.5,
   "APCriticalChanceMultiplier": 0.013,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 2,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 3,
-  "Instability": 20,
-  "DamageOnJamming": true,
-  "FlatJammingChance": 0.2,
+  "ImprovedBallistic": true,
+  "CantHitUnaffecedByPathing": true,
+  "IndirectFireCapable": false,
+  "ClearMineFieldRadius": 8,
   "GunneryJammingMult": 0.01,
   "GunneryJammingBase": 1,
-  "AdditionalImpactVFX": "WFX_SPlasma",
-  "AdditionalImpactVFXScaleX": 1,
-  "AdditionalImpactVFXScaleY": 1,
-  "AdditionalImpactVFXScaleZ": 1,
+  "FlatJammingChance": 0.2,
+  "DamageOnJamming": true,
+  "AttackRecoil": 3,
+  "ProjectileScale": {
+    "x": 0.7,
+    "y": 0.7,
+    "z": 1.2
+  },
   "ColorsTable": [
     {
       "C": "#B0E0E6",
       "I": 5
     }
   ],
-  "ImprovedBallistic": true,
   "ColorChangeRule": "t0",
-  "ProjectileScale": {
-    "x": 0.7,
-    "y": 0.7,
-    "z": 1.2
-  },
-  "CantHitUnaffecedByPathing": true,
+  "AdditionalImpactVFX": "WFX_SPlasma",
+  "AdditionalImpactVFXScaleX": 1,
+  "AdditionalImpactVFXScaleY": 1,
+  "AdditionalImpactVFXScaleZ": 1,
   "WeaponEffectID": "WeaponEffect-Weapon_PPC",
   "Description": {
     "Cost": 1580000,
@@ -116,76 +125,27 @@
   "AllowedLocations": "All",
   "DisallowedLocations": "All",
   "CriticalComponent": false,
-  "ClearMineFieldRadius": 8,
-  "evasivePipsMods": {
-    "RefireModifier": 0.3333,
-    "AccuracyModifier": -0.2333
-  },
   "statusEffects": [
     {
       "durationData": {
-        "duration": 1,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "stackLimit": 45
-      },
-      "targetingData": {
-        "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
-        "showInTargetPreview": false,
-        "showInStatusPanel": false
-      },
-      "effectType": "StatisticEffect",
-      "Description": {
-        "Id": "HeatDamageTakenSoftCapMultiplier",
-        "Name": "Heat SoftCap 5%",
-        "Details": "Reduce Heat Damage by 1%",
-        "Icon": "uixSvgIcon_equipment_ThermalExchanger"
-      },
-      "nature": "Buff",
-      "statisticData": {
-        "statName": "CACIncomingHeatMult",
-        "operation": "Float_Multiply",
-        "modValue": "0.95",
-        "modType": "System.Single"
-      }
-    },
-    {
-      "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "AbilityDefPPC",
-        "Name": "SENSORS IMPAIRED",
+        "Name": "TSEMP Cannon (OS): Increased Target ECM Jamming",
         "Details": "EM Interference reduces sensor efficiency.",
         "Icon": "uixSvgIcon_status_sensorsImpaired"
       },
-      "nature": "Debuff",
       "statisticData": {
         "statName": "LV_ECM_JAMMED",
         "operation": "Int_Add",
@@ -196,33 +156,23 @@
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": 6,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "TSEMP-Effect1",
-        "Name": "Walk Impaired",
+        "Name": "TSEMP Cannon (OS): Decreased Target Walk Speed",
         "Details": "The Mech's Movement is reduced.",
         "Icon": "uixSvgIcon_status_sensorsImpaired"
       },
-      "nature": "Debuff",
       "statisticData": {
         "statName": "WalkSpeed",
         "operation": "Float_Multiply",
@@ -233,36 +183,24 @@
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": 6,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "SingleTarget",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "TSEMP-Effect3",
-        "Name": "Cooling Impaired",
+        "Name": "TSEMP Cannon (OS): Increased Target Heat Generated",
         "Details": "The Mech's cooling is impaired.",
         "Icon": "uixSvgIcon_status_sensorsImpaired"
       },
-      "nature": "Debuff",
       "statisticData": {
-        "appliesEachTick": false,
-        "effectsPersistAfterDestruction": false,
         "statName": "HeatGenerated",
         "operation": "Float_Multiply",
         "modValue": "1.8",
@@ -279,9 +217,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WeaponEffect-OnHitShutdownChance",
-        "Name": "Mr. Zappy",
+        "Name": "TSEMP Cannon (OS): Increased Target Shutdown Chance",
         "Details": "Mr. Zappy",
         "Icon": "uixSvgIcon_run_n_gun"
       },
@@ -290,8 +229,7 @@
         "operation": "Float_Add",
         "modValue": "0.8",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

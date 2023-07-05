@@ -4,7 +4,6 @@
     "Name": "Acid FASCAM Mortar Ammo",
     "UIName": "FASCAM",
     "Details": "Massive rounds, designed for devastating impact, to be used in an AC/20.",
-    "Icon": null,
     "Cost": 0,
     "Rarity": 0,
     "Purchasable": false
@@ -13,41 +12,38 @@
   "Category": "MORTAR",
   "HeatGenerated": 0,
   "HeatGeneratedModifier": 1,
+  "DamageMultiplier": 0.5,
   "ArmorDamageModifier": 1.5,
   "ISDamageModifier": 0.5,
   "CriticalDamageModifier": 1,
+  "AccuracyModifier": 5,
   "AOECapable": false,
-  "DamageMultiplier": 0.5,
-  "AlwaysIndirectVisuals": true,
   "CantHitUnaffecedByPathing": true,
-  "AccuracyModifier": 5.0,
+  "AlwaysIndirectVisuals": true,
   "MinMissRadius": 10,
   "MaxMissRadius": 80,
   "MineField": {
-    "UIName": "M-FASCAM-A",
     "MinefieldDefID": "MortarMinesAcid",
+    "UIName": "M-FASCAM-A",
+    "Count": 4,
+    "Damage": 2,
+    "Heat": 0,
+    "Chance": 0.44,
+    "InstallCellRange": 10,
+    "AOEDamage": 2,
+    "AOEHeat": 0,
+    "AOEInstability": 2,
+    "AOERange": 30,
+    "MoveCostFactor": 0,
     "ExposedStructureEndMove": true,
-    "MoveCostFactor": 0.0,
     "CausesSympatheticDetonation": false,
-    "SubjectToSympatheticDetonationChance": 0.0,
-    "DetonateAllMinesInStackChance": 0.0,
-    "MisfireOnDeployChance": 0.0,
+    "SubjectToSympatheticDetonationChance": 0,
+    "DetonateAllMinesInStackChance": 0,
+    "MisfireOnDeployChance": 0,
     "ShouldAddToExistingFields": false,
     "stealthLevel": 1,
     "IFFLevel": 0,
     "burnReaction": "Destroy",
-    "InstallCellRange": 10,
-    "Count": 4,
-    "Heat": 0,
-    "Chance": 0.44,
-    "Damage": 2,
-    "AOEDamage": 2,
-    "AOERange": 30,
-    "AOEHeat": 0,
-    "AOEInstability": 2,
-    "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
-    "VFXMinDistance": 30,
-    "SFX": "enum:AudioEventList_explosion.explosion_propane_tank",
     "FireTerrainChance": 0.01,
     "FireDurationWithoutForest": 0,
     "FireTerrainStrength": 0,
@@ -56,29 +52,21 @@
       {
         "durationData": {
           "duration": 2,
-          "ticksOnActivations": true,
-          "useActivationsOfTarget": true,
-          "ticksOnEndOfRound": false,
-          "ticksOnMovements": false,
           "stackLimit": -1,
-          "clearedWhenAttacked": false
+          "ticksOnActivations": true,
+          "useActivationsOfTarget": true
         },
         "targetingData": {
           "effectTriggerType": "OnHit",
-          "triggerLimit": 0,
           "extendDurationOnTrigger": 2,
-          "specialRules": "NotSet",
-          "effectTargetType": "NotSet",
-          "range": 0,
-          "forcePathRebuild": false,
-          "forceVisRebuild": false,
           "showInTargetPreview": true,
           "showInStatusPanel": true
         },
         "effectType": "StatisticEffect",
+        "nature": "Debuff",
         "Description": {
           "Id": "Effect_AcidMine",
-          "Name": "Acid",
+          "Name": "FASCAM Minefield: Increased Target Damage Taken",
           "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
           "Icon": "uixSvgIcon_biome_Heated"
         },
@@ -87,35 +75,26 @@
           "operation": "Float_Add",
           "modValue": "0.01",
           "modType": "System.Single"
-        },
-        "nature": "Debuff"
+        }
       },
       {
         "durationData": {
           "duration": 2,
-          "ticksOnActivations": true,
-          "useActivationsOfTarget": true,
-          "ticksOnEndOfRound": false,
-          "ticksOnMovements": false,
           "stackLimit": -1,
-          "clearedWhenAttacked": false
+          "ticksOnActivations": true,
+          "useActivationsOfTarget": true
         },
         "targetingData": {
           "effectTriggerType": "OnHit",
-          "triggerLimit": 0,
           "extendDurationOnTrigger": 2,
-          "specialRules": "NotSet",
-          "effectTargetType": "NotSet",
-          "range": 0,
-          "forcePathRebuild": false,
-          "forceVisRebuild": false,
           "showInTargetPreview": true,
           "showInStatusPanel": true
         },
         "effectType": "StatisticEffect",
+        "nature": "Debuff",
         "Description": {
           "Id": "Effect_AcidMine",
-          "Name": "Acid",
+          "Name": "FASCAM Minefield: Increased Target AoE Damage Taken",
           "Details": "This unit is coated with corrosive Acid. It will take increased Damage.",
           "Icon": "uixSvgIcon_biome_Heated"
         },
@@ -124,9 +103,11 @@
           "operation": "Float_Add",
           "modValue": "0.01",
           "modType": "System.Single"
-        },
-        "nature": "Debuff"
+        }
       }
-    ]
+    ],
+    "VFXprefab": "vfxNstPrtl_vehicleCrushed_A",
+    "VFXMinDistance": 30,
+    "SFX": "enum:AudioEventList_explosion.explosion_propane_tank"
   }
 }

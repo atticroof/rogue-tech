@@ -10,6 +10,7 @@
       "unit_lance_support",
       "unit_vehicle_mobileHQ",
       "unit_vehicle_apc",
+      "Unit_Convoy_Command",
       "unit_command",
       "unit_generic",
       "unit_bracket_low",
@@ -21,7 +22,7 @@
   },
   "ChassisID": "vehiclechassisdef_QUAESTOR",
   "Description": {
-    "Cost": 1350700,
+    "Cost": 1336075,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Quaestor MTCHQ",

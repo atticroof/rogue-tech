@@ -34,16 +34,9 @@
     ],
     "tagSetSourceFile": ""
   },
-  "RequiredToSpawnCompanyTags": {
-    "items": [
-      "omni_tank",
-      "flashpoint_Riskybuisness_complete"
-    ],
-    "tagSetSourceFile": ""
-  },
   "ChassisID": "vehiclechassisdef_Baras_0E",
   "Description": {
-    "Cost": 29864999,
+    "Cost": 29921249,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Baras OE MBT",

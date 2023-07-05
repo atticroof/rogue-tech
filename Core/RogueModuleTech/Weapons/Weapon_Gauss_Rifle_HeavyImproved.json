@@ -11,19 +11,19 @@
     "BonusDescriptions": [
       "WpnRecoil: 4",
       "WpnCrits: +100%",
-      "BracetoFire: 25%",
+      "BracetoFire: 28%",
       "IsHeavyGauss",
       "WeaponAttachmentCompatible: Recoil Damper",
       "WeaponExplosionInertAmmo: 75, 37.5, 18.8"
+    ],
+    "Flags": [
+      "not_broken"
     ],
     "ComponentExplosion": {
       "ExplosionDamagePerAmmo": 75.0,
       "HeatDamagePerAmmo": 37.5,
       "StabilityDamagePerAmmo": 18.75
     },
-    "Flags": [
-      "not_broken"
-    ],
     "IBLS": {
       "StorageSize": 10
     }
@@ -42,23 +42,26 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 6,
   "Damage": 150,
+  "HeatDamage": 0,
+  "Instability": 37.5,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 4,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 2,
   "APArmorShardsMod": 0.5,
   "APMaxArmorThickness": 450,
   "APCriticalChanceMultiplier": 2,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 4,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
+  "ImprovedBallistic": true,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "AttackRecoil": 18,
-  "Instability": 37.5,
   "ProjectileScale": {
     "x": 1.3,
     "y": 1.3,
@@ -87,13 +90,12 @@
   "Tonnage": 20,
   "AllowedLocations": "Torso",
   "DisallowedLocations": "Arms",
-  "ImprovedBallistic": true,
   "CriticalComponent": false,
   "statusEffects": [
     {
       "durationData": {
         "duration": 1,
-        "stackLimit": 5
+        "stackLimit": -1
       },
       "targetingData": {
         "effectTriggerType": "OnWeaponFire",
@@ -101,19 +103,19 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WeaponEffect-SelfknockdownCheck_OnFire",
-        "Name": "Tubthumping",
+        "Name": "Improved HGR: Increased Self Knockdown on Fire",
         "Details": "Tubthumping",
         "Icon": "uixSvgIcon_run_n_gun"
       },
       "statisticData": {
         "statName": "SelfknockdownCheck_OnFire",
         "operation": "Float_Add",
-        "modValue": "0.25",
+        "modValue": "0.28",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

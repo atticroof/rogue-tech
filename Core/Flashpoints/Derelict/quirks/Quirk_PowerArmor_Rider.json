@@ -20,7 +20,6 @@
         {
           "nature": "Buff",
           "statisticData": {
-            "effectsPersistAfterDestruction": false,
             "statName": "CUAlternateRepresentation",
             "operation": "Set",
             "modValue": "1",
@@ -39,7 +38,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Conversion-Gear",
-            "Name": "Alt Mode",
+            "Name": "Quirk C Rider Activatable: Disable Alternate Representation",
             "Details": "Alt mode",
             "Icon": "uixSvgIcon_equipment_Gyro"
           }
@@ -47,7 +46,6 @@
         {
           "nature": "Buff",
           "statisticData": {
-            "effectsPersistAfterDestruction": false,
             "statName": "CUNoRandomIdleAnimations",
             "operation": "Set",
             "modValue": "True",
@@ -66,7 +64,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Conversion-Gear",
-            "Name": "Alt Mode",
+            "Name": "Quirk C Rider Activatable: Disable Idle Animation",
             "Details": "Alt mode",
             "Icon": "uixSvgIcon_equipment_Gyro"
           }
@@ -74,7 +72,6 @@
         {
           "nature": "Buff",
           "statisticData": {
-            "effectsPersistAfterDestruction": false,
             "statName": "CUNoMoveAnimation",
             "operation": "Set",
             "modValue": "True",
@@ -93,7 +90,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Conversion-Gear",
-            "Name": "Alt Mode",
+            "Name": "Quirk C Rider Activatable: Disable Move Animation",
             "Details": "Alt mode",
             "Icon": "uixSvgIcon_equipment_Gyro"
           }
@@ -112,14 +109,14 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "TSMActive1",
-            "Name": "TSM ACTIVATED!",
+            "Name": "Quirk C Rider Activatable: Increased Run Speed",
             "Details": "Stronger Melee and faster Movement",
             "Icon": "uixSvgIcon_equipment_ActuatorArm"
           },
           "statisticData": {
             "statName": "CBTBE_RunMultiMod",
             "operation": "Float_Add",
-            "modValue": "2.5",
+            "modValue": "3.5",
             "modType": "System.Single"
           },
           "nature": "Buff"
@@ -138,13 +135,37 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "CanSwarmStat",
-            "Name": "This Battle Armor can make swarm attacks.",
+            "Name": "Quirk C Rider Activatable: Disallow Swarming",
             "Details": "This Battle Armor can make swarm attacks."
           },
           "statisticData": {
             "statName": "CanSwarm",
             "operation": "Set",
             "modValue": "false",
+            "modType": "System.Boolean"
+          }
+        },
+        {
+          "durationData": {
+            "duration": -1,
+            "stackLimit": -1
+          },
+          "targetingData": {
+            "effectTriggerType": "Passive",
+            "effectTargetType": "Creator",
+            "showInTargetPreview": true,
+            "showInStatusPanel": true
+          },
+          "effectType": "StatisticEffect",
+          "Description": {
+            "Id": "CanSwarmStat",
+            "Name": "Quirk C Rider Activatable: This Battle Armor can make swarm attacks.",
+            "Details": "This Battle Armor can make swarm attacks."
+          },
+          "statisticData": {
+            "statName": "BattleArmorInternalMountsOnly",
+            "operation": "Set",
+            "modValue": "true",
             "modType": "System.Boolean"
           }
         }

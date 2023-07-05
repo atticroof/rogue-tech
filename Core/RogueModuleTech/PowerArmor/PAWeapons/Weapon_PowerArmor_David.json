@@ -6,24 +6,23 @@
       }
     ],
     "BonusDescriptions": [
-      "DmgFallOff: 70%",
+      "BAWEAPON",
       "WpnCrits: +50%",
       "AccuracyUnitBoth: +10, Battle Armor & Protomech",
       "DamageUnitBoth: +100%, Battle Armor & Protomech",
-      "BAWEAPON",
-      "AmmoCost: 50"
+      "AmmoCost: 12"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 50
-    },
     "Flags": [
       "not_broken"
     ],
-    "IBLS": {
-      "StorageSize": 1
-    },
     "InternalAmmoTonnage": {
       "InternalAmmoTons": 0.01
+    },
+    "AmmoCost": {
+      "PerUnitCost": 12
+    },
+    "IBLS": {
+      "StorageSize": 1
     }
   },
   "weaponCategoryID": "BattleArmor",
@@ -33,40 +32,38 @@
   "MaxRange": 300,
   "RangeSplit": [
     90,
-    180,
+    150,
     240
   ],
-  "AmmoCategory": "Flamer",
-  "StartingAmmoCapacity": 10,
+  "AmmoCategory": "MagShotInternal",
+  "StartingAmmoCapacity": 15,
   "HeatGenerated": 0,
-  "Damage": 6,
+  "Damage": 5,
+  "HeatDamage": 0,
+  "Instability": 5,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
+  "CriticalChanceMultiplier": 1.5,
   "TrooperSquadDamageModifier": 2,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "ChassisTagsAccuracyModifiers": {
     "unit_powerarmor": -10,
     "unit_protomech": -10
   },
-  "DistantVariance": 0.7,
-  "DistantVarianceReversed": false,
-  "isHeatVariation": true,
-  "isStabilityVariation": true,
-  "isDamageVariation": true,
-  "CriticalChanceMultiplier": 1.5,
   "APArmorShardsMod": 0.5,
   "APMaxArmorThickness": 18,
   "APCriticalChanceMultiplier": 0.09,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 2,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
+  "ImprovedBallistic": true,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "AttackRecoil": 4,
-  "Instability": 5,
   "ProjectileScale": {
     "x": 0.35,
     "y": 0.35,
@@ -74,15 +71,15 @@
   },
   "WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",
   "Description": {
-    "Cost": 24500,
+    "Cost": 22500,
     "Rarity": 10,
     "Purchasable": true,
     "Manufacturer": "David",
     "Model": "Light Gauss Rifle",
     "UIName": "BA David Gauss",
     "Id": "Weapon_PowerArmor_David",
-    "Name": "MagShot Rifle",
-    "Details": "A Battle Armor 'David' Gauss Rifle, carrying 8 shots. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+    "Name": "BA David Light Gauss",
+    "Details": "A Battle Armor 'David' Light Gauss Rifle, carrying 15 shots. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
     "Icon": "uixSvgIcon_weapon_Ballistic"
   },
   "BonusValueA": "",
@@ -95,7 +92,6 @@
   "Tonnage": 0.1,
   "AllowedLocations": "All",
   "DisallowedLocations": "All",
-  "ImprovedBallistic": true,
   "CriticalComponent": false,
   "statusEffects": [],
   "ComponentTags": {

@@ -35,7 +35,7 @@
   },
   "DissipationCapacity": 0,
   "Description": {
-    "Cost": 1250000,
+    "Cost": 375000,
     "Rarity": 4,
     "Purchasable": true,
     "Manufacturer": "GM",
@@ -70,7 +70,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "MaxEvasionBase",
-        "Name": "EVASIVE MOVE",
+        "Name": "ProtoMech Core 075 x5: Increased Max Evasive Pips",
         "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
         "Icon": "uixSvgIcon_action_evasivemove"
       },

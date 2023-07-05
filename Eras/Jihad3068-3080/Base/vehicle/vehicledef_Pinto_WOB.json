@@ -8,6 +8,7 @@
       "unit_vtol",
       "apply_bomb_drag_tag",
       "unit_release",
+      "unit_vehicle_apc",
       "unit_lance_vanguard",
       "unit_advanced",
       "unit_bracket_med",
@@ -20,7 +21,7 @@
   },
   "ChassisID": "vehiclechassisdef_Pinto_WOB",
   "Description": {
-    "Cost": 4193002,
+    "Cost": 4213002,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Pinto (WoB)",

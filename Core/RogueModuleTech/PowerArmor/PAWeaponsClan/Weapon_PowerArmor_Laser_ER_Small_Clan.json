@@ -7,14 +7,14 @@
     ],
     "BonusDescriptions": [
       "BAWEAPON",
-      "AmmoCost: 75"
+      "AmmoCost: 25"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 75
-    },
     "Flags": [
       "not_broken"
     ],
+    "AmmoCost": {
+      "PerUnitCost": 25
+    },
     "IBLS": {
       "StorageSize": 1
     }
@@ -23,45 +23,47 @@
   "Type": "Laser",
   "WeaponSubType": "SmallLaser",
   "MinRange": 0,
-  "MaxRange": 300,
+  "MaxRange": 360,
   "RangeSplit": [
-    75,
-    150,
-    225
+    90,
+    180,
+    300
   ],
   "AmmoCategory": "NotSet",
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 0,
   "Damage": 20,
+  "HeatDamage": 0,
+  "Instability": 1,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0.1,
   "APMaxArmorThickness": 24,
   "APCriticalChanceMultiplier": 0.04,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
+  "FireTerrainChance": 0.045,
   "AttackRecoil": 0,
-  "Instability": 0,
-  "FireTerrainChance": 0.025,
-  "WeaponEffectID": "WeaponEffect-Weapon_Laser_Small",
+  "WeaponEffectID": "WeaponEffect-Weapon_LaserER_Small",
   "Description": {
-    "Cost": 33400,
+    "Cost": 22500,
     "Rarity": 20,
     "Purchasable": true,
     "Manufacturer": "CLAN",
-    "Model": "Small Laser",
-    "UIName": "BA ER Laser(C)",
+    "Model": "Extended-Range Small Laser",
+    "UIName": "BA ER S Laser (C)",
     "Id": "Weapon_PowerArmor_Laser_ER_Small_Clan",
-    "Name": "BA ER Laser ",
-    "Details": "A Battle Armor Anti Armor Laser. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+    "Name": "BA ER S Laser (C)",
+    "Details": "A Battle Armor Extended Range Small Laser. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
     "Icon": "uixSvgIcon_weapon_Support"
   },
   "BonusValueA": "",
@@ -80,7 +82,7 @@
     "items": [
       "component_type_stock",
       "PAWeapon",
-      "range_close"
+      "range_standard"
     ],
     "tagSetSourceFile": ""
   }

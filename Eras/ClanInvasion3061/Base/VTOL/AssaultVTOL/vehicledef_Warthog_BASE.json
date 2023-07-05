@@ -4,7 +4,7 @@
       "NoBiome_lunarVacuum",
       "WikiBL",
       "BLACKLISTED",
-      "mr-resize-1.84",
+      "mr-resize-1.43",
       "unit_rt_custom",
       "unit_vehicle",
       "unit_assault",
@@ -35,7 +35,7 @@
   },
   "ChassisID": "vehiclechassisdef_Warthog_BASE",
   "Description": {
-    "Cost": 9377100,
+    "Cost": 9350100,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Warthog CAS",

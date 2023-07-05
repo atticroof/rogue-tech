@@ -12,7 +12,7 @@
       }
     ],
     "BonusDescriptions": [
-      "Special: 0.2",
+      "Special: 0.2T",
       "NewAdvancedZoom: 810"
     ],
     "CarryLeftOverUsage": 0.2,
@@ -27,7 +27,7 @@
   "RelativeModifier": 0,
   "AbsoluteModifier": 0,
   "Description": {
-    "Cost": 300000,
+    "Cost": 400000,
     "Rarity": 8,
     "Purchasable": true,
     "Manufacturer": "Mitchell",
@@ -64,7 +64,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "Zoom Vision Effect",
-        "Name": "Bonus Accuracy at range",
+        "Name": "Add On Advanced Zoom MK2: Zoom Vision",
         "Details": "range bracket bonus accuracy",
         "Icon": "uixSvgIcon_ability_precisionstrike"
       },

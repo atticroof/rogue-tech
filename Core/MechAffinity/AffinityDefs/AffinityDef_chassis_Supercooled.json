@@ -15,6 +15,7 @@
       "sidewinder_75",
       "OmniBlackKnight_75",
       "blackknight_75",
+      "blackknightiic_75",
       "spiritwalker_75",
       "novacat_70",
       "viper_40",
@@ -51,7 +52,7 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "Affinity_Supercooled",
-              "Name": "Improved Heat Sinking",
+              "Name": "Chassis Affinity Supercooled: Increased Cooling",
               "Details": "Heat sinking increased by 10",
               "Icon": "uixSvgIcon_equipment_TTS"
             },

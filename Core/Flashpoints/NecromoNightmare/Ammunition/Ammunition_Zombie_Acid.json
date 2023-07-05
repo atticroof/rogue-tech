@@ -4,7 +4,6 @@
     "Name": "Zombie Acid",
     "UIName": "Fire",
     "Details": "Refined Zombie Spew.",
-    "Icon": null,
     "Cost": 0,
     "Rarity": 0,
     "Purchasable": false
@@ -24,12 +23,8 @@
   "AOEHeatDamage": 20,
   "AOEInstability": 1,
   "AlwaysIndirectVisuals": true,
-  "AMSImmune": true,
   "ClearMineFieldRadius": 4,
-  "AdditionalImpactVFX": "vfxPrfPrtl_artilleryExplosion",
-  "AdditionalImpactVFXScaleX": 1,
-  "AdditionalImpactVFXScaleY": 1,
-  "AdditionalImpactVFXScaleZ": 1,
+  "AMSImmune": true,
   "FireTerrainChance": 1,
   "FireDurationWithoutForest": 2,
   "FireTerrainStrength": 5,
@@ -39,29 +34,21 @@
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
         "extendDurationOnTrigger": 2,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_AcidSpit",
-        "Name": "Acid",
+        "Name": "Zombie Acid: Increased Target Damage Taken",
         "Details": "This unit is coated with corrosive Acid. It will take +30% Damage. Can stack. 2 Turn Duration.",
         "Icon": "uixSvgIcon_biome_Heated"
       },
@@ -70,35 +57,26 @@
         "operation": "Float_Add",
         "modValue": "0.3",
         "modType": "System.Single"
-      },
-      "nature": "Debuff"
+      }
     },
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
         "extendDurationOnTrigger": 2,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_AcidSpit",
-        "Name": "Acid",
+        "Name": "Zombie Acid: Increased Target AoE Damage Taken",
         "Details": "This unit is coated with corrosive Acid. It will take +30% Damage. Can stack. 2 Turn Duration.",
         "Icon": "uixSvgIcon_biome_Heated"
       },
@@ -107,8 +85,11 @@
         "operation": "Float_Add",
         "modValue": "0.3",
         "modType": "System.Single"
-      },
-      "nature": "Debuff"
+      }
     }
-  ]
+  ],
+  "AdditionalImpactVFX": "vfxPrfPrtl_artilleryExplosion",
+  "AdditionalImpactVFXScaleX": 1,
+  "AdditionalImpactVFXScaleY": 1,
+  "AdditionalImpactVFXScaleZ": 1
 }

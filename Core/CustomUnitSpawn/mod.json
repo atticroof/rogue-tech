@@ -25,6 +25,7 @@
       "unit_bracket_high": { "weight": 70, "replace": [ "unit_bracket_med" ] },
       "unit_bracket_med": { "weight": 70, "replace": [ "unit_bracket_low", "unit_bracket_high" ] },
       "unit_bracket_low": { "weight": 70, "replace": [ "unit_bracket_med" ] },
+      "unit_superheavy_pirate_special": { "weight": 60, "replace": [ "" ] },
       "unit_advanced": { "weight": 50, "replace": [ "" ] },
       "unit_generic": { "weight": 50, "replace": [ "" ] },
       "unit_primitive": { "weight": 39, "replace": [ "" ] },
@@ -40,7 +41,11 @@
       "unit_superheavy_tier4": { "weight": 15, "replace": [ "unit_superheavy_tier3" ] },
       "unit_superheavy_tier3": { "weight": 15, "replace": [ "unit_superheavy_tier2" ] },
       "unit_superheavy_tier2": { "weight": 15, "replace": [ "unit_superheavy_tier1" ] },
-      "unit_vtol": { "weight": 5, "replace": [ "unit_vehicle" ] }
+      "unit_hover": { "weight": 6, "replace": [ "unit_wheels" ] },
+      "unit_wheels": { "weight": 6, "replace": [ "unit_tracks", "" ] },
+      "unit_tracks": { "weight": 6, "replace": [ "unit_wheels", "" ] },
+      "unit_vtol": { "weight": 5, "replace": [ "unit_vehicle" ] },
+      "unit_demolisher": { "weight": 5, "replace": [ "" ] }
     }, 
     "excluded_tags_weights": {
       "unit_assault": { "weight": 203, "replace": [ "" ] },
@@ -61,7 +66,6 @@
       "unit_generic": { "weight": 50, "replace": [ "" ] },
       "unit_primitive": { "weight": 39, "replace": [ "" ] },
       "unit_unit_sldf": { "weight": 34, "replace": [ "" ] },
-      "unit_totem": { "weight": 32, "replace": [ "" ] },
       "unit_lance_assassin": { "weight": 20, "replace": [ "" ] },
       "unit_lance_support": { "weight": 20, "replace": [ "" ] },
       "unit_lance_vanguard": { "weight": 20, "replace": [ "" ] },

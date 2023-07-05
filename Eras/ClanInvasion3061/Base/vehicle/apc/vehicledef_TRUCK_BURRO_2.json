@@ -7,6 +7,7 @@
       "unit_wheels",
       "unit_noncombatant",
       "unit_vehicle_apc",
+      "Unit_Convoy_Cargo",
       "unit_resupply",
       "unit_release",
       "unit_generic",
@@ -108,7 +109,7 @@
   },
   "ChassisID": "vehiclechassisdef_TRUCK_BURRO_2",
   "Description": {
-    "Cost": 1326875,
+    "Cost": 1328750,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Burro II CT",
@@ -247,8 +248,22 @@
       "DamageLevel": "Functional"
     },
     {
+      "MountedLocation": "Left",
+      "ComponentDefID": "Gear_Vehicle_Munitions",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
       "MountedLocation": "Right",
       "ComponentDefID": "Default_Vehicle_Motive_Wheeled_Right",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Right",
+      "ComponentDefID": "Gear_Vehicle_Munitions",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"
@@ -276,20 +291,6 @@
     {
       "MountedLocation": "Rear",
       "ComponentDefID": "Gear_Vehicle_Compartment_Cargo",
-      "ComponentDefType": "Upgrade",
-      "HardpointSlot": -1,
-      "DamageLevel": "Functional"
-    },
-    {
-      "MountedLocation": "Rear",
-      "ComponentDefID": "Gear_Vehicle_Munitions",
-      "ComponentDefType": "Upgrade",
-      "HardpointSlot": -1,
-      "DamageLevel": "Functional"
-    },
-    {
-      "MountedLocation": "Rear",
-      "ComponentDefID": "Gear_Vehicle_Munitions",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

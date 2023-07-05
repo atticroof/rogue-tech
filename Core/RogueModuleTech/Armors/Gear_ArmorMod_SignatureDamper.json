@@ -15,6 +15,7 @@
       }
     },
     "BonusDescriptions": [
+      "IsArmorMod",
       "StealthEnhance",
       "StealthSensors: 40%, 2, 1, 2, 3",
       "ActiveSignature: -35%",
@@ -52,14 +53,11 @@
         {
           "durationData": {
             "duration": -1,
-            "stackLimit": 1
+            "stackLimit": -1
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "Creator",
-            "range": 0.0,
-            "forcePathRebuild": false,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
@@ -67,7 +65,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "LV_Stealth_Effect",
-            "Name": "STEALTH",
+            "Name": "Signature Damper Activatable: Stealth",
             "Details": "Makes the carrier much harder to detect with stealth",
             "Icon": "uixSvgIcon_status_ECM-ghost"
           },
@@ -93,7 +91,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Signature_Decrease_Stealth",
-            "Name": "Stealth Signature Decrease",
+            "Name": "Signature Damper Activatable: Decreased Sensor Signature",
             "Details": "Signature Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
@@ -119,7 +117,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Heat_Generation_Stealth",
-            "Name": "Increased Heat",
+            "Name": "Signature Damper Activatable: Increased Heat Generated",
             "Details": "Heat generation",
             "Icon": "uixSvgIcon_equipment_ThermalExchanger"
           },
@@ -146,7 +144,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Heat_Capacity_Stealth",
-            "Name": "Decreased Heat Capacity",
+            "Name": "Signature Damper Activatable: Decreased Cooling",
             "Details": "Heat Capacity Penalty",
             "Icon": "uixSvgIcon_equipment_ThermalExchanger"
           },
@@ -220,7 +218,7 @@
     "Model": "Signature Damper",
     "UIName": "Signature Damper",
     "Id": "Gear_ArmorMod_SignatureDamper",
-    "Name": "Signature Damper",
+    "Name": "Armor Mod Signature Damper",
     "Details": "Developed alongside the Stealth Armor do allow these Systems to be added to Mimetic Armors granting them Defense against being Detected by most Sensors. Reserves 1 slot in every Location except the Head and requires a Mimetic Armor.",
     "Icon": "StealthArmor"
   },

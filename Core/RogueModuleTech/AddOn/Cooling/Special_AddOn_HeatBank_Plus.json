@@ -31,7 +31,7 @@
   },
   "DissipationCapacity": 6,
   "Description": {
-    "Cost": 320000,
+    "Cost": 640000,
     "Rarity": 2,
     "Purchasable": true,
     "Manufacturer": "Generic",
@@ -68,7 +68,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "BoltOnPenaltySensor",
-        "Name": "BoltOn Sensor Penalty",
+        "Name": "Add On Heat Bank +: Increased Sensor Signature",
         "Details": "Signature Statuseffect.",
         "Icon": "uixSvgIcon_equipment_TTS"
       },
@@ -94,7 +94,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "BoltOnPenaltyVisual",
-        "Name": "BoltOn Visual Penalty",
+        "Name": "Add On Heat Bank +: Increased Visual Signature",
         "Details": "Visibility Statuseffect.",
         "Icon": "uixSvgIcon_equipment_TTS"
       },
@@ -115,12 +115,13 @@
         "effectTriggerType": "Passive",
         "effectTargetType": "Creator",
         "showInTargetPreview": false,
-        "showInStatusPanel": false
+        "showInStatusPanel": false,
+        "hideApplicationFloatie": true
       },
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "HeatDamageTaken_Salamander",
-        "Name": "HEAT GENERATION DECREASED",
+        "Name": "Add On Heat Bank +: Decreased Heat Damage Taken",
         "Details": "Heat generation reduced by 20%.",
         "Icon": "uixSvgIcon_equipment_ThermalExchanger"
       },

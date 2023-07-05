@@ -15,6 +15,7 @@
       "CopperheadMKII_30",
       "Enyo_55",
       "Flintlock_50",
+      "GreaterDemonSHTank_160",
       "HarrisHawkVTOL_15",
       "Izula_35",
       "Izula_45",
@@ -44,7 +45,13 @@
       "neanderthal_80",
       "busterhauler_50",
       "striker_80",
-      "shogun_85"
+      "shogun_85",
+      "cestus_65",
+      "firefalcon_25",
+      "thresher_60",
+      "thresherii_60",
+      "carrioncrow_40",
+      "Deva_70"
     ],
     "idType": "AssemblyVariant",
     "altMaps": [],
@@ -69,7 +76,7 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "RangeBracketBonusAccMinR",
-              "Name": "Bonus Accuracy at range",
+              "Name": "Chassis Affinity Brawler: Improved Minimum Range Accuracy",
               "Details": "range bracket bonus accuracy",
               "Icon": "uixSvgIcon_ability_precisionstrike"
             },
@@ -95,7 +102,7 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "RangeBracketBonusAccSR",
-              "Name": "Bonus Accuracy at range",
+              "Name": "Chassis Affinity Brawler: Improved Short Range Accuracy",
               "Details": "range bracket bonus accuracy",
               "Icon": "uixSvgIcon_ability_precisionstrike"
             },
@@ -121,7 +128,7 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "RangeBracketBonusAccMR",
-              "Name": "Bonus Accuracy at range",
+              "Name": "Chassis Affinity Brawler: Improved Medium Range Accuracy",
               "Details": "range bracket bonus accuracy",
               "Icon": "uixSvgIcon_ability_precisionstrike"
             },

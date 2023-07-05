@@ -10,6 +10,7 @@
       "unit_predator",
       "unit_bracket_low",
       "unit_vehicle_apc",
+      "Unit_Convoy_Troops",
       "unit_vehicle_clan",
       "omni_tank",
       "EscorpionImperio",
@@ -36,7 +37,7 @@
   },
   "ChassisID": "vehiclechassisdef_BANDIT-G_CLAN",
   "Description": {
-    "Cost": 6045845,
+    "Cost": 6108345,
     "Rarity": 3,
     "Purchasable": false,
     "UIName": "Bandit HCV C-G",

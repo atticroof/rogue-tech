@@ -38,28 +38,29 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 30,
   "Damage": 50,
+  "HeatDamage": 0,
+  "Instability": 10,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 1,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0.25,
-  "APMaxArmorThickness": 75.0,
+  "APMaxArmorThickness": 75,
   "APCriticalChanceMultiplier": 0.125,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 1,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "FireDelayMultiplier": 0.15,
-  "AttackRecoil": 3,
-  "Instability": 10,
-  "FlatJammingChance": 0,
+  "IndirectFireCapable": false,
+  "ClearMineFieldRadius": 8,
   "GunneryJammingMult": 0.01,
   "GunneryJammingBase": 1,
+  "FlatJammingChance": 0,
   "FireTerrainChance": 0.175,
+  "AttackRecoil": 3,
+  "FireDelayMultiplier": 0.15,
   "WeaponEffectID": "WeaponEffect-Weapon_PPC",
   "Description": {
     "Cost": 950000,
@@ -84,7 +85,6 @@
   "AllowedLocations": "All",
   "DisallowedLocations": "All",
   "CriticalComponent": false,
-  "ClearMineFieldRadius": 8,
   "Modes": [
     {
       "Id": "x1",
@@ -96,54 +96,44 @@
       "Id": "x2",
       "UIName": "x2",
       "isBaseMode": false,
+      "HeatGenerated": 30,
       "ShotsWhenFired": 1,
       "RefireModifier": 1,
-      "HeatGenerated": 30,
-      "AIHitChanceCap": 0.15,
-      "FlatJammingChance": 0.15
+      "FlatJammingChance": 0.15,
+      "AIHitChanceCap": 0.15
     },
     {
       "Id": "x3",
       "UIName": "x3",
       "isBaseMode": false,
+      "HeatGenerated": 60,
       "ShotsWhenFired": 2,
       "RefireModifier": 2,
-      "HeatGenerated": 60,
-      "AIHitChanceCap": 0.15,
-      "FlatJammingChance": 0.3
+      "FlatJammingChance": 0.3,
+      "AIHitChanceCap": 0.15
     }
   ],
   "statusEffects": [
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "AbilityDefPPC",
-        "Name": "SENSORS IMPAIRED",
+        "Name": "Yin Rotary PPC: Increased Target ECM Jamming",
         "Details": "EM Interference reduces sensor efficiency.",
         "Icon": "uixSvgIcon_status_sensorsImpaired"
       },
-      "nature": "Debuff",
       "statisticData": {
         "statName": "LV_ECM_JAMMED",
         "operation": "Int_Add",
@@ -163,9 +153,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AAAFactor",
-        "Name": "AA Factor",
+        "Name": "Yin Rotary PPC: Anti Air Factor",
         "Details": "AA Factor",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },
@@ -174,8 +165,7 @@
         "operation": "Float_Add",
         "modValue": "0.2",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

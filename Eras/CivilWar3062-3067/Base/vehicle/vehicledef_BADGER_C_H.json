@@ -8,6 +8,7 @@
       "unit_generic",
       "unit_bracket_med",
       "unit_vehicle_apc",
+      "Unit_Convoy_Troops",
       "unit_vehicle_clan",
       "RavenAlliance",
       "EscorpionImperio",
@@ -39,7 +40,7 @@
   },
   "ChassisID": "vehiclechassisdef_BADGER_C_H",
   "Description": {
-    "Cost": 1574079,
+    "Cost": 1736579,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Badger C-H",

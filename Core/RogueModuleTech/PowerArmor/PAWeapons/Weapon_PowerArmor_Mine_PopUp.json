@@ -3,68 +3,75 @@
     "Category": [
       {
         "CategoryID": "w/s/m/pa"
+      },
+      {
+        "CategoryID": "MineDispenserBA"
       }
     ],
     "BonusDescriptions": [
       "BAWEAPON",
       "1shot",
+      "WpnAccuracy: +1",
       "ThroughArmorDamage: 20",
+      "TACchance: +200%",
       "WpnCrits: +200%",
-      "AmmoCost: 200"
+      "AmmoCost: 15000"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 200
-    },
     "Flags": [
       "not_broken",
       "default",
       "no_salvage",
       "autorepair"
     ],
-    "IBLS": {
-      "StorageSize": 1
-    },
     "InternalAmmoTonnage": {
       "InternalAmmoTons": 0.01
+    },
+    "AmmoCost": {
+      "PerUnitCost": 15000
+    },
+    "IBLS": {
+      "StorageSize": 1
     }
   },
   "weaponCategoryID": "BattleArmor",
   "Type": "SRM",
   "WeaponSubType": "SRM2",
   "MinRange": 0,
-  "MaxRange": 30,
+  "MaxRange": 45,
   "RangeSplit": [
-    30,
-    30,
-    30
+    45,
+    45,
+    45
   ],
   "AmmoCategory": "Flamer",
   "StartingAmmoCapacity": 1,
   "HeatGenerated": 0,
   "Damage": 5,
+  "HeatDamage": 0,
+  "Instability": 10,
+  "APDamage": 20,
+  "DamageVariance": 0,
+  "AccuracyModifier": -1,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 3,
-  "APDamage": 20,
   "APArmorShardsMod": 0.35,
-  "APMaxArmorThickness": 125,
-  "APCriticalChanceMultiplier": 1.5,
+  "APMaxArmorThickness": 375,
+  "APCriticalChanceMultiplier": 3,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 1,
-  "Instability": 10,
   "AMSImmune": true,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "FireTerrainChance": 0,
+  "AttackRecoil": 1,
   "WeaponEffectID": "WeaponEffect-Weapon_SRM2",
   "Description": {
-    "Cost": 10500,
+    "Cost": 2500,
     "Rarity": 20,
     "Purchasable": true,
     "Manufacturer": "Defiance",
@@ -72,7 +79,7 @@
     "UIName": "BA Pop-Up Mine",
     "Id": "Weapon_PowerArmor_Mine_PopUp",
     "Name": "BA Pop-Up Mine",
-    "Details": "his is a rare weapon indeed, a Pop-Up Mine designed for mounting on the Sloth Battle Armor suit. The first quad battle armor, the Sloth was designed to carry this mine into combat and deploy it while directly beneath the target mech. The mine would then pop up and penetrate the armor from below, dealing direct structure damage. The BA-scale Pop-Up Mine was only ever deployed on the Sloth and fell out of favor along with the Sloth as technology advanced and suits became more complex. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+    "Details": "This is a rare weapon indeed, a Pop-Up Mine designed for mounting on the Sloth Battle Armor suit. The first quad battle armor, the Sloth was designed to carry this mine into combat and deploy it while directly beneath the target mech. The mine would then pop up and penetrate the armor from below, dealing direct structure damage. The BA-scale Pop-Up Mine was only ever deployed on the Sloth and fell out of favor along with the Sloth as technology advanced and suits became more complex. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
     "Icon": "uixSvgIcon_weapon_Missile"
   },
   "BonusValueA": "",

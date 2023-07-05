@@ -27,7 +27,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_Raxpert_Recoil",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Raxpert: Decreased Recoil"
             },
             "durationData": {
               "duration": -1,
@@ -36,6 +36,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_Raxpert",
               "statName": "RefireModifier",
               "operation": "Int_Add",
               "modValue": "-1",
@@ -54,7 +55,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_Raxpert_Accuracy",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Raxpert: Improved Accuracy"
             },
             "durationData": {
               "duration": -1,
@@ -63,6 +64,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_Raxpert",
               "statName": "AccuracyModifier",
               "operation": "Float_Add",
               "modValue": "-2.0",
@@ -81,7 +83,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_Raxpert_JamChance",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Raxpert: Decreased Jam Chance"
             },
             "durationData": {
               "duration": -1,
@@ -90,6 +92,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_Raxpert",
               "statName": "CACModJammingChance",
               "operation": "Float_Multiply",
               "modValue": "0.9",

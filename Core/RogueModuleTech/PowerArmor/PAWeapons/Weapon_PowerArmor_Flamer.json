@@ -7,22 +7,23 @@
     ],
     "BonusDescriptions": [
       "BAWEAPON",
-      "PipsIgnored: +1",
-      "WpnAccuracy: +1",
-      "OHDamage: 40%",
+      "PipsIgnored: 1",
       "AlwaysStartsFire",
-      "DmgFallOff: 45%",
-      "AccuracyUnit: Battle Armor",
-      "AccuracyUnit2: +5",
+      "DmgFallOff: 40%",
+      "OHDamage: 35%",
       "NoAA",
-      "AmmoCost: 30"
+      "AccuracyUnitBoth: +5, Battle Armor & Protomech",
+      "AmmoCost: 20"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 30
-    },
     "Flags": [
       "not_broken"
     ],
+    "InternalAmmoTonnage": {
+      "InternalAmmoTons": 0.01
+    },
+    "AmmoCost": {
+      "PerUnitCost": 20
+    },
     "IBLS": {
       "StorageSize": 1
     }
@@ -31,44 +32,46 @@
   "Type": "Flamer",
   "WeaponSubType": "Flamer",
   "MinRange": 0,
-  "MaxRange": 150,
+  "MaxRange": 180,
   "RangeSplit": [
-    30,
-    70,
-    110
+    60,
+    90,
+    120
   ],
-  "AmmoCategory": "NotSet",
-  "StartingAmmoCapacity": 0,
+  "AmmoCategory": "Flamer",
+  "StartingAmmoCapacity": 20,
   "HeatGenerated": 0,
-  "Damage": 4,
-  "OverheatedDamageMultiplier": 1.4,
-  "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 1,
+  "Damage": 10,
+  "HeatDamage": 10,
+  "Instability": 1,
   "DamageVariance": 0,
-  "HeatDamage": 8,
-  "AccuracyModifier": -1,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 1,
+  "RefireModifier": 0,
+  "OverheatedDamageMultiplier": 1.35,
+  "EvasiveDamageMultiplier": 0,
+  "CriticalChanceMultiplier": 0.1,
   "ChassisTagsAccuracyModifiers": {
-    "unit_powerarmor": -5
+    "unit_powerarmor": -5,
+    "unit_protomech": -5
   },
-  "DistantVariance": 0.45,
+  "DistantVariance": 0.4,
   "DistantVarianceReversed": false,
   "isHeatVariation": true,
   "isStabilityVariation": true,
   "isDamageVariation": true,
-  "CriticalChanceMultiplier": 0.1,
   "APArmorShardsMod": 0.1,
   "APMaxArmorThickness": 1,
   "APCriticalChanceMultiplier": 0.01,
-  "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 0,
-  "Instability": 0,
+  "CantHitUnaffecedByPathing": true,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "FireTerrainChance": 1,
   "FireOnSuccessHit": true,
-  "CantHitUnaffecedByPathing": true,
+  "AttackRecoil": 0,
   "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
   "Description": {
     "Cost": 7500,
@@ -78,8 +81,8 @@
     "Model": "Flamethrower",
     "UIName": "BA Flamer",
     "Id": "Weapon_PowerArmor_Flamer",
-    "Name": "Flamer",
-    "Details": "A Battle Armor Flamethrower. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
+    "Name": "Battle Armor Flamer",
+    "Details": "A Battle Armor Flamethrower, carrying 20 shots. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
     "Icon": "uixSvgIcon_weapon_Energy"
   },
   "BonusValueA": "",
@@ -87,48 +90,13 @@
   "ComponentType": "Weapon",
   "ComponentSubType": "Weapon",
   "PrefabIdentifier": "Flamer",
-  "BattleValue": 0,
+  "BattleValue": 5,
   "InventorySize": 1,
   "Tonnage": 0.15,
   "AllowedLocations": "All",
   "DisallowedLocations": "All",
   "CriticalComponent": false,
-  "statusEffects": [
-    {
-      "durationData": {
-        "duration": 1,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "stackLimit": 45
-      },
-      "targetingData": {
-        "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
-        "showInTargetPreview": false,
-        "showInStatusPanel": false
-      },
-      "effectType": "StatisticEffect",
-      "Description": {
-        "Id": "HeatDamageTakenSoftCapMultiplier",
-        "Name": "Heat SoftCap 3%",
-        "Details": "Reduce Heat Damage by 1%",
-        "Icon": "uixSvgIcon_equipment_ThermalExchanger"
-      },
-      "nature": "Buff",
-      "statisticData": {
-        "statName": "CACIncomingHeatMult",
-        "operation": "Float_Multiply",
-        "modValue": "0.97",
-        "modType": "System.Single"
-      }
-    }
-  ],
+  "statusEffects": [],
   "ComponentTags": {
     "items": [
       "component_type_stock",

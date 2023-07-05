@@ -1036,12 +1036,17 @@
             "unitDefId": "Tagged",
             "unitTagSet": {
               "items": [
-                "unit_demolisher"
+                "unit_demolisher",
+                "unit_vehicle",
+                "unit_assault"
               ],
               "tagSetSourceFile": "tags/UnitTags"
             },
             "unitExcludedTagSet": {
-              "items": [],
+              "items": [
+                "unit_totem",
+                "unit_noncombatant"
+              ],
               "tagSetSourceFile": "tags/UnitTags"
             },
             "spawnEffectTags": {
@@ -1339,7 +1344,7 @@
         "lanceDefId": "Tagged",
         "lanceTagSet": {
           "items": [
-            "lance_type_support"
+            "lance_type_cavalry"
           ],
           "tagSetSourceFile": "tags/LanceTags"
         },

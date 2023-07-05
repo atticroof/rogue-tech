@@ -19,7 +19,8 @@
       "Unique_FCS_ImprovedTC",
       "Unique_Sensors_TrackerMk2",
       "Unique_Default_Cockpit_Lifesupport_AT-Mainframe",
-      "Unique_FCS_Rattler"
+      "Unique_FCS_Rattler",
+      "Unique_FCS_Glory"
     ],
     "affinityLevels": [
       {
@@ -42,7 +43,7 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "Quirk_Damage_Mod",
-              "Name": "Melee Weapon Damage Mod",
+              "Name": "Fixed Affinity Advanced Tracking: Increased Evasive Pips Ignore",
               "Details": "Damage Modifier",
               "Icon": "uixSvgIcon_equipment_ActuatorArm"
             },

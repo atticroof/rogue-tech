@@ -4,57 +4,40 @@
     "Name": "Magpulse EMP SRM Ammo",
     "UIName": "EMP",
     "Details": "Short range missiles, inferno.",
-    "Icon": null,
     "Cost": 0,
     "Rarity": 0,
     "Purchasable": false
   },
   "Type": "Normal",
   "Category": "SRM",
-  "DamageMultiplier": 0.3,
-  "HeatDamagePerShot": 2.0,
   "AIBattleValue": 90,
-  "AccuracyModifier": 0.0,
+  "HeatDamagePerShot": 2,
   "HeatGenerated": 0,
   "HeatGeneratedModifier": 1,
+  "DamageMultiplier": 0.3,
   "ArmorDamageModifier": 1,
   "ISDamageModifier": 1,
   "CriticalDamageModifier": 1,
+  "AccuracyModifier": 0,
   "MissileHealth": 3,
-  "ColorsTable": [
-    {
-      "C": "#ff0066",
-      "I": 5
-    }
-  ],
-  "ColorChangeRule": "t0",
   "statusEffects": [
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_MagPulse_Heat",
-        "Name": "MagPulse",
+        "Name": "Magpulse EMP SRM: Increased Target Heat Generated",
         "Details": "This unit got by a EMP.",
         "Icon": "uixSvgIcon_biome_Heated"
       },
@@ -63,39 +46,28 @@
         "operation": "Float_Multiply",
         "modValue": "1.02",
         "modType": "System.Single"
-      },
-      "nature": "Debuff"
+      }
     },
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_MagPulse_ECM",
-        "Name": "SENSORS IMPAIRED",
+        "Name": "Magpulse EMP SRM: Increased Target ECM Jamming",
         "Details": "EM Interference reduces sensor efficiency.",
         "Icon": "uixSvgIcon_status_sensorsImpaired"
       },
-      "nature": "Debuff",
       "statisticData": {
         "statName": "LV_ECM_JAMMED",
         "operation": "Int_Add",
@@ -110,13 +82,14 @@
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "hideApplicationFloatie": true,
-        "showInStatusPanel": false
+        "showInStatusPanel": false,
+        "hideApplicationFloatie": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WeaponEffect-MagPulseShutdownChance",
-        "Name": "Mr. Zappy",
+        "Name": "Magpulse EMP SRM: Increased Target Shutdown Chance",
         "Details": "Mr. Zappy",
         "Icon": "uixSvgIcon_run_n_gun"
       },
@@ -125,8 +98,14 @@
         "operation": "Float_Add",
         "modValue": "0.005",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     }
-  ]
+  ],
+  "ColorsTable": [
+    {
+      "C": "#ff0066",
+      "I": 5
+    }
+  ],
+  "ColorChangeRule": "t0"
 }

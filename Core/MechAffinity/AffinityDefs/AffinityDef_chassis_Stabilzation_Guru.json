@@ -19,7 +19,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_StabilzationGuru_JamChance",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Stabilzation Guru: Decreased Jam Chance"
             },
             "durationData": {
               "duration": -1,
@@ -28,6 +28,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_StabilzationGuru",
               "statName": "CACModJammingChance",
               "operation": "Float_Multiply",
               "modValue": "0.8",
@@ -46,7 +47,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_StabilzationGuru_Recoil",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Stabilzation Guru: Decreased Recoil"
             },
             "durationData": {
               "duration": -1,
@@ -55,6 +56,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_StabilzationGuru",
               "statName": "RefireModifier",
               "operation": "Int_Add",
               "modValue": "-2",

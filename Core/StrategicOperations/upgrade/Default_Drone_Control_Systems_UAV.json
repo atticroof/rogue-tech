@@ -1,0 +1,159 @@
+{
+  "Custom": {
+    "BonusDescriptions": [
+      "VitalComponent",
+      "EvaPips: +1",
+      "EvaMax: +2",
+      "Sensors: +50%",
+      "Sight: +50%"
+    ],
+    "CriticalEffects": {
+      "DeathMethod": "VitalComponentDestroyed"
+    },
+    "Flags": [
+      "default",
+      "not_broken",
+      "no_salvage",
+      "autorepair"
+    ],
+    "IBLS": {
+      "StorageSize": 3
+    }
+  },
+  "Description": {
+    "Cost": 0,
+    "Rarity": 99,
+    "Purchasable": true,
+    "Manufacturer": "Generic",
+    "Model": "Generic",
+    "UIName": "Drone Systems",
+    "Id": "Default_Drone_Control_Systems_UAV",
+    "Name": "Drone Systems",
+    "Details": "Remote operation controls, automated systems, and fire control systems required to operate a drone.",
+    "Icon": "threecrew"
+  },
+  "BonusValueA": "",
+  "BonusValueB": "",
+  "ComponentType": "Upgrade",
+  "ComponentSubType": "NotSet",
+  "PrefabIdentifier": "",
+  "BattleValue": 0,
+  "InventorySize": 3,
+  "Tonnage": 0,
+  "AllowedLocations": "All",
+  "DisallowedLocations": "All",
+  "CriticalComponent": false,
+  "statusEffects": [
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator",
+        "showInStatusPanel": false
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "GainEvasion",
+        "Name": "Default Drone Systems: Increased Evasive Pips Gain",
+        "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+        "Icon": "uixSvgIcon_action_evasivemove"
+      },
+      "statisticData": {
+        "statName": "EvasivePipsGainedAdditional",
+        "operation": "Int_Add",
+        "modValue": "1",
+        "modType": "System.Int32"
+      },
+      "nature": "Buff"
+    },
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator"
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "MaxEvasion",
+        "Name": "Default Drone Systems: Increased Max Evasive Pips",
+        "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+        "Icon": "uixSvgIcon_action_evasivemove"
+      },
+      "statisticData": {
+        "statName": "MaxEvasivePips",
+        "operation": "Int_Add",
+        "modValue": "2",
+        "modType": "System.Int32"
+      },
+      "nature": "Buff"
+    },
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator",
+        "showInStatusPanel": false
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "VTOL_Spotting_Gain-T1",
+        "Name": "Default Drone Systems: Increased Vision Range",
+        "Details": "Increases spotting distance by 30m.",
+        "Icon": "uixSvgIcon_equipment_Cockpit"
+      },
+      "nature": "Buff",
+      "statisticData": {
+        "statName": "SpotterDistanceAbsolute",
+        "operation": "Float_Multiply",
+        "modValue": "1.5",
+        "modType": "System.Single"
+      }
+    },
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator",
+        "showInTargetPreview": false,
+        "showInStatusPanel": false
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "VTOL_Sensor_Gain-T1",
+        "Name": "Default Drone Systems: Increased Sensor Range",
+        "Details": "Increased Sight/Sensors",
+        "Icon": "uixSvgIcon_equipment_Cockpit"
+      },
+      "nature": "Buff",
+      "statisticData": {
+        "statName": "SensorDistanceAbsolute",
+        "operation": "Float_Multiply",
+        "modValue": "1.5",
+        "modType": "System.Single"
+      }
+    }
+  ],
+  "ComponentTags": {
+    "items": [
+      "BLACKLISTED",
+      "WikiWL",
+      "component_type_stock",
+      "BAIncompatible",
+      "ProtoIncompatible",
+      "LootMagnetBlacklist"
+    ],
+    "tagSetSourceFile": ""
+  }
+}

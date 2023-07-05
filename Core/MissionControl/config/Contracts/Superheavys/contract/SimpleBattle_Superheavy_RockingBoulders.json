@@ -1,0 +1,11 @@
+{
+  "ID": "SimpleBattle_Superheavy_RockingBoulders",
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 1,
+    "EnemyLances": [
+      "lancedef_support_d10_superheavy_dynamic"
+    ],
+    "AllyLanceCount": 0
+  }
+}

@@ -1,6 +1,7 @@
 {
   "VehicleTags": {
     "items": [
+      "mr-resize-0.89",
       "NoBiome_lunarVacuum",
       "skip_heatcheck",
       "unit_command",
@@ -198,7 +199,7 @@
     },
     {
       "MountedLocation": "Front",
-      "ComponentDefID": "Gear_Sensors_MissileRange",
+      "ComponentDefID": "Gear_Sensors_Passive",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

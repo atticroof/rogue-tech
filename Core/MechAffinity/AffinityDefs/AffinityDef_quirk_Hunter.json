@@ -10,7 +10,7 @@
       {
         "missionsRequired": 40,
         "levelName": "Hunter",
-        "decription": "+1 Probe, +10% Sight, +5% Sensors",
+        "decription": "+1 Adv. Sensors, +10% Sight, +5% Sensors",
         "affinities": [],
         "effectData": [
           {
@@ -20,10 +20,7 @@
             },
             "targetingData": {
               "effectTriggerType": "Passive",
-              "specialRules": "NotSet",
               "effectTargetType": "Creator",
-              "range": 0.0,
-              "forcePathRebuild": false,
               "forceVisRebuild": true,
               "showInTargetPreview": false,
               "showInStatusPanel": false
@@ -31,12 +28,12 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "LV_PROBE_CARRIER",
-              "Name": "Active Probe (Passive)",
+              "Name": "Quirk Affinity Hunter: Increased Advanced Sensor Strength",
               "Details": "Reduces effectiveness of stealthed and ECM shielded units",
               "Icon": "uixSvgIcon_status_ECM-ghost"
             },
             "statisticData": {
-              "statName": "LV_PROBE_CARRIER",
+              "statName": "LV_ADVANCED_SENSORS",
               "operation": "Int_Add",
               "modValue": "1",
               "modType": "System.Int32"
@@ -57,7 +54,7 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "BAProbe",
-              "Name": "Beagle Probe",
+              "Name": "Quirk Affinity Hunter: Increased Sensor Range",
               "Details": "Increased Sight/Sensors",
               "Icon": "uixSvgIcon_equipment_Cockpit"
             },
@@ -65,7 +62,7 @@
             "statisticData": {
               "statName": "SensorDistanceAbsolute",
               "operation": "Float_Multiply",
-              "modValue": "1.1",
+              "modValue": "1.05",
               "modType": "System.Single"
             }
           },
@@ -83,7 +80,7 @@
             "effectType": "StatisticEffect",
             "Description": {
               "Id": "BAP-Spotting_Gain-T1",
-              "Name": "SPOTTING DISTANCE INCREASED",
+              "Name": "Quirk Affinity Hunter: Increased Vision Range",
               "Details": "Increases spotting distance by 50m.",
               "Icon": "uixSvgIcon_equipment_Cockpit"
             },
@@ -91,7 +88,7 @@
             "statisticData": {
               "statName": "SpotterDistanceAbsolute",
               "operation": "Float_Multiply",
-              "modValue": "1.05",
+              "modValue": "1.1",
               "modType": "System.Single"
             }
           }

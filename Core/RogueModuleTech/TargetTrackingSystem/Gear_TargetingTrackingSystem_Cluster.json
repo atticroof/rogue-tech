@@ -21,7 +21,7 @@
   "RelativeModifier": 0,
   "AbsoluteModifier": 0,
   "Description": {
-    "Cost": 110000,
+    "Cost": 100000,
     "Rarity": 8,
     "Purchasable": true,
     "Manufacturer": "MOA Industries",
@@ -56,7 +56,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "BC_CALLED_SHOT",
-        "Name": "Improved Called Shot",
+        "Name": "BC Clustering: Increased Called Shot Targeted Location Hit Chance",
         "Details": "Called Shots twice as reliable",
         "Icon": "uixSvgIcon_ability_mastertactician"
       },
@@ -79,7 +79,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "StatusEffect_BCCluster",
-        "Name": "Laser Weapon Cluster Chance Improved",
+        "Name": "BC Clustering: Increased Clustering Modifier",
         "Details": "Substantially increases the clustering of this unit's LRM weapons.",
         "Icon": "AdvancedTC"
       },

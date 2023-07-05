@@ -2,6 +2,7 @@
   "VehicleTags": {
     "items": [
       "skip_heatcheck",
+      "unit_release",
       "unit_vehicle",
       "unit_vehicle_clan",
       "unit_light",
@@ -28,7 +29,7 @@
   },
   "ChassisID": "vehiclechassisdef_SHAMASH_CLAN",
   "Description": {
-    "Cost": 356438,
+    "Cost": 411338,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Shamash HRV",

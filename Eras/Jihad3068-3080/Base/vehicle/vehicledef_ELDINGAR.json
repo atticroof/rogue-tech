@@ -5,6 +5,7 @@
       "unit_vehicle",
       "unit_vehicle_clan",
       "unit_vehicle_apc",
+      "Unit_Convoy_Troops",
       "unit_medium",
       "unit_release",
       "unit_lance_vanguard",
@@ -20,7 +21,7 @@
   },
   "ChassisID": "vehiclechassisdef_ELDINGAR",
   "Description": {
-    "Cost": 11726064,
+    "Cost": 12176064,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Eldingar HIFV",

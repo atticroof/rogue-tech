@@ -22,21 +22,22 @@
       "NoAA",
       "Indirect",
       "SawedOffArtillery",
+      "BracetoFire: 9%",
       "AmmoCost: 930"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 930
-    },
-    "CarryHandUsage": 3,
     "Flags": [
       "not_broken"
     ],
+    "InternalAmmoTonnage": {
+      "InternalAmmoTons": 0.1
+    },
+    "AmmoCost": {
+      "PerUnitCost": 930
+    },
     "IBLS": {
       "StorageSize": 1
     },
-    "InternalAmmoTonnage": {
-      "InternalAmmoTons": 0.1
-    }
+    "CarryHandUsage": 3
   },
   "weaponCategoryID": "SpecialHandHeld",
   "Type": "Autocannon",
@@ -52,28 +53,32 @@
   "StartingAmmoCapacity": 1,
   "HeatGenerated": 0,
   "Damage": 75,
+  "HeatDamage": 0,
+  "Instability": 20,
+  "AccuracyModifier": 1,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 3,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 1,
   "CriticalChanceMultiplier": 2,
+  "Cooldown": 99,
   "APArmorShardsMod": 1,
   "APMaxArmorThickness": 150,
   "APCriticalChanceMultiplier": 0.5,
-  "RefireModifier": 3,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 1,
-  "Instability": 20,
-  "Cooldown": 99,
   "AMSImmune": true,
-  "FireTerrainChance": 0.08,
-  "CantHitUnaffecedByPathing": true,
   "ImprovedBallistic": true,
+  "CantHitUnaffecedByPathing": true,
+  "IndirectFireCapable": true,
+  "AlwaysIndirectVisuals": true,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
+  "CanBeBlocked": false,
   "blockWeaponsInInstalledLocation": true,
   "EjectWeapon": true,
-  "CanBeBlocked": false,
+  "FireTerrainChance": 0.08,
+  "AttackRecoil": 1,
   "WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
   "Description": {
     "Cost": 129999,
@@ -84,7 +89,7 @@
     "UIName": "Oneshot Thumper QS",
     "Id": "Weapon_Artillery_Thumper_Oneshot_Quicsell",
     "Name": "Oneshot Thumper Artillery QS",
-    "Details": "Need to hit someone in another county, but don't want to drag around an entire artillery piece? Try the Quicsell one-shot artillery line up today. We've cut the weight down by 80% by removing unneccessary parts like the breech, so you can give your enemies a nice surprise from over the horizon. When you set it off, we guarantee that someone's day is going to be ruined. \n\n <b><color=#ffcc00>1 SHOT</color></b>",
+    "Details": "Need to hit someone in another county, but don't want to drag around an entire artillery piece? Try the Quicsell one-shot artillery line up today. We've cut the weight down by 80% by removing unnecessary parts like the breech, so you can give your enemies a nice surprise from over the horizon. When you set it off, we guarantee that someone's day is going to be ruined. \n\n <b><color=#ffcc00>1 SHOT</color></b>",
     "Icon": "Artillery"
   },
   "BonusValueA": "",
@@ -98,9 +103,33 @@
   "AllowedLocations": "Arms",
   "DisallowedLocations": "All",
   "CriticalComponent": false,
-  "AlwaysIndirectVisuals": true,
-  "IndirectFireCapable": true,
-  "statusEffects": [],
+  "statusEffects": [
+    {
+      "durationData": {
+        "duration": 1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "OnWeaponFire",
+        "effectTargetType": "Creator",
+        "showInStatusPanel": false
+      },
+      "effectType": "StatisticEffect",
+      "nature": "Buff",
+      "Description": {
+        "Id": "WeaponEffect-SelfknockdownCheck_OnFire",
+        "Name": "Oneshot Thumper QS: Increased Self Knockdown on Fire",
+        "Details": "Tubthumping",
+        "Icon": "uixSvgIcon_run_n_gun"
+      },
+      "statisticData": {
+        "statName": "SelfknockdownCheck_OnFire",
+        "operation": "Float_Add",
+        "modValue": "0.09",
+        "modType": "System.Single"
+      }
+    }
+  ],
   "ComponentTags": {
     "items": [
       "HandHeld.{location}",

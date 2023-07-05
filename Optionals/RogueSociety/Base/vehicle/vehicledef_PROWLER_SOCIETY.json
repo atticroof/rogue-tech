@@ -12,6 +12,7 @@
       "unit_advanced",
       "unit_bracket_med",
       "unit_vehicle_apc",
+      "Unit_Convoy_Troops",
       "unit_indirectFire",
       "unit_predator",
       "clanburrock",
@@ -22,7 +23,7 @@
   },
   "ChassisID": "vehiclechassisdef_PROWLER_SOCIETY",
   "Description": {
-    "Cost": 6643076,
+    "Cost": 7108076,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Prowler MTV (S)",

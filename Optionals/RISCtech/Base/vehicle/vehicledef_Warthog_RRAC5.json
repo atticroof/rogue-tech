@@ -2,13 +2,13 @@
   "VehicleTags": {
     "items": [
       "NoBiome_lunarVacuum",
-      "mr-resize-1.84",
+      "mr-resize-1.43",
       "unit_vehicle",
       "unit_assault",
       "unit_vtol",
       "apply_bomb_drag_tag",
       "unit_release",
-      "unit_lance_tank",
+      "unit_lance_support",
       "unit_advanced",
       "unit_bracket_high",
       "unit_noconvoy",
@@ -37,7 +37,7 @@
   },
   "ChassisID": "vehiclechassisdef_Warthog_RRAC5",
   "Description": {
-    "Cost": 15594525,
+    "Cost": 15567525,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Warthog HOG-RR5",

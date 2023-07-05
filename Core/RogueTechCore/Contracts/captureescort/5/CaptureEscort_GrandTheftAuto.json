@@ -1036,12 +1036,17 @@
             "unitDefId": "Tagged",
             "unitTagSet": {
               "items": [
-                "unit_demolisher"
+                "unit_demolisher",
+                "unit_vehicle",
+                "unit_assault"
               ],
               "tagSetSourceFile": "tags/UnitTags"
             },
             "unitExcludedTagSet": {
-              "items": [],
+              "items": [
+                "unit_totem",
+                "unit_noncombatant"
+              ],
               "tagSetSourceFile": "tags/UnitTags"
             },
             "spawnEffectTags": {

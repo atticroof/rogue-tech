@@ -15,6 +15,7 @@
       }
     },
     "BonusDescriptions": [
+      "IsArmorMod",
       "MimeticEnhance",
       "MimeticStealth: 35%, 4, 3",
       "StealthReserved: 1",
@@ -52,14 +53,11 @@
         {
           "durationData": {
             "duration": -1,
-            "stackLimit": 1
+            "stackLimit": -1
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "Creator",
-            "range": 0.0,
-            "forcePathRebuild": false,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
@@ -67,7 +65,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "LV_MIMETIC",
-            "Name": "MIMETIC ARMOR",
+            "Name": "Active Camouflage Activatable: Mimetic Armor",
             "Details": "Makes the carrier much harder to see with eyes",
             "Icon": "uixSvgIcon_status_ECM-ghost"
           },
@@ -93,7 +91,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Visibility_Decrease_Stealth",
-            "Name": "Stealth Visibility Decrease",
+            "Name": "Active Camouflage Activatable: Decreased Visual Signature",
             "Details": "Visibility Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
@@ -119,7 +117,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Heat_Generation_Stealth",
-            "Name": "Increased Heat",
+            "Name": "Active Camouflage Activatable: Increased Heat Generated",
             "Details": "Heat generation",
             "Icon": "uixSvgIcon_equipment_ThermalExchanger"
           },
@@ -146,7 +144,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Heat_Capacity_Stealth",
-            "Name": "Decreased Heat Capacity",
+            "Name": "Active Camouflage Activatable: Decreased Cooling",
             "Details": "Heat Capacity Penalty",
             "Icon": "uixSvgIcon_equipment_ThermalExchanger"
           },
@@ -223,7 +221,7 @@
     "Model": "Active Camouflage System",
     "UIName": "Active Camouflage",
     "Id": "Gear_ArmorMod_ActiveCamouflage",
-    "Name": "Active Camouflage System",
+    "Name": "Armor Mod Active Camouflage",
     "Details": "Active Camouflage Systems can be added to a existing Stealth Armour giving it Mimetic capabilities. Reserves 1 slot in every Location except the Head and requires a Stealth Armour.",
     "Icon": "StealthArmor"
   },

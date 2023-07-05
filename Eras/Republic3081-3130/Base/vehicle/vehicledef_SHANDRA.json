@@ -2,6 +2,7 @@
   "VehicleTags": {
     "items": [
       "mr-resize-1.50",
+      "unit_release",
       "unit_vehicle",
       "unit_light",
       "unit_wheels",
@@ -21,7 +22,7 @@
   },
   "ChassisID": "vehiclechassisdef_SHANDRA",
   "Description": {
-    "Cost": 1019250,
+    "Cost": 1006593,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Shandra ASV",

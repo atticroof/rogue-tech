@@ -5,25 +5,22 @@
         "CategoryID": "LAMInfantryBay"
       }
     ],
-    "WorkOrderCosts": {
-      "Install": {
-        "TechCost": "0.225 * [[Chassis.Tonnage]]",
-        "CBillCost": "35 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]]"
-      }
-    },
     "BonusDescriptions": [
       "BACarrier: 2",
       "BAWingMountWeight: 4",
       "WingMountDrag"
     ],
+    "Flags": [
+      "not_broken"
+    ],
     "ActivatableComponent": {
-      "HideInUI": true,
       "ButtonName": "Load 'em Up",
+      "HideInUI": true,
       "CanNotBeActivatedManualy": true,
       "CanActivateAfterMove": false,
       "CanActivateAfterFire": false,
-      "NoUniqueCheck": true,
       "ActiveByDefault": true,
+      "NoUniqueCheck": true,
       "statusEffects": [
         {
           "durationData": {
@@ -39,7 +36,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "CanSwarmStat",
-            "Name": "This Battle Armor can make swarm attacks.",
+            "Name": "LAM Infantry Bay (2 BA)[WM] Activatable: Disable Unmountable for Battle Armor",
             "Details": "This Battle Armor can make swarm attacks."
           },
           "statisticData": {
@@ -51,13 +48,16 @@
         }
       ]
     },
-    "CarryLeftOverUsage": 4,
-    "Flags": [
-      "not_broken"
-    ],
+    "WorkOrderCosts": {
+      "Install": {
+        "TechCost": "0.225 * [[Chassis.Tonnage]]",
+        "CBillCost": "35 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]]"
+      }
+    },
     "IBLS": {
       "StorageSize": 2
     },
+    "CarryLeftOverUsage": 4,
     "RGBColor": "#b30000"
   },
   "Description": {
@@ -86,7 +86,8 @@
   "statusEffects": [
     {
       "durationData": {
-        "duration": -1
+        "duration": -1,
+        "stackLimit": -1
       },
       "targetingData": {
         "effectTriggerType": "Passive",
@@ -95,13 +96,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "StatusEffect-getHasBattleArmorMounts",
-        "Name": "getHasBattleArmorMounts",
+        "Name": "LAM Infantry Bay (2 BA)[WM]: Increased Internal Battle Armor Carry Capacity",
         "Details": "getHasBattleArmorMounts",
         "Icon": "uixSvgIcon_ability_precisionstrike"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "InternalBattleArmorSquadCap",
         "operation": "Int_Add",
@@ -121,15 +122,15 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WingMountDragCruise",
-        "Name": "Bomb Drag",
+        "Name": "LAM Infantry Bay (2 BA)[WM]: Decreased Cruise Speed",
         "Details": "Things on Wings slow you down",
         "Icon": "uixSvgIcon_action_evasivemove"
       },
-      "nature": "Buff",
       "statisticData": {
-        "effectsPersistAfterDestruction": false,
+        "abilifierId": "WingMountDrag",
         "statName": "CruiseSpeed",
         "operation": "Float_Multiply",
         "modValue": "0.84",
@@ -148,15 +149,15 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WingMountDragFlank",
-        "Name": "Bomb Drag",
+        "Name": "LAM Infantry Bay (2 BA)[WM]: Decreased Flank Speed",
         "Details": "Things on Wings slow you down",
         "Icon": "uixSvgIcon_action_evasivemove"
       },
-      "nature": "Buff",
       "statisticData": {
-        "effectsPersistAfterDestruction": false,
+        "abilifierId": "WingMountDrag",
         "statName": "FlankSpeed",
         "operation": "Float_Multiply",
         "modValue": "0.84",
@@ -175,20 +176,20 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WingMountDragWalk",
-        "Name": "Bomb Drag",
+        "Name": "LAM Infantry Bay (2 BA)[WM]: Decreased Walk Speed",
         "Details": "Things on Wings slow you down",
         "Icon": "uixSvgIcon_action_evasivemove"
       },
       "statisticData": {
-        "effectsPersistAfterDestruction": false,
+        "abilifierId": "WingMountDrag",
         "statName": "WalkSpeed",
         "operation": "Float_Multiply",
         "modValue": "0.84",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -202,19 +203,20 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "WingMountDragJump",
-        "Name": "Bomb Drag",
+        "Name": "LAM Infantry Bay (2 BA)[WM]: Decreased Jump Distance",
         "Details": "Things on Wings slow you down",
         "Icon": "uixSvgIcon_action_evasivemove"
       },
       "statisticData": {
+        "abilifierId": "WingMountDrag",
         "statName": "JumpDistanceMultiplier",
         "operation": "Float_Multiply",
         "modValue": "0.84",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -228,13 +230,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "BoltOnPenaltySensor",
-        "Name": "BoltOn Sensor Penalty",
+        "Name": "LAM Infantry Bay (2 BA)[WM]: Increased Sensor Signature",
         "Details": "Signature Statuseffect.",
         "Icon": "uixSvgIcon_equipment_TTS"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "SensorSignatureModifier",
         "operation": "Float_Multiply",

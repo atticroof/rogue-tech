@@ -2,6 +2,7 @@
   "VehicleTags": {
     "items": [
       "mr-resize-1.5",
+      "unit_release",
       "unit_vehicle",
       "unit_light",
       "unit_hover",
@@ -10,6 +11,7 @@
       "unit_predator",
       "unit_advanced",
       "unit_bracket_low",
+      "clanwolverine",
       "DarkCaste",
       "RimWorldsRepublic",
       "TerranHegemony",
@@ -24,7 +26,7 @@
   },
   "ChassisID": "vehiclechassisdef_BEAGLE",
   "Description": {
-    "Cost": 627978,
+    "Cost": 757978,
     "Rarity": 3,
     "Purchasable": false,
     "UIName": "Beagle Hover Scout",
@@ -101,7 +103,7 @@
     },
     {
       "MountedLocation": "Front",
-      "ComponentDefID": "Default_Vehicle_Sensors",
+      "ComponentDefID": "Gear_Sensors_Identify",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

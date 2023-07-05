@@ -22,7 +22,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_ElectromagneticProficiency_EvasivePipsIgnored",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Electromagnetic Proficiency: Increased Evasive Pips Ignore"
             },
             "durationData": {
               "duration": -1,
@@ -31,6 +31,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_ElectromagneticProficiency",
               "statName": "EvasivePipsIgnored",
               "operation": "Float_Add",
               "modValue": "1.0",
@@ -49,7 +50,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_ElectromagneticProficiency_Recoil",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Electromagnetic Proficiency: Decreased Recoil"
             },
             "durationData": {
               "duration": -1,
@@ -58,6 +59,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_ElectromagneticProficiency",
               "statName": "RefireModifier",
               "operation": "Int_Add",
               "modValue": "-2",
@@ -76,7 +78,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_ElectromagneticProficiency_CriticalChance",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Electromagnetic Proficiency: Increased Critical Hit Chance"
             },
             "durationData": {
               "duration": -1,
@@ -85,6 +87,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_ElectromagneticProficiency",
               "statName": "CriticalChanceMultiplier",
               "operation": "Float_Add",
               "modValue": "1",

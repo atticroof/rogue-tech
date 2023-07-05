@@ -19,19 +19,19 @@
       "AmmoCost: 100",
       "EjectableWeapon"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 100
-    },
-    "CarryHandUsage": 5,
     "Flags": [
       "not_broken"
     ],
-    "IBLS": {
-      "StorageSize": 3
-    },
     "InternalAmmoTonnage": {
       "InternalAmmoTons": 1.5
-    }
+    },
+    "AmmoCost": {
+      "PerUnitCost": 100
+    },
+    "IBLS": {
+      "StorageSize": 1
+    },
+    "CarryHandUsage": 5
   },
   "weaponCategoryID": "SpecialHandHeld",
   "Type": "Laser",
@@ -47,24 +47,33 @@
   "StartingAmmoCapacity": 45,
   "HeatGenerated": 0,
   "Damage": 8,
+  "HeatDamage": 2,
+  "Instability": 0.4,
+  "DamageVariance": 2,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 2,
-  "HeatDamage": 2,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0.1,
-  "APMaxArmorThickness": 24.0,
+  "APMaxArmorThickness": 24,
   "APCriticalChanceMultiplier": 0.04,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 4,
   "ProjectilesPerShot": 3,
-  "AttackRecoil": 1,
-  "Instability": 0.4,
+  "BallisticDamagePerPallet": true,
+  "DamageNotDivided": true,
+  "ImprovedBallistic": true,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
+  "CanBeBlocked": false,
+  "blockWeaponsInInstalledLocation": true,
+  "EjectWeapon": true,
   "FireTerrainChance": 0.0625,
+  "AttackRecoil": 1,
+  "FireDelayMultiplier": 0.08,
   "ColorsTable": [
     {
       "C": "#FF69B4",
@@ -99,18 +108,11 @@
       "I": 5
     }
   ],
-  "ImprovedBallistic": true,
-  "BallisticDamagePerPallet": true,
-  "DamageNotDivided": true,
-  "ColorSpeedChange": 3,
   "ColorChangeRule": "Random",
-  "FireDelayMultiplier": 0.08,
-  "blockWeaponsInInstalledLocation": true,
-  "EjectWeapon": true,
-  "CanBeBlocked": false,
+  "ColorSpeedChange": 3,
   "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
   "Description": {
-    "Cost": 120000,
+    "Cost": 450000,
     "Rarity": 10,
     "Purchasable": true,
     "Manufacturer": "Sprayfire Inc.",
@@ -132,42 +134,7 @@
   "AllowedLocations": "Arms",
   "DisallowedLocations": "All",
   "CriticalComponent": false,
-  "statusEffects": [
-    {
-      "durationData": {
-        "duration": 1,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "stackLimit": 45
-      },
-      "targetingData": {
-        "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
-        "showInTargetPreview": false,
-        "showInStatusPanel": false
-      },
-      "effectType": "StatisticEffect",
-      "Description": {
-        "Id": "HeatDamageTakenSoftCapMultiplier",
-        "Name": "Heat SoftCap 2%",
-        "Details": "Reduce Heat Damage by 1%",
-        "Icon": "uixSvgIcon_equipment_ThermalExchanger"
-      },
-      "nature": "Buff",
-      "statisticData": {
-        "statName": "CACIncomingHeatMult",
-        "operation": "Float_Multiply",
-        "modValue": "0.98",
-        "modType": "System.Single"
-      }
-    }
-  ],
+  "statusEffects": [],
   "ComponentTags": {
     "items": [
       "HandHeld.{location}",

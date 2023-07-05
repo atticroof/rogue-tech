@@ -9,6 +9,7 @@
       "unit_lance_vanguard",
       "unit_hover",
       "unit_vehicle_apc",
+      "Unit_Convoy_Troops",
       "unit_vehicle_clan",
       "unit_noconvoy",
       "unit_generic",
@@ -19,7 +20,7 @@
   },
   "ChassisID": "vehiclechassisdef_SVANTOVIT_ATM_CLAN",
   "Description": {
-    "Cost": 6274550,
+    "Cost": 6657050,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Svantovit 'Masada '",

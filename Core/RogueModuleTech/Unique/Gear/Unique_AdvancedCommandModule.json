@@ -34,11 +34,9 @@
     ],
     "ActivatableComponent": {
       "CanNotBeActivatedManualy": true,
-      "NoUniqueCheck": true,
       "ActivationMessage": "Ping",
       "DeactivationMessage": "",
-      "statusEffects": [],
-      "offlineStatusEffects": []
+      "NoUniqueCheck": true
     },
     "DecoratorComponent": [
       {
@@ -64,28 +62,6 @@
       "StorageSize": 12
     }
   },
-  "Description": {
-    "Cost": 0,
-    "Rarity": 99,
-    "Purchasable": false,
-    "Manufacturer": "Stormvanger",
-    "Model": "",
-    "UIName": "Adv. Command Mod",
-    "Id": "Unique_AdvancedCommandModule",
-    "Name": "Advanced Command Module",
-    "Details": "The Cyclops HQ comes equipped with a sophisticated and powerful Advanced Command Module. Granting the entire Command Improved Communication and Coordination.",
-    "Icon": "uixSvgIcon_special_Equipment"
-  },
-  "BonusValueA": "",
-  "BonusValueB": "",
-  "ComponentType": "Upgrade",
-  "ComponentSubType": "NotSet",
-  "PrefabIdentifier": "",
-  "InventorySize": 12,
-  "Tonnage": 16,
-  "AllowedLocations": "LeftTorso,RightTorso",
-  "DisallowedLocations": "All",
-  "CriticalComponent": false,
   "Auras": [
     {
       "Id": "Gear_C3_Master_Aura",
@@ -100,13 +76,6 @@
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
       "IsPositiveToAlly": true,
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -115,18 +84,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_grant",
-            "Name": "C3 Master Network",
+            "Name": "Adv. Command Mod Aura: C3 Master Network",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -135,8 +101,7 @@
             "operation": "Float_Add",
             "modValue": "1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -145,28 +110,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus",
-            "Name": "C3 Master Sensors Bonus",
+            "Name": "Adv. Command Mod Aura: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.2",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -175,28 +137,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus",
-            "Name": "C3 Master Vision Bonus",
+            "Name": "Adv. Command Mod Aura: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -205,28 +164,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus",
-            "Name": "C3 Master Sensor Bonus",
+            "Name": "Adv. Command Mod Aura: Increased Allies Advanced Sensor Strength",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "LV_ADVANCED_SENSORS",
             "operation": "Int_Add",
             "modValue": "2",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -235,28 +191,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_ini",
-            "Name": "C3 Master Sensor Bonus",
+            "Name": "Adv. Command Mod Aura: Increased Allies Initiative",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "SBI_MOD_MISC",
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -276,13 +229,6 @@
       "neededOwnerTags": [
         "unit_npc"
       ],
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -291,28 +237,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_grant_AI",
-            "Name": "C3 Master Network AI",
+            "Name": "Adv. Command Mod AI C3 MAster Aura: C3 Master Network AI",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "ADD_ENCOUNTER_TAG_C3AI_network",
             "operation": "Float_Add",
             "modValue": "1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -321,28 +264,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_AI",
-            "Name": "C3 Master Sensors Bonus AI",
+            "Name": "Adv. Command Mod AI C3 MAster Aura: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.2",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -351,28 +291,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_AI",
-            "Name": "C3 Master Vision Bonus AI",
+            "Name": "Adv. Command Mod AI C3 MAster Aura: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -381,28 +318,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_AI",
-            "Name": "C3 Master Sensor Bonus AI",
+            "Name": "Adv. Command Mod AI C3 MAster Aura: Increased Allies Advanced Sensor Strength",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "LV_ADVANCED_SENSORS",
             "operation": "Int_Add",
             "modValue": "2",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -411,28 +345,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_ini_AI",
-            "Name": "C3 Master Sensor Bonus",
+            "Name": "Adv. Command Mod AI C3 MAster Aura: Increased Allies Initiative",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "SBI_MOD_MISC",
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -441,22 +372,14 @@
       "Name": "Area Sensors",
       "ReticleColor": "#00e600",
       "Range": 270,
-      "HideOnNotSelected": true,
       "RemoveOnSensorLock": false,
       "State": "Persistent",
       "ApplySelf": false,
+      "HideOnNotSelected": true,
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "NegativeOne",
-      "IsPositiveToAlly": false,
       "IsNegativeToEnemy": true,
-      "ownerVFX": [],
-      "targetVFX": [],
-      "removeOwnerVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
+      "IsPositiveToAlly": false,
       "statusEffects": [
         {
           "durationData": {
@@ -466,19 +389,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-SensorInfo1",
-            "Name": "AreaSensors Sensor Information1",
+            "Name": "Adv. Command Mod Aura: Probe Ping",
             "Details": "Shares Sensor Information on nearby Targets",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "LV_PROBE_PING",
             "operation": "Int_Add",
@@ -494,19 +416,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-SensorInfo2",
-            "Name": "AreaSensors Sensor Information2",
+            "Name": "Unique Adv. Command Mod Aura: Probe Ping",
             "Details": "Shares Sensor Information on nearby Targets",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "LV_PROBE_PING",
             "operation": "Int_Add",
@@ -522,19 +443,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-SensorInfo3",
-            "Name": "AreaSensors Sensor Information3",
+            "Name": "Unique Adv. Command Mod Aura: Probe Ping 3",
             "Details": "Shares Sensor Information on nearby Targets",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "LV_PROBE_PING",
             "operation": "Int_Add",
@@ -550,19 +470,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthSignature1",
-            "Name": "AreaSensors Signature Detection1",
+            "Name": "Adv. Command Mod Aura: Increased Enemies Sensor Signature",
             "Details": "C3 Signature Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SensorSignatureModifier",
             "operation": "Float_Multiply",
@@ -578,19 +497,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthSignature3",
-            "Name": "AreaSensors Signature Detection3",
+            "Name": "Unique Adv. Command Mod Aura: Increased Enemies Sensor Signature",
             "Details": "C3 Signature Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SensorSignatureModifier",
             "operation": "Float_Multiply",
@@ -606,19 +524,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthSignature4",
-            "Name": "AreaSensors Signature Detection4",
+            "Name": "Unique Adv. Command Mod Aura: Increased Enemies Sensor Signature 4",
             "Details": "C3 Signature Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SensorSignatureModifier",
             "operation": "Float_Multiply",
@@ -634,19 +551,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthSignature5",
-            "Name": "AreaSensors Signature Detection5",
+            "Name": "Unique Adv. Command Mod Aura: Increased Enemies Sensor Signature 5",
             "Details": "C3 Signature Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SensorSignatureModifier",
             "operation": "Float_Multiply",
@@ -662,19 +578,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthVisibility1",
-            "Name": "AreaSensors Visibility Detection1",
+            "Name": "Adv. Command Mod Aura: Increased Enemies Visual Signature",
             "Details": "C3 Visibility Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SpottingVisibilityMultiplier",
             "operation": "Float_Multiply",
@@ -690,19 +605,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthVisibility2",
-            "Name": "AreaSensors Visibility Detection2",
+            "Name": "Unique Adv. Command Mod Aura: Increased Enemies Visual Signature",
             "Details": "C3 Visibility Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SpottingVisibilityMultiplier",
             "operation": "Float_Multiply",
@@ -718,19 +632,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthVisibility3",
-            "Name": "AreaSensors Visibility Detection3",
+            "Name": "Unique Adv. Command Mod Aura: Increased Enemies Visual Signature 3",
             "Details": "C3 Visibility Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SpottingVisibilityMultiplier",
             "operation": "Float_Multiply",
@@ -746,19 +659,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthVisibility4",
-            "Name": "AreaSensors Visibility Detection4",
+            "Name": "Unique Adv. Command Mod Aura: Increased Enemies Visual Signature 4",
             "Details": "C3 Visibility Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SpottingVisibilityMultiplier",
             "operation": "Float_Multiply",
@@ -774,19 +686,18 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "AreaSensors-StrengthVisibility5",
-            "Name": "AreaSensors Visibility Detection5",
+            "Name": "Unique Adv. Command Mod Aura: Increased Enemies Visual Signature 5",
             "Details": "C3 Visibility Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
-          "nature": "Buff",
           "statisticData": {
             "statName": "SpottingVisibilityMultiplier",
             "operation": "Float_Multiply",
@@ -809,13 +720,6 @@
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
       "IsPositiveToAlly": true,
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -824,18 +728,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-Tacticon1",
-            "Name": "Tacticon 1",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Initiative",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -844,8 +745,7 @@
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -854,18 +754,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-Tacticon2",
-            "Name": "Tacticon 2",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Initiative 2",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -874,8 +771,7 @@
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -884,18 +780,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-Tacticon3",
-            "Name": "Tacticon 3",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Initiative 3",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -904,28 +797,24 @@
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
             "duration": -1,
-            "stackLimit": 1
+            "stackLimit": 3
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
-            "Id": "StatusEffect-LanceIndirectAccuracy1",
-            "Name": "Lance Indirect Accuracy 1",
+            "Id": "StatusEffect-Indirect_Bonus",
+            "Name": "Adv. Command Mod Aura: Improved Allies Indirect Hit Chance",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -934,8 +823,7 @@
             "operation": "Float_Add",
             "modValue": "-1.0",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -944,18 +832,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSight1",
-            "Name": "AllLanceSight 1",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Vision Range",
             "Details": "AllLanceSight",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -964,8 +849,7 @@
             "operation": "Float_Multiply",
             "modValue": "1.05",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -974,18 +858,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSight2",
-            "Name": "AllLanceSight 2",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Vision Range 2",
             "Details": "AllLanceSight",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -994,8 +875,7 @@
             "operation": "Float_Multiply",
             "modValue": "1.05",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1004,18 +884,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSight3",
-            "Name": "AllLanceSight 3",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Vision Range 3",
             "Details": "AllLanceSight",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1024,8 +901,7 @@
             "operation": "Float_Multiply",
             "modValue": "1.045",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1034,18 +910,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSensors1",
-            "Name": "AllLanceSensors 1",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Sensor Range",
             "Details": "AllLanceSensors",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1054,8 +927,7 @@
             "operation": "Float_Multiply",
             "modValue": "1.05",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1064,18 +936,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSensors2",
-            "Name": "AllLanceSensors 2",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Sensor Range 2",
             "Details": "AllLanceSensors",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1084,8 +953,7 @@
             "operation": "Float_Multiply",
             "modValue": "1.05",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1094,18 +962,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSensors3",
-            "Name": "AllLanceSensors 3",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Sensor Range 3",
             "Details": "AllLanceSensors",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1114,8 +979,7 @@
             "operation": "Float_Multiply",
             "modValue": "1.045",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1124,18 +988,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-LanceScatterMin",
-            "Name": "Lance Scatter Min",
+            "Name": "Adv. Command Mod Aura: Decreased Allies Min Miss Radius",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1145,8 +1006,7 @@
             "modValue": "0.9",
             "modType": "System.Single",
             "targetCollection": "Weapon"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1155,18 +1015,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-LanceScatterMax",
-            "Name": "Lance Scatter Max",
+            "Name": "Adv. Command Mod Aura: Decreased Allies Max Miss Radius",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1176,8 +1033,7 @@
             "modValue": "0.8",
             "modType": "System.Single",
             "targetCollection": "Weapon"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1186,18 +1042,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-LanceTactics1",
-            "Name": "Lance Tactics 1",
+            "Name": "Adv. Command Mod Aura: Increased Allies Tactics",
             "Details": "+1 Tactics Skill for all teammates.",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1207,8 +1060,7 @@
             "modValue": "1",
             "modType": "System.Int32",
             "targetCollection": "Pilot"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1217,18 +1069,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-LanceTactics2",
-            "Name": "Lance Tactics 2",
+            "Name": "Unique Adv. Command Mod Aura: Increased Allies Tactics",
             "Details": "+1 Tactics Skill for all teammates.",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1238,8 +1087,7 @@
             "modValue": "1",
             "modType": "System.Int32",
             "targetCollection": "Pilot"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -1259,13 +1107,6 @@
       "neededOwnerTags": [
         "CommandModule_Affinity"
       ],
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -1274,18 +1115,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-Tacticon4",
-            "Name": "Tacticon 4",
+            "Name": "Adv. Command Mod Command Module Affinity Aura: Increased Allies Initiative",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1294,8 +1132,7 @@
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1304,18 +1141,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSight4",
-            "Name": "AllLanceSight 4",
+            "Name": "Adv. Command Mod Command Module Affinity Aura: Increased Allies Vision Range",
             "Details": "AllLanceSight",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1324,8 +1158,7 @@
             "operation": "Float_Multiply",
             "modValue": "1.045",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1334,18 +1167,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-AllLanceSensors4",
-            "Name": "AllLanceSensors 4",
+            "Name": "Adv. Command Mod Command Module Affinity Aura: Increased Allies Sensor Range",
             "Details": "AllLanceSensors",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1354,28 +1184,24 @@
             "operation": "Float_Multiply",
             "modValue": "1.045",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
             "duration": -1,
-            "stackLimit": 1
+            "stackLimit": 3
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
-            "Id": "StatusEffect-LanceIndirectAccuracy2",
-            "Name": "Lance Indirect Accuracy 2",
+            "Id": "StatusEffect-Indirect_Bonus",
+            "Name": "Adv. Command Mod Command Module Affinity Aura: Improved Allies Indirect Hit Chance",
             "Details": "Tacticon",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1384,8 +1210,7 @@
             "operation": "Float_Add",
             "modValue": "-1.0",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -1394,18 +1219,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "StatusEffect-LanceTactics3",
-            "Name": "Lance Tactics 3",
+            "Name": "Adv. Command Mod Command Module Affinity Aura: Increased Allies Tactics",
             "Details": "+1 Tactics Skill for all teammates.",
             "Icon": "uixSvgIcon_equipment_Cockpit"
           },
@@ -1415,12 +1237,33 @@
             "modValue": "1",
             "modType": "System.Int32",
             "targetCollection": "Pilot"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     }
   ],
+  "Description": {
+    "Cost": 0,
+    "Rarity": 99,
+    "Purchasable": false,
+    "Manufacturer": "Stormvanger",
+    "Model": "",
+    "UIName": "Adv. Command Mod",
+    "Id": "Unique_AdvancedCommandModule",
+    "Name": "Advanced Command Module",
+    "Details": "The Cyclops HQ comes equipped with a sophisticated and powerful Advanced Command Module. Granting the entire Command Improved Communication and Coordination.",
+    "Icon": "uixSvgIcon_special_Equipment"
+  },
+  "BonusValueA": "",
+  "BonusValueB": "",
+  "ComponentType": "Upgrade",
+  "ComponentSubType": "NotSet",
+  "PrefabIdentifier": "",
+  "InventorySize": 12,
+  "Tonnage": 16,
+  "AllowedLocations": "LeftTorso,RightTorso",
+  "DisallowedLocations": "All",
+  "CriticalComponent": false,
   "statusEffects": [
     {
       "durationData": {
@@ -1434,9 +1277,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3i",
-        "Name": "C3i network",
+        "Name": "Adv. Command Mod: C3i network",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -1445,8 +1289,7 @@
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -1460,9 +1303,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3_master",
-        "Name": "C3 Master",
+        "Name": "Adv. Command Mod: C3 Master",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -1471,8 +1315,7 @@
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -1486,19 +1329,20 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3_AI",
-        "Name": "C3 AI",
+        "Name": "Adv. Command Mod: C3 AI",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
       "statisticData": {
+        "abilifierId": "C3_network_AI",
         "statName": "ADD_ENCOUNTER_TAG_C3AI_network",
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -1513,9 +1357,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_Shares_Vision",
-        "Name": "Vision Sharing",
+        "Name": "Adv. Command Mod: Shared Vision",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -1524,8 +1369,7 @@
         "operation": "Set",
         "modValue": "true",
         "modType": "System.Boolean"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "targetingData": {
@@ -1548,28 +1392,23 @@
     {
       "durationData": {
         "duration": -1,
-        "stackLimit": -1
+        "stackLimit": 3,
+        "stackId": "LanceResolvePerRound"
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
         "effectTargetType": "AllLanceMates",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "StatusEffect-Morale_Gain-T3",
-        "Name": "MORALE GENERATION INCREASED",
+        "Name": "Adv. Command Mod: Increased Lance Base Resolve Generation per Round",
         "Details": "Provides a bonus to actions that generate Morale.",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "resolveRoundBaseMod",
         "operation": "Float_Add",
@@ -1584,27 +1423,21 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AdvZoom-Sensor_Gain",
-        "Name": "SENSOR DISTANCE INCREASED",
+        "Name": "Adv. Command Mod: Increased Sensor Range",
         "Details": "Increases spotting distance.",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },
-      "nature": "Buff",
       "statisticData": {
-        "operation": "Float_Multiply",
         "statName": "SensorDistanceAbsolute",
+        "operation": "Float_Multiply",
         "modValue": "1.15",
         "modType": "System.Single"
       }
@@ -1616,24 +1449,18 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AdvZoom-Spotting_Gain",
-        "Name": "SPOTTING DISTANCE INCREASED",
+        "Name": "Adv. Command Mod: Increased Vision Range",
         "Details": "Increases spotting distance.",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "SpotterDistanceAbsolute",
         "operation": "Float_Multiply",

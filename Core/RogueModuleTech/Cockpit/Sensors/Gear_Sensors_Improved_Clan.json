@@ -11,6 +11,14 @@
       "EWSSelf: 0, 1",
       "AdvancedSensors: 2"
     ],
+    "DecoratorComponent": [
+      {
+        "Text": "S",
+        "Color": "#248000",
+        "Icon": "ComponentGearIcons_ECM",
+        "Importance": 30
+      }
+    ],
     "Flags": [
       "not_broken"
     ],
@@ -22,7 +30,7 @@
   "RelativeModifier": 0,
   "AbsoluteModifier": 0,
   "Description": {
-    "Cost": 100000,
+    "Cost": 125000,
     "Rarity": 3,
     "Purchasable": true,
     "Manufacturer": "CLAN",
@@ -52,10 +60,7 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
@@ -63,7 +68,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "LV_ADVANCED_SENSORS",
-        "Name": "Advanced Sensors",
+        "Name": "Sensor Improved (C): Increased Advanced Sensor Strength",
         "Details": "Provides detailed information on enemy units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -89,14 +94,12 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "BAProbe",
-        "Name": "HP-CockpitSensors-Sensor",
+        "Name": "Sensor Improved (C): Increased Sensor Range",
         "Details": "Increased Sight/Sensors",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },
       "nature": "Buff",
       "statisticData": {
-        "appliesEachTick": false,
-        "effectsPersistAfterDestruction": false,
         "statName": "SensorDistanceAbsolute",
         "operation": "Float_Multiply",
         "modValue": "1.05",
@@ -117,14 +120,12 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "HP-CockpitSensors-Spot",
-        "Name": "SPOTTING DISTANCE INCREASED",
+        "Name": "Sensor Improved (C): Increased Vision Range",
         "Details": "Increases spotting distance by 50m.",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },
       "nature": "Buff",
       "statisticData": {
-        "appliesEachTick": false,
-        "effectsPersistAfterDestruction": false,
         "statName": "SpotterDistanceAbsolute",
         "operation": "Float_Multiply",
         "modValue": "1.05",
@@ -145,7 +146,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "ECMPassiveJam",
-        "Name": "ECMPassiveJam",
+        "Name": "Sensor Improved (C): Decreased ECM Jamming",
         "Details": "Passive Jamming Protection",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },

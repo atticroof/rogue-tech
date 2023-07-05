@@ -6,17 +6,19 @@
       "unit_release",
       "unit_ready",
       "unit_role_sniper",
-      "unit_superheavy_tier2",
+      "unit_superheavy_tier3",
       "unit_superheavy_mech",
       "unit_stealth",
       "unit_chassis_stonegiant",
       "unit_optional_superheavys",
       "unit_tonnage_180",
+      "NoFaction",
       "locals",
       "davion",
       "kurita",
       "republic",
       "steiner",
+      "filtveltcoalition",
       "ai_heat_high",
       "ai_dfa_low",
       "ai_melee_normal",
@@ -125,6 +127,7 @@
       "ComponentDefID": "Gear_Armor_Stealth_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -132,6 +135,7 @@
       "ComponentDefID": "Linked_Armor_Stealth_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -139,6 +143,7 @@
       "ComponentDefID": "Linked_Armor_Stealth_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -146,6 +151,7 @@
       "ComponentDefID": "Linked_Armor_Stealth_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -153,6 +159,7 @@
       "ComponentDefID": "Linked_Armor_Stealth_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -160,6 +167,7 @@
       "ComponentDefID": "Linked_Armor_Stealth_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -167,20 +175,7 @@
       "ComponentDefID": "Linked_Armor_Stealth_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
-      "DamageLevel": "Functional"
-    },
-    {
-      "MountedLocation": "LeftTorso",
-      "ComponentDefID": "Default_Cockpit_LifeSupportA_Torso",
-      "ComponentDefType": "Upgrade",
-      "HardpointSlot": -1,
-      "DamageLevel": "Functional"
-    },
-    {
-      "MountedLocation": "RightTorso",
-      "ComponentDefID": "Default_Cockpit_LifeSupportB_Torso",
-      "ComponentDefType": "Upgrade",
-      "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -188,6 +183,23 @@
       "ComponentDefID": "Gear_Structure_EndoSteel_Superheavy",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "LeftTorso",
+      "ComponentDefID": "Default_Cockpit_LifeSupportA_Torso",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Default_Cockpit_LifeSupportB_Torso",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -195,6 +207,7 @@
       "ComponentDefID": "Gear_Cockpit_Torsomount",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -202,6 +215,7 @@
       "ComponentDefID": "Gear_ECM_Guardian",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -209,6 +223,7 @@
       "ComponentDefID": "Gear_Gyro_Superheavy_XL",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -216,6 +231,7 @@
       "ComponentDefID": "Gear_EngineCore_440",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -223,6 +239,7 @@
       "ComponentDefID": "Gear_Engine_XXL",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -230,6 +247,7 @@
       "ComponentDefID": "Linked_Engine_Size_6",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -237,6 +255,7 @@
       "ComponentDefID": "Linked_Engine_Size_6",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": true,
       "DamageLevel": "Functional"
     },
     {
@@ -244,6 +263,7 @@
       "ComponentDefID": "Gear_EngineCooling_Heatsinks_7",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -251,6 +271,15 @@
       "ComponentDefID": "Gear_HeatSinkKit_Double",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Special_AddOn_CentrosphericFlywheelPlus",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -258,6 +287,7 @@
       "ComponentDefID": "Gear_CASE2",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -265,6 +295,7 @@
       "ComponentDefID": "Gear_CASE2",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -272,6 +303,7 @@
       "ComponentDefID": "Weapon_SRM_4_Streak",
       "ComponentDefType": "Weapon",
       "HardpointSlot": 0,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -279,6 +311,7 @@
       "ComponentDefID": "Weapon_PPC_ER_MagnaFirestar",
       "ComponentDefType": "Weapon",
       "HardpointSlot": 0,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -286,6 +319,7 @@
       "ComponentDefID": "Weapon_PPC_ER_MagnaFirestar",
       "ComponentDefType": "Weapon",
       "HardpointSlot": 0,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -293,6 +327,7 @@
       "ComponentDefID": "Weapon_LRM_20_Enhanced",
       "ComponentDefType": "Weapon",
       "HardpointSlot": 0,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -300,6 +335,7 @@
       "ComponentDefID": "Weapon_LRM_20_Enhanced",
       "ComponentDefType": "Weapon",
       "HardpointSlot": 0,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -307,6 +343,7 @@
       "ComponentDefID": "Weapon_Autocannon_UAC_2",
       "ComponentDefType": "Weapon",
       "HardpointSlot": 0,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -314,6 +351,7 @@
       "ComponentDefID": "Ammo_AmmunitionBox_LRM_Deadfire",
       "ComponentDefType": "AmmunitionBox",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -321,6 +359,7 @@
       "ComponentDefID": "Ammo_AmmunitionBox_LRM_Swarm",
       "ComponentDefType": "AmmunitionBox",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -328,6 +367,7 @@
       "ComponentDefID": "Ammo_AmmunitionBox_SRM_Streak",
       "ComponentDefType": "AmmunitionBox",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -335,6 +375,7 @@
       "ComponentDefID": "Ammo_AmmunitionBox_LRM",
       "ComponentDefType": "AmmunitionBox",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -342,6 +383,7 @@
       "ComponentDefID": "Ammo_AmmunitionBox_LRM_ListenKill",
       "ComponentDefType": "AmmunitionBox",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -349,6 +391,7 @@
       "ComponentDefID": "Ammo_AmmunitionBox_UAC_2",
       "ComponentDefType": "AmmunitionBox",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -356,6 +399,7 @@
       "ComponentDefID": "Gear_HeatSink_Double",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -363,6 +407,7 @@
       "ComponentDefID": "Gear_HeatSink_Double",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -370,6 +415,7 @@
       "ComponentDefID": "Gear_HeatSink_Double",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     },
     {
@@ -377,6 +423,7 @@
       "ComponentDefID": "Gear_HeatSink_Double",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
+      "IsFixed": false,
       "DamageLevel": "Functional"
     }
   ]

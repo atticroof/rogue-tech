@@ -19,7 +19,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_PlasmaCapacitors_HeatDamage",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Plasma Capacitors: Increased Heat Damage per Shot"
             },
             "durationData": {
               "duration": -1,
@@ -28,6 +28,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_PlasmaCapacitors",
               "statName": "HeatDamagePerShot",
               "operation": "Float_Multiply",
               "modValue": "1.3",
@@ -46,7 +47,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_PlasmaCapacitors_HeatGenerated",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Plasma Capacitors: Decreased Heat Generated"
             },
             "durationData": {
               "duration": -1,
@@ -55,6 +56,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_PlasmaCapacitors",
               "statName": "HeatGenerated",
               "operation": "Float_Multiply",
               "modValue": "0.9",

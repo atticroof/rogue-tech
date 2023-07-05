@@ -3,6 +3,7 @@
     "items": [
       "skip_heatcheck",
       "unit_singleton",
+      "unit_release",
       "unit_vehicle",
       "unit_vehicle_clan",
       "unit_assault",
@@ -19,7 +20,7 @@
   },
   "ChassisID": "vehiclechassisdef_CHENTU",
   "Description": {
-    "Cost": 26463491,
+    "Cost": 27989741,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Chentu MBT",

@@ -10,8 +10,8 @@
       "Sight: +30%",
       "Signature: +35%",
       "Visibility: +15%",
-      "IsProbe: 3",
-      "AdvancedSensors: 3",
+      "IsProbe: 2",
+      "AdvancedSensors: 4",
       "DetectMine: 180"
     ],
     "Flags": [
@@ -91,10 +91,7 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
@@ -102,14 +99,14 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "LV_PROBE_CARRIER",
-        "Name": "Active Probe (Passive)",
+        "Name": "Boosted BAP: Active Probe",
         "Details": "Reduces effectiveness of stealthed and ECM shielded units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
       "statisticData": {
         "statName": "LV_PROBE_CARRIER",
         "operation": "Int_Add",
-        "modValue": "3",
+        "modValue": "2",
         "modType": "System.Int32"
       },
       "nature": "Buff"
@@ -121,10 +118,7 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
@@ -132,14 +126,14 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "LV_ADVANCED_SENSORS",
-        "Name": "Advanced Sensors",
+        "Name": "Boosted BAP: Increased Advanced Sensor Strength",
         "Details": "Provides detailed information on enemy units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
       "statisticData": {
         "statName": "LV_ADVANCED_SENSORS",
         "operation": "Int_Add",
-        "modValue": "3",
+        "modValue": "4",
         "modType": "System.Int32"
       },
       "nature": "Buff"
@@ -158,7 +152,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "BAProbe",
-        "Name": "Beagle Probe",
+        "Name": "Boosted BAP: Increased Sensor Range",
         "Details": "Increased Sight/Sensors",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },
@@ -184,7 +178,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "BAP-Spotting_Gain-T1",
-        "Name": "SPOTTING DISTANCE INCREASED",
+        "Name": "Boosted BAP: Increased Vision Range",
         "Details": "Increases spotting distance by 50m.",
         "Icon": "uixSvgIcon_equipment_Cockpit"
       },
@@ -210,7 +204,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "Angel-Signature_Decrease_45",
-        "Name": "Null Signature Systems",
+        "Name": "Boosted BAP: Increased Sensor Signature",
         "Details": "Active Null Signature Systems reduce visibility and grant Bulwark.",
         "Icon": "uixSvgIcon_equipment_TTS"
       },
@@ -236,7 +230,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "Angel-visi",
-        "Name": "Active Stealth Armor",
+        "Name": "Boosted BAP: Increased Visual Signature",
         "Details": "Provides a +2 difficulty to hit bonus.",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },
@@ -255,10 +249,7 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
@@ -266,7 +257,7 @@
       "effectType": "StatisticEffect",
       "Description": {
         "Id": "MineFieldDetection",
-        "Name": "Active Probe (Passive)",
+        "Name": "Boosted BAP: Increased Minefield Detection",
         "Details": "Detects Minefields",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },

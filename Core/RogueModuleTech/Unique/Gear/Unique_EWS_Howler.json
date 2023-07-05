@@ -33,16 +33,6 @@
       "C3iBonus: C3 Master/C3i, +3%, +2%",
       "C3BonusNoStack: C3i, +15% Missile Max Range"
     ],
-    "Flags": [
-      "default",
-      "not_broken",
-      "no_salvage",
-      "autorepair"
-    ],
-    "IBLS": {
-      "StorageSize": 2
-    },
-    "Lootable": "Gear_Sensors_EWS",
     "DecoratorComponent": [
       {
         "Text": "IS",
@@ -62,11 +52,18 @@
         "Icon": "ComponentGearIcons_PROBE",
         "Importance": 20
       }
-    ]
+    ],
+    "Flags": [
+      "default",
+      "not_broken",
+      "no_salvage",
+      "autorepair"
+    ],
+    "IBLS": {
+      "StorageSize": 2
+    },
+    "Lootable": "Gear_Sensors_EWS"
   },
-  "StatName": null,
-  "RelativeModifier": 0,
-  "AbsoluteModifier": 0,
   "Description": {
     "Cost": 450000,
     "Rarity": 99,
@@ -84,6 +81,8 @@
   "ComponentType": "Upgrade",
   "ComponentSubType": "Prototype_ElectronicWarfare",
   "PrefabIdentifier": "",
+  "RelativeModifier": 0,
+  "AbsoluteModifier": 0,
   "BattleValue": 0,
   "InventorySize": 2,
   "Tonnage": 1,
@@ -104,13 +103,6 @@
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
       "IsPositiveToAlly": true,
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -119,28 +111,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_slave_bonus",
-            "Name": "C3 Slave Sensors Bonus",
+            "Name": "Howler MKII Comm Suite / Aura C3 network: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_slave_bonus",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.03",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -149,28 +138,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_slave_bonus",
-            "Name": "C3 Slave Vision Bonus",
+            "Name": "Howler MKII Comm Suite / Aura C3 network: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_slave_bonus",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.02",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -179,28 +165,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3i_network_bonus",
-            "Name": "C3i Sensors Bonus",
+            "Name": "Unique Howler MKII Comm Suite / Aura C3 network: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3i_network_bonus",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.03",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -209,28 +192,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3i_network_bonus",
-            "Name": "C3i Vision Bonus",
+            "Name": "Unique Howler MKII Comm Suite / Aura C3 network: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3i_network_bonus",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.02",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -239,30 +219,27 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3i_network_bonus_missile_maxrange",
-            "Name": "C3i Sensor Check Bonus",
+            "Name": "Howler MKII Comm Suite / Aura C3 network: Increased Allies Missile Max Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3i_network_bonus",
             "statName": "MaxRange",
             "operation": "Float_Multiply",
             "modValue": "1.15",
             "modType": "System.Single",
             "targetCollection": "Weapon",
             "targetWeaponCategory": "Missile"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -270,49 +247,32 @@
       "Id": "MINEDETECTIONAURA",
       "Name": "Minesweeper",
       "ReticleColor": "white",
-      "LineType": "Dots",
-      "isSpining": false,
-      "MinefieldDetector": true,
-      "HideOnNotSelected": true,
       "Range": 180,
       "RemoveOnSensorLock": false,
       "State": "Persistent",
       "ApplySelf": true,
+      "HideOnNotSelected": true,
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
-      "IsPositiveToAlly": false,
       "IsNegativeToEnemy": false,
-      "ownerVFX": [],
-      "targetVFX": [],
-      "removeOwnerVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
-      "statusEffects": []
+      "IsPositiveToAlly": false,
+      "MinefieldDetector": true,
+      "LineType": "Dots",
+      "isSpining": false
     },
     {
       "Id": "ECM_Aura",
       "Name": "ECM",
       "ReticleColor": "#a31aff",
       "Range": 180,
-      "HideOnNotSelected": false,
       "RemoveOnSensorLock": false,
       "State": "Persistent",
       "ApplySelf": false,
+      "HideOnNotSelected": false,
       "AllyStealthAffection": "PositiveOne",
       "EnemyStealthAffection": "None",
-      "IsPositiveToAlly": true,
       "IsNegativeToEnemy": false,
-      "ownerVFX": [],
-      "targetVFX": [],
-      "removeOwnerVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
+      "IsPositiveToAlly": true,
       "statusEffects": [
         {
           "durationData": {
@@ -322,15 +282,15 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "LV_ECM_SHIELD",
-            "Name": "ECM Buff",
+            "Name": "Howler MKII Comm Suite / Aura ECM: Increased Allies ECM Shield",
             "Details": "Ally ECM Shield",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -339,8 +299,7 @@
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -349,22 +308,14 @@
       "Name": "ECCM",
       "ReticleColor": "#a31aff",
       "Range": 180,
-      "HideOnNotSelected": true,
       "RemoveOnSensorLock": false,
       "State": "Persistent",
       "ApplySelf": false,
+      "HideOnNotSelected": true,
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "Nullify",
-      "IsPositiveToAlly": false,
       "IsNegativeToEnemy": true,
-      "ownerVFX": [],
-      "targetVFX": [],
-      "removeOwnerVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
+      "IsPositiveToAlly": false,
       "statusEffects": [
         {
           "durationData": {
@@ -374,15 +325,15 @@
           "targetingData": {
             "effectTriggerType": "Passive",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "LV_ECCM_SHIELD",
-            "Name": "ECCM Debuff",
+            "Name": "Howler MKII Comm Suite / Aura ECCM: Decreased Enemies ECM Shield",
             "Details": "ECCM Shield Reduction",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -391,8 +342,7 @@
             "operation": "Int_Add",
             "modValue": "-2",
             "modType": "System.Int32"
-          },
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -401,16 +351,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3",
-            "Name": "ECM Disrupts C3",
+            "Name": "Howler MKII Comm Suite / Aura ECCM: ECM Disrupts C3",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -419,9 +368,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -430,16 +377,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3i",
-            "Name": "ECM Disrupts C3i",
+            "Name": "Howler MKII Comm Suite / Aura ECCM: ECM Disrupts C3i",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -448,9 +394,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -459,16 +403,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3n",
-            "Name": "ECM Disrupts C3 Nova",
+            "Name": "Howler MKII Comm Suite / Aura ECCM: ECM Disrupts C3 Nova",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -477,9 +420,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         },
         {
           "durationData": {
@@ -488,16 +429,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "EnemiesWithinRange",
-            "range": 0.0,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
+          "effectType": "StatisticEffect",
+          "nature": "Debuff",
           "Description": {
             "Id": "ECM_disrupt_C3AI",
-            "Name": "ECM Disrupts C3 AI",
+            "Name": "Howler MKII Comm Suite / Aura ECCM: ECM Disrupts C3 AI",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -506,9 +446,7 @@
             "operation": "Float_Add",
             "modValue": "-2",
             "modType": "System.Single"
-          },
-          "effectType": "StatisticEffect",
-          "nature": "Debuff"
+          }
         }
       ]
     }
@@ -526,9 +464,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3i",
-        "Name": "C3i network",
+        "Name": "Howler MKII Comm Suite: C3i network",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -537,8 +476,7 @@
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -552,19 +490,20 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3_AI",
-        "Name": "C3 AI",
+        "Name": "Howler MKII Comm Suite: C3 AI",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
       "statisticData": {
+        "abilifierId": "C3_network_AI",
         "statName": "ADD_ENCOUNTER_TAG_C3AI_network",
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -578,9 +517,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "MineFieldDetection",
-        "Name": "Active Probe (Passive)",
+        "Name": "Howler MKII Comm Suite: Increased Minefield Detection",
         "Details": "Detects Minefields",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -589,8 +529,7 @@
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -604,9 +543,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_PROBE_CARRIER",
-        "Name": "Active Probe (Passive)",
+        "Name": "Howler MKII Comm Suite: Active Probe",
         "Details": "Reduces effectiveness of stealthed and ECM shielded units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -615,8 +555,7 @@
         "operation": "Int_Add",
         "modValue": "2",
         "modType": "System.Int32"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -630,9 +569,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_ADVANCED_SENSORS",
-        "Name": "Advanced Sensors",
+        "Name": "Howler MKII Comm Suite: Increased Advanced Sensor Strength",
         "Details": "Provides detailed information on enemy units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -641,8 +581,7 @@
         "operation": "Int_Add",
         "modValue": "1",
         "modType": "System.Int32"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -656,13 +595,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AdvancedProbeSensor",
-        "Name": "Probe Sensor",
+        "Name": "Howler MKII Comm Suite: Increased Sensor Range",
         "Details": "Increased Sight/Sensors/Health.",
         "Icon": "uixSvgIcon_equipment_Comms"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "SensorDistanceAbsolute",
         "operation": "Float_Multiply",
@@ -682,13 +621,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AdvancedProbeSight",
-        "Name": "Probe Sight",
+        "Name": "Howler MKII Comm Suite: Increased Vision Range",
         "Details": "Increases spotting distance by 50m.",
         "Icon": "uixSvgIcon_equipment_Comms"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "SpotterDistanceAbsolute",
         "operation": "Float_Multiply",
@@ -708,13 +647,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "ECMPassiveShield",
-        "Name": "ECMPassiveShield",
+        "Name": "Howler MKII Comm Suite: Increased ECM Shield",
         "Details": "Passive ECM Protection",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "LV_ECM_SHIELD",
         "operation": "Int_Add",
@@ -734,13 +673,13 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "ECMPassiveJam",
-        "Name": "ECMPassiveJam",
+        "Name": "Howler MKII Comm Suite: Decreased ECM Jamming",
         "Details": "Passive Jamming Protection",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "LV_ECM_JAMMED",
         "operation": "Int_Add",
@@ -751,7 +690,7 @@
     {
       "durationData": {
         "duration": -1,
-        "stackLimit": 1
+        "stackLimit": -1
       },
       "targetingData": {
         "effectTriggerType": "Passive",
@@ -761,9 +700,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_Shares_Vision",
-        "Name": "Vision Sharing",
+        "Name": "Howler MKII Comm Suite: Shared Vision",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -772,8 +712,7 @@
         "operation": "Set",
         "modValue": "true",
         "modType": "System.Boolean"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

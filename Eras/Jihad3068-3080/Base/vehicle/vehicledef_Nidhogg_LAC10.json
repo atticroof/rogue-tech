@@ -9,7 +9,7 @@
       "apply_bomb_drag_tag",
       "unit_release",
       "unit_lance_tank",
-      "unit_lance_support",
+      "unit_lance_vanguard",
       "unit_advanced",
       "unit_bracket_high",
       "unit_noconvoy",
@@ -112,7 +112,7 @@
   },
   "ChassisID": "vehiclechassisdef_Nidhogg_LAC10",
   "Description": {
-    "Cost": 8162500,
+    "Cost": 8080000,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Nidhogg (LAC/10)",

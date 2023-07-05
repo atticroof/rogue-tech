@@ -6,7 +6,6 @@
       "unit_command",
       "unit_superheavy_vehicle",
       "unit_immune_shutdownonhit",
-      "unit_immune_bracetofire",
       "unit_noconvoy",
       "unit_sniper",
       "wordofblake",
@@ -66,7 +65,7 @@
   },
   "ChassisID": "vehiclechassisdef_TEPPO_SUPERHEAVY_TANK",
   "Description": {
-    "Cost": 12758127,
+    "Cost": 12820627,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Teppô ASV",

@@ -17,20 +17,20 @@
       "NoAA",
       "AmmoCost: 60"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 60
-    },
-    "CarryLeftOverUsage": 1.5,
     "Flags": [
       "not_broken",
       "no_salvage"
     ],
-    "IBLS": {
-      "StorageSize": 1
-    },
     "InternalAmmoTonnage": {
       "InternalAmmoTons": 0.5
     },
+    "AmmoCost": {
+      "PerUnitCost": 60
+    },
+    "IBLS": {
+      "StorageSize": 1
+    },
+    "CarryLeftOverUsage": 1.5,
     "Lootable": "Weapon_FluidGun"
   },
   "weaponCategoryID": "Special",
@@ -47,24 +47,26 @@
   "StartingAmmoCapacity": 10,
   "HeatGenerated": 0,
   "Damage": 10,
+  "HeatDamage": 0,
+  "Instability": 0,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0,
   "APMaxArmorThickness": 1,
   "APCriticalChanceMultiplier": 0.5,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 0,
-  "Instability": 0,
   "CantHitUnaffecedByPathing": true,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
+  "AttackRecoil": 0,
   "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
   "Description": {
     "Cost": 90000,
@@ -93,29 +95,21 @@
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
         "extendDurationOnTrigger": 2,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_AcidSpit",
-        "Name": "Acid",
+        "Name": "Unique Acid Spit: Increased Target Damage Taken",
         "Details": "This unit is coated with corrosive Acid. It will take 30% increased Damage. Can stack. 2 Turn Duration.",
         "Icon": "uixSvgIcon_biome_Heated"
       },
@@ -124,35 +118,26 @@
         "operation": "Float_Add",
         "modValue": "0.3",
         "modType": "System.Single"
-      },
-      "nature": "Debuff"
+      }
     },
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
         "extendDurationOnTrigger": 2,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "Effect_AcidSpit",
-        "Name": "Acid",
+        "Name": "Unique Acid Spit: Increased Target AoE Damage Taken",
         "Details": "This unit is coated with corrosive Acid. It will take 30% increased Damage. Can stack. 2 Turn Duration.",
         "Icon": "uixSvgIcon_biome_Heated"
       },
@@ -161,8 +146,7 @@
         "operation": "Float_Add",
         "modValue": "0.3",
         "modType": "System.Single"
-      },
-      "nature": "Debuff"
+      }
     }
   ],
   "ComponentTags": {

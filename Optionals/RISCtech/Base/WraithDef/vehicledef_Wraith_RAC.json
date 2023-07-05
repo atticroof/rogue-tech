@@ -12,7 +12,6 @@
       "unit_legendary",
       "unit_hover",
       "unit_advanced",
-      "unit_legendary",
       "unit_bracket_high",
       "unit_stealth",
       "unit_wraith",
@@ -41,12 +40,6 @@
       "securitysolutionsinc",
       "paladinprotectionllc",
       "housekhulan"
-    ],
-    "tagSetSourceFile": ""
-  },
-  "RequiredToSpawnCompanyTags": {
-    "items": [
-      "omni_tank"
     ],
     "tagSetSourceFile": ""
   },

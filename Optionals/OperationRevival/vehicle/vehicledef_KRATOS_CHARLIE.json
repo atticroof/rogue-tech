@@ -11,7 +11,7 @@
       "unit_lance_tank",
       "unit_lance_vanguard",
       "unit_bracket_high",
-      "unit_indirectfire",
+      "unit_indirectFire",
       "unit_proxy_icon",
       "unit_proxy_model",
       "omni_tank",
@@ -23,7 +23,7 @@
   },
   "ChassisID": "vehiclechassisdef_KRATOS_CHARLIE",
   "Description": {
-    "Cost": 37948170,
+    "Cost": 38588013,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Kratos Charlie",

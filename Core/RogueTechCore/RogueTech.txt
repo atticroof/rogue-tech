@@ -73,8 +73,6 @@ KNOWN ISSUES - READ THEM!
 
 - Mech that falls as a result of minefield explosions could end at the same hex as other mech and become untargetable, cant be fixed unfortunatelly, use AOE weapons to kill it.
 
-- Memorial doesnt always show the name of the mech pilot died in
-
 - Do not move your last mech into evac zone by melee attack on target in evac zone, game will softlock.
 
 - Installing ANY CheatHappens trainers will get you banned from online map
@@ -84,6 +82,8 @@ KNOWN ISSUES - READ THEM!
 - If you have mech stuck in queue in "Done" state, delete Mods folder, reinstall RT and go back to save before it was put into queue
 
 - Do not assemble new units from parts and ready from storage at the same time, can result in disappearing units.
+
+- Do not abort ready from storage orders, can result in disappearing units.
 
 - You can use RogueTechSaves/local/modsettings/CustomVoices.json to control custom sounds (chopper, jets, etc) volume if you don't like defaults.
 
@@ -96,6 +96,277 @@ KNOWN ISSUES - READ THEM!
 
 
 ========
+**HHR** 1.3.14
+Even more fixes for camera issues. Hopefully all camera settings should once again work properly without soft locks.
+Fix for Vehicles and Squad units not dropping components for salvage.
+
+**HHR** 1.3.13
+More fixes for follow camera sequence when using units with alternate states (e.g. LAMs and QuadVees).
+Fixes for applying paint scheme to units with alternate states.
+Skirmish lances now can be altered from drop screen.
+C Rider - Fixed so they no longer can mount other units in bike mode.
+Heavy Silver Bullet Turret - Tweaked to not cause loading issues if not all mods are installed.
+Hahnunah - Minor tweaks.
+Fury FCT-CX17 - Minor tweaks.
+MRM Carrier G2 - Minor fixes.
+
+**HHR** 1.3.12
+Fix for issues with abilities introduced in 1.3.11
+Some new turrets
+
+**HHR** 1.3.11
+Fix for softlock after movement for LAM and other units that can transform between modes.
+Further fixes for units passing through terrain.
+Fixed UAV Beacons not appearing in Clan shops.
+Gullfaxi Prime - Minor tweaks.
+Gullfaxi 0M - New variant of the Superheavy OmniTank.
+Sleipnir Command - A high end command and control APC with an unique Command Suite.
+
+**HHR** 1.3.10
+More fixes for overlapping loaner units in lance selection screen.
+Protomech parts now available in Clan shops.
+Hippogriff HIP-2 - New SRM armed version of this heavy protomech. RT custom.
+
+**HHR** 1.3.9
+Fixed squad-based units movement so they no longer glitch through terrain.
+Fixed issues with unit selection screen for contracts with multiple loaner units.
+Fixed some ammunition not working properly against the specified unit types, e.g. SAM ammunition against VTOL.
+Fix for SAR missions being created multiple times in some situations.
+Fixed the cooldown between Solaris Seasons. It should now be 90 days.
+More Battle Armor gear renamed from prefix ''PA'' to ''BA''.
+ProtoMech engines reduced in price to be more consistent with official cost, resulting in cheaper ProtoMechs.
+Fusillade (ProtoMech Weapon) - Max Range increased from 540 to 600.
+LRM-1 (C) to LRM-19 (C) (ProtoMech Weapon) - Max Range increased from 690 to 840.
+SRM-1 (C) to SRM-3 (C) (ProtoMech Weapon) - Max Range increased from 330 to 360.
+Added 14 new turrets using Clan Early weapons.
+
+**HHR** 1.3.8
+Hotfix for some weapons with internal ammunition having much too high ammo cost.
+Streak SRM-2 (C-IOS) / Streak SRM-4 (C-IOS) / Streak SRM-6 (C-IOS) - Fixed to use the correct internal ammunition type.
+Dig Lord - Rescaled to a more appropriate size.
+Drone Beacons available in stacks of 10 in stores instead of stacks of 5.
+
+**HHR** 1.3.7
+Hotfix for AMS not firing
+
+**HHR** 1.3.6
+Custom Prewarm should now work correctly again.
+Using weapons stripping in mech bay (CTRL-click on strip button) will now also remove ammunition and weapon attachments.
+Heat damage cap has been tweaked.
+Most positive or negative AMS Hit Chance on missiles and launchers has been changed from a flat plus / minus stat to a multiplier.
+As it was too easy to stack probe bonus to completely negate ECM and stealth, values on items have been brought down or replaced and combat penalties increased.
+Fix for some weapon and ammunition combinations using incorrect AOE heat and stability damage values.
+AI Units spawned in middle of battle will now start with spawn protection. Spawn protection will now provide 12 evasion pips instead of 6.
+All abilities should now properly cost resolve as intended.
+More fixes for headshots destroying units without cockpit in head.
+Flying units will no longer break lines of sight.
+All LAMs now start in Flight mode.
+Fixes to injures for Vehicle pilots.
+Airstrikes / summon unit abilities restrictions have been tweaked. Only Solaris contracts and duels block everything, destroy/defend/attack defend contracts now only block air strikes for the attacking side.
+Added new bonus event for completing Search and Rescue contracts.
+Destroy Base contracts - Bonus pay for destroying buildings reduced, base pay for contract type increased so it's clearer up front how much these contracts pay.
+MechWarrior Jamie can no longer be used together with FCS Pyro.
+Two new RTO Legends pilots.
+The following MechWarriors can no longer pilot Battle Armor: Alekto, High-Khan Fiona Kerensky, Jelly Roll, Julimarie, Kamea, Rieper, St. Burt
+Battle Armor squads of a size less than 6 have a defense bonus of +1 for each member less than six. Defense bonus per lost member during combat is now exactly +1.
+Tweaked to some and added new Battle Armor weapons and equipment. More Battle Armor items added to stores.
+Three new Battle Armor added. 
+New Drones/UAVs with beacons have been added as consumable items. UAVs can no longer be used in Lunar biomes.
+Over 380 new mechs, including many new official chassis. Several updated mechs.
+21 new turrets.
+6 new and many update vehicles
+
+Many, many other fixes and tweaks. For full details see https://roguetech.fandom.com/wiki/Change_Log
+
+**HHR** 1.3.5
+End of Turn heat effects (e.g. hot weather) will now not occur twice when out of combat.
+Turrets will no longer get their passive status effects incorrectly applied for a total of three times, resulting in very long range and very accurate shots.
+Enemy Tanks should no longer start in a state where they are unable to move.
+Removed incorrect Totem unit classification on several units and reduced spawn rate for remaining ones. As a result this will reduce amount of RICS UrbanMechs as assassination target at lower difficulties.
+Fixed mission load failure due to wrong ID on a turret.
+Several vehicle quirks had no linked 40 mission affinity, this has been fixed.
+Removed chance for Suspicious Cargo and Nukes not to explode due to the new second chance mechanic.
+Weapons and Fire Modes with no inherent Jam Chance will now properly reduce any dynamically assigned jam chance during a mission based on MechWarrior's Gunnery skill.
+RISC Silver Bullet Gauss - This weapon was a bit too strong due to high total damage combined with a decent TAC chance and tight clustering and has had its damage lowered sligthly.
+Rotary AC/20 RISC - Brace to Fire knockdown chance in x1 mode corrected from 70% to 7%.
+Sniper Rifle - Added +100% critical hit chance. Changed AP Max Armor Thickness from 120 to 290.
+Thunderbolt 20 NEMP ammunition - When Thermobolts were reduce in strength NEMP ammo was overlooked. This has now been corrected.
+Mech Eagle (ALL) - Fixed incorrect model id resulting in mech not being usable.
+Fix for adding more than 13 Movement or Jump capacity breaking mechlab.
+Fix for the ''BA1100N'' event to actually give a ''BA1100N''.
+
+**HHR** 1.3.4
+Performance improvements to timeline (i.e. as each day passes).
+Fixed issue with torso mounted cockpits and head destruction.
+Fix for contracts initialized from events.
+Fix for SAR contracts sometimes not completing correctly.
+Fix for resolve sometimes not generating correctly during combat.
+Fixes to Kraken Good Time event chain.
+Fixed old bug which caused all turrets above Difficulty 15 to be Artillery.
+Totem units should now not appear for wrong factions.
+Several new turrets added.
+Arion 'Jumping Jack' - New RT Custom Unique Mech.
+Eagle - New mech with 3 variants.
+Streak MRM are no longer compatible with Advanced Missile Guidance systems.
+TAG and Narc target effects should now properly not stack with each other.
+
+**HHR** 1.3.3
+Weird targeting lines fixed.
+Fix for C3 networks.
+UAV weapons will now be fired as properly.
+Previous manual heat cap per weapon configuration replaced by global to ensure consistency.
+Battle Armor doesn't track heat, a few of their weapons had heat generation accidentally. It has been removed.
+BA Shotgun - Fix for damage value not displaying correctly. Hit type changed to Cluster. Description added for Recoil of 2. Price Reduced.
+Superheavy Ferro-Alloy - Can no longer be combined with HarJel or CASE.
+Tracks (QuadVee) - Will not drop as salvage anymore. As it was never intended to be salvagable, just sell any copy in storage. Price changed from 0 to 600,000.
+Navi - Is now salvageable.
+Project Sectarian - Equipment updates.
+Cornerstone CTD-150 - Tiny armor fix.
+Pilot Das voice pack was updated.
+
+
+**HHR** 1.3.2
+Critical fix for QuadVees. If you already have one, store and ready it.
+
+**HHR** 1.3.1
+Fixed issue with game softlocking during event resolution selection.
+Fixed the new jam instead of misfire feature, it should now be 10% chance at most (at max Guts) to downgrade a misfire.
+AI Airstrikes should no longer target neutral targets, such as buildings.
+Search And Rescue Escort contracts have been rolled back to the 1.2.6 version due to blocking bugs with completion.
+Fixed selling of empty mech parts.
+QuadVees can now be dropped in both Mech and Vehicle slots as intended.
+Accuracy tooltip should no longer show unnecesary entries.
+Reduced floatie / Combat Log spam when using weapons that apply soft heat cap.
+Carronade - Tooltip has been shortened, to not list the same Brace to Fire information so many times.
+Tooltip Critical Hit information for Leg actuators has been corrected.
+Cornerstone CTD-150 - Minor fixes.
+Highlander HGN-732-BW - Fixed invalid loadout.
+Mite MTE-12C - Corrected tagging as Light unit again.
+Pwwka S-PW-1LAM / S-PW-2LAM - Reclassified as medium threat, making it less likely to spawn at lower difficulties.
+
+**HHR** 1.3.0
+NOTE: This is one of the largest releases to date, if counting by changes and fixes. It is impossible to list even all the important changes here, so for full details see https://roguetech.fandom.com/wiki/Change_Log as usual.
+
+QuadVees have been added. Hells Horses have new loyalty FP, rewarding a QuadVee.
+Lance-wide resolve generation has been tuned down.
+Brace to Fire reworked. Higher value on weapons and superheavy mitigate less. Quads and 200t no longer immune.
+Disassembling a chassis for a full Mech will now provide parts without gear only.
+Many status effects were misconfigured and have now been fixed.
+Superheavy contracts difficulty has been tweaked. Generation chance lowered.
+Thunderbolts were too strong and have been nerfed. Especially Thermobolts.
+Battle Armor weapons and equipment have been adjusted, in price, ammo count, range and damage
+TAG weapons and Narc beacons have been fixed to work as intended. 
+Indirect Fire accuracy bonuses will now not stack beyond +3, as this is the difference between direct and indirect fire.
+Armor Piercing ammunition for several autocannon types had too low AP maximum thickness set
+Many LAM/VTOL and Clan weapons have had their price and cost per shot adjusted.
+Lowered chance to trigger a Search and Rescue mission on pilot eject.
+Added Heat Softcap to more Plasma weapons.
+Many other fixes and tweaks.
+
+**HHR** 1.2.6
+Fixed critical bugs with IDs not matching filenames.
+Fixed some Superheavy Contracts not getting correct prefix.
+Fix for vehicles something dying as soon as mission starts.
+Fix for pilot abilities such as Air Strike sometimes doing nothing.
+Fix for Second MRB Assessment (Omega) reappearing.
+Fix for a number of RISC vehicles being unable to spawn.
+Three new Highlander variants added.
+Cockpit RISC - Price changed from 0 to 90,000.
+SLIC Suite - Price changed from 770,000 to 750,000.
+Droppable Thumper Shell / x2 - Accuracy changed from -1 to -2.
+
+**HHR** 1.2.5
+Updated RogueWar Online client.
+
+**HHR** 1.2.4
+Fix for some blackout missions allowing dropping with wrong unit count causing a fatal error.
+Fix for Scuti Superheavy Mech causing crashes.
+Superheavy pilots are now less likely to randomly eject.
+Emperor EMP-GSR - Some tweaks.
+
+**HHR** 1.2.3
+Tonnage limits on duels has been fixed.
+Heavy Rotary Rifle - Price corrected from 18,000 to 180,000.
+Chameleon LPS - Price corrected from 100 to 900,000.
+Chameleon LPS (S) - Price corrected from 100 to 1,200,000.
+Some minor tweaks to Superheavy Hunt target's loadouts to make them more interesting.
+Superheavy Duel opponents have been tweaked.
+
+**HHR** 1.2.2
+Removed April Fool's prank.
+Fix for being able to mount Plasma Railguns in arms.
+Fixed limit of one Nitro Specialist equipment.
+
+**HHR* 1.2.1
+Hotfix for Vehicle weapons UI going AWOL during combat.
+The change in drop value difficulty was a bit too much and has been reduced by 50% to 13,500,000 per difficulty rating (half-skull).
+
+**HHR** 1.2.0
+Superheavy Contracts (NEW FEATURE):
+- This feature is only enabled if the optional module ''Superheavys'' is selected during installation of RogueTech.</font>
+- Generation and game play with contracts where Superheavy units can appear has been majorly reworked. Instead of just rare missions that appear at higher difficulties there now is a full system for these contracts, which seperates them from standard contracts.
+- New Argo upgrades allows unlocking Superheavy contracts, without them no Superheavy Contract will ever generate.
+- Many new superheavy Contracts have been added. There are now three new distinct categories of Superheavy contracts: Challenge, Conflict and Hunt (very hard).
+- The first upgrade in the chain of new Argo upgrades to enable Superheavy contracts can not be granted retroactively, but is free to build.
+- More extensive information of this feature can be found on the Superheavy Contracts wiki page: https://roguetech.fandom.com/wiki/Superheavy_Contracts
+Drop value per difficulty increase has been adjusted slightly, since a lot of things have changed cost without it being properly adjusted for a long time.
+MRB Console - New Argo upgrade subcategory. Has no impact unless Superheavys mod is installed.
+All standard duel contracts now limit each dropped unit to a maximum weight of 100 tons.
+All existing contracts that could spawn Superheavy units (except flashpoints) have been reworked to fit in with the new Superheavy Contracts feature.
+Many Specialist item had their cost tweaked.
+Superheavy Stealth armors have been tweaked.
+Centrospheric Flywheel - New specalist equipment. Increases movement speed based on tonnage of Mech. Superheavy Mechs only.
+Weapon Mount Recoil - The Jam reduction was too strong, meaning placing any weapon with Jam not in arms clearly suboptimal in most cases. As a result the Jam Chance modifier has been changed from -30% to -15%.
+3 new standard and 48 new superheavy mechs.
+MechWarrior  'Capt. Jack' - Fix for special pilot quirk Pirate WiFi never triggering its positive outcome.
+Droppable Thumper Shell - Fix for missed shots landing hundreds of meters away. Range increased.
+Many railguns were too strong for the required weight and slots, and have been adjusted.
+Many other tweaks and fixes, see wiki changelog for full list.
+
+**HHR** 1.1.19
+Another fix for pilots strafe abilities
+
+**HHR** 1.1.18
+Fix for pilots summon/strafe abilities
+
+**HHR** 1.1.17
+- Fixed tooltip for storage costs on equipment and weapons incorrectly claiming it was per unit, when it is per weight.
+- Fixed LAM weapons and ammo not appearing in inventory tabs properly. Weapons are in the ''Specialist'' tab, and ammo under ''Etc'' with Thunderbolt and Arrow missiles.
+- Another attempt at fixing UAV units incorrectly appearing as salvage after missions.
+- First attempt at adding Circle-Strafe behaviour to VTOL AI.
+- Fix for rounding issues around resolve preventing use of skills even though pilot has enough resolve. (Actually added now)
+- Search and Rescue recoveries no longer triggered by duels, tournaments or gladiator missions.
+- Escort Search and Rescue contracts enabled again.
+- Protomechs, Battle Armor and Mech Squads will no longer appear in duels or solo lances.
+- Protomech increased spawn chance compensation changed to only affect standard protomechs, not legendary and elites.
+- Special Delivery Flashpoint contracts will now generate on set biomes only to prevent scenarios where VTOLs are spawned in restricted biomes.
+- Battle Computers have long been a bit on the cheaper side. Several have had their prices adjusted.
+- Ferro-Carbide Lamellor (C) - This armor was much too strong and has been been brought down a bit. 
+- Nine new mechs, one of them a brand new one - the Kyudo.
+- Six new vehicles and more existing ones tweaked.
+- Adv. AMS (P) - Double Protomech and Battle Armor damage modifier has been removed. Will now only do the intended +200%.
+- Light Rifle / Light Rotary Rifle / Ultra Light Rifle/ Ultra Light Rotary Rifle - Stability damage adjusted.
+- Many other tweaks and fixes.
+
+**HHR** 1.1.16
+Removed chance of dedicated combat vehicles from friendly convoys, all units will have transport capacity or be support vehicles, unless the mission details dictates otherwise.
+Search and Rescue - Capture Escort contract type has been disabled due to causing issues with map loads.
+Pagan Horde - New custom voice pack.
+Nine new mechs: 
+- Atlas AS7-LH 'Corporal'
+- Catapult CPLT-GSR
+- Jackrabbit JKR-8T
+- Jackrabbit JKR-9R 'Joker'
+- Jackrabbit JKR-9W
+- Victor VTR-GSR
+- Warhammer WHM-77 'Glory'
+- Yinghuochong YHC-3E
+- Yinghuochong YHC-3Y
+Fixed tagging on many transport vehicles so they will spawn in convoys.
+Fixed tagging on many misc vehicles so they spawn at appropriate rarity.
+Model scale adjusted on several vehicles.
+AA Arrow [WM] - Removed accidental 1 Through Armor Damage.
+
 **HHR** 1.1.15
 Fixed Logan X negative price. Quicsell up to their usual shenanigans.
 
@@ -145,7 +416,7 @@ New vehicles:
 The following superheavy tanks have been switched to more appropriate 3d models: Karkadann, King Harald II, Metal Storm, Object 1024, Oliphant, Vachir Qorchi
 Vehicle Parti-Kill - Given new model by FrostRaptor not previously seen in RT.
 Weapon Disco Pistol - Fixes to mirror the Disco Laser.
-Internal Weapons Bay - Renamed to ''Weapons Bay''. Description updated to explicitly mention it has multiple fire modes, since some players reported confusion switching between bombs and missiles.
+Internal Weapons Bay - Renamed to Weapons Bay. Description updated to explicitly mention it has multiple fire modes, since some players reported confusion switching between bombs and missiles.
 Other minor tweaks and fixes, many many corrected typoes.
 
 Full changelog at https://roguetech.fandom.com/wiki/Change_Log#HHR_1.1.10_-_2023-03-18 for detailed information.
@@ -252,7 +523,7 @@ Rotary AC/10 RISC - Damage changed from 56 to 55. Armor penetration slightly red
 Many other tweaks and minor fixes.
 
 **HHR** 1.0.12
-Fix for ''Weapon Attachments'' not working as intended during missions.
+Fix for Weapon Attachments not working as intended during missions.
 Fix for bonus/malus to hit prone 'Mechs not being calculated as intended.
 Mech Lab:
 - Weapon tooltip will now list damage, heat, range accurately according to default firing mode, including all bonuses from other equipment and similar factors.
@@ -297,7 +568,7 @@ Salvage - Very common and generic items should once again be rolled up into stac
 Laser Insulator - Should now be properly fixed.
 New Mechs: Banzai, Pillager and Shogun. Several new variants of other mechs.
 Two new vehicle early clan variants.
-All BA weapons have had their ''Armor Piercing'' stats adjusted.
+All BA weapons have had their Armor Piercing stats adjusted.
 Heavy MRM reworked to only exist in 45 and 60 tubes sizes.
 Many minor tweaks and fixes.
 

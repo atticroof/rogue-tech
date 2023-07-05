@@ -31,11 +31,9 @@
   "AIPersonality": "Undefined",
   "PilotTags": {
     "items": [
-      "pilot_mercenary",
-      "pilot_painshunt",
-      "pilot_NeuralImplants",
       "pilot_military",
       "pilot_mechwarrior",
+      "pilot_reckless",
       "pilot_honest",
       "name_Blaze",
       "pilot_magistracy"

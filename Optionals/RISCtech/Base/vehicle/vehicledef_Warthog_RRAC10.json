@@ -2,12 +2,13 @@
   "VehicleTags": {
     "items": [
       "NoBiome_lunarVacuum",
-      "mr-resize-1.84",
+      "mr-resize-1.43",
       "unit_vehicle",
       "unit_assault",
       "unit_vtol",
       "apply_bomb_drag_tag",
       "unit_release",
+      "unit_lance_assassin",
       "unit_lance_tank",
       "unit_advanced",
       "unit_bracket_high",
@@ -37,7 +38,7 @@
   },
   "ChassisID": "vehiclechassisdef_Warthog_RRAC10",
   "Description": {
-    "Cost": 15928650,
+    "Cost": 15901650,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Warthog HOG-RR10",

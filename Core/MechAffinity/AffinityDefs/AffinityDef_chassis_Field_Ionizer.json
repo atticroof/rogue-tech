@@ -19,7 +19,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_FieldIonizer_Accuracy",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Field Ionizer: Improved Accuracy"
             },
             "durationData": {
               "duration": -1,
@@ -28,6 +28,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_FieldIonizer",
               "statName": "AccuracyModifier",
               "operation": "Float_Add",
               "modValue": "-1.0",
@@ -46,7 +47,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_FieldIonizer_HeatGenerated",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Field Ionizer: Decreased Heat Generated"
             },
             "durationData": {
               "duration": -1,
@@ -55,6 +56,7 @@
             "effectType": "StatisticEffect",
             "nature": "Buff",
             "statisticData": {
+              "abilifierId": "Affinity_FieldIonizer",
               "statName": "HeatGenerated",
               "operation": "Float_Multiply",
               "modValue": "0.75",

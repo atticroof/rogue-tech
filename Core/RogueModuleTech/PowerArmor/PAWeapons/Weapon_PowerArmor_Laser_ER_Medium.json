@@ -8,14 +8,14 @@
     "BonusDescriptions": [
       "BAWEAPON",
       "IsLaser",
-      "AmmoCost: 150"
+      "AmmoCost: 50"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 150
-    },
     "Flags": [
       "not_broken"
     ],
+    "AmmoCost": {
+      "PerUnitCost": 50
+    },
     "IBLS": {
       "StorageSize": 1
     }
@@ -34,35 +34,37 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 0,
   "Damage": 25,
+  "HeatDamage": 0,
+  "Instability": 1.25,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0.1,
   "APMaxArmorThickness": 30,
   "APCriticalChanceMultiplier": 0.05,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
+  "FireTerrainChance": 0.07,
   "AttackRecoil": 1,
-  "Instability": 3.3,
-  "FireTerrainChance": 0.0625,
   "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
   "Description": {
-    "Cost": 40000,
+    "Cost": 80000,
     "Rarity": 0,
     "Purchasable": true,
     "Manufacturer": "Hellion",
     "Model": "Medium Laser",
     "UIName": "BA ER Medium Laser",
     "Id": "Weapon_PowerArmor_Laser_ER_Medium",
-    "Name": "ER M Laser",
-    "Details": "Medium Lasers are lightweight with respectable damage. Because of this, at least one can be found mounted on most units that cross the battlefield.",
+    "Name": "BA Extended Range Medium Laser",
+    "Details": "A Battle Armor Extended Range Medium Laser. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
     "Icon": "uixSvgIcon_weapon_Energy"
   },
   "BonusValueA": "",

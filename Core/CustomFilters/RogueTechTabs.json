@@ -125,6 +125,7 @@
             "w/m/s/srm",
             "w/m/s/ssrm",
             "w/m/s/mrm",
+            "w/m/s/smrm",
             "w/m/s/hmrm",
             "w/m/s/mms",
             "w/m/s/rl"
@@ -176,7 +177,6 @@
             "w/s/m/energy",
             "w/s/m/pa",
             "w/s/m/explode",
-            "w/s/m/bomb",
             "w/s/m/support",
             "ProtoAC",
             "Fusiliade",
@@ -191,11 +191,13 @@
       {
         "Icon": "HandHeldRifle",
         "Tag": "",
-        "Tooltip": "Show Specialist Weapons",
+        "Tooltip": "Show Specialist & LAM Weapons",
         "Filter": {
           "Categories": [
             "w/s/h/HandHeld",
-            "w/s/h/BoltOn"
+            "w/s/h/BoltOn",
+            "w/b/b/InternalBombBay",
+            "w/w/w/bomb"
           ]
         }
       },
@@ -255,6 +257,7 @@
             "w/m/s/mml",
             "w/m/s/rl",
             "w/m/s/mrm",
+            "w/m/s/smrm",
             "w/m/s/hmrm",
             "w/m/s/mms",
             "w/m/l/lrm",
@@ -280,6 +283,8 @@
             "w/s/m/explode",
             "w/s/h/HandHeld",
             "w/s/h/BoltOn",
+            "w/b/b/InternalBombBay",
+            "w/w/w/bomb",
             "ProtoAC",
             "Fusiliade",
             "iFusiliade",
@@ -450,8 +455,7 @@
             "a/m/t/thunderbolt",
             "a/m/t/arrowiv",
             "a/m/t/cruisemissile",
-            "w/s/m/InternalBombBay",
-            "w/s/m/bomb"
+            "a/w/w/bomb"
           ]
         }
       },
@@ -532,9 +536,7 @@
             "a/a/a/rac",
             "a/a/a/shrac",
             "a/a/a/uac",
-            "w/s/m/InternalBombBay",
-            "w/s/m/bomb",
-            "WingMountedAmmo"
+            "a/w/w/bomb"
           ]
         }
       },

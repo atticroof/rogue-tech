@@ -28,23 +28,25 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 0,
   "Damage": 1,
+  "HeatDamage": 20,
+  "Instability": 20,
+  "DamageVariance": 0,
+  "AccuracyModifier": -1,
+  "EvasivePipsIgnored": 1,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 2,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 1,
-  "DamageVariance": 0,
-  "HeatDamage": 20,
-  "AccuracyModifier": -1,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0,
   "APMaxArmorThickness": 1,
   "APCriticalChanceMultiplier": 0.5,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "AttackRecoil": 0,
-  "Instability": 20,
   "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
   "Description": {
     "Cost": 1,
@@ -73,53 +75,30 @@
     {
       "durationData": {
         "duration": 10,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "effect_reportme-flamer",
         "Name": "CLEANED OUTPUT LOG",
         "Details": "BATTLETECH Mods cleaned_output_log txt Just drag and drop it in Discord.",
         "Icon": "uixSvgIcon_shipUpgrade_power2"
       },
-      "nature": "Debuff",
       "statisticData": {
-        "appliesEachTick": false,
-        "effectsPersistAfterDestruction": false,
         "statName": "HeatGenerated",
         "operation": "Float_Multiply",
         "modValue": "1.25",
         "modType": "System.Single",
-        "additionalRules": "NotSet",
-        "targetCollection": "Weapon",
-        "targetWeaponCategory": "NotSet",
-        "targetWeaponType": "NotSet",
-        "targetAmmoCategory": "NotSet",
-        "targetWeaponSubType": "NotSet"
-      },
-      "tagData": null,
-      "floatieData": null,
-      "actorBurningData": null,
-      "vfxData": null,
-      "instantModData": null,
-      "poorlyMaintainedEffectData": null
+        "targetCollection": "Weapon"
+      }
     }
   ],
   "ComponentTags": {

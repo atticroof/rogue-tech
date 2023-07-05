@@ -8,14 +8,14 @@
     "BonusDescriptions": [
       "BAWEAPON",
       "IsLaser",
-      "AmmoCost: 150"
+      "AmmoCost: 50"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 150
-    },
     "Flags": [
       "not_broken"
     ],
+    "AmmoCost": {
+      "PerUnitCost": 50
+    },
     "IBLS": {
       "StorageSize": 1
     }
@@ -24,7 +24,7 @@
   "Type": "Laser",
   "WeaponSubType": "MediumLaser",
   "MinRange": 0,
-  "MaxRange": 330,
+  "MaxRange": 360,
   "RangeSplit": [
     90,
     180,
@@ -34,24 +34,26 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 0,
   "Damage": 25,
+  "HeatDamage": 0,
+  "Instability": 3.3,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0.1,
   "APMaxArmorThickness": 30,
   "APCriticalChanceMultiplier": 0.05,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 1,
-  "Instability": 3.3,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "FireTerrainChance": 0.0625,
+  "AttackRecoil": 0,
   "WeaponEffectID": "WeaponEffect-Weapon_Laser_Medium",
   "Description": {
     "Cost": 40000,
@@ -61,8 +63,8 @@
     "Model": "Medium Laser",
     "UIName": "BA Medium Laser",
     "Id": "Weapon_PowerArmor_Laser_Medium",
-    "Name": "M Laser",
-    "Details": "Medium Lasers are lightweight with respectable damage. Because of this, at least one can be found mounted on most units that cross the battlefield.",
+    "Name": "Battle Armor Medium Laser",
+    "Details": "A Battle Armor Medium Laser. \n\n<b><color=#ffcc00>Battle Armor Weapons can only be mounted on Powered Armor Units.</color></b>",
     "Icon": "uixSvgIcon_weapon_Energy"
   },
   "BonusValueA": "",

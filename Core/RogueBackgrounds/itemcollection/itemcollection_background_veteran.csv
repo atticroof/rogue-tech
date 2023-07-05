@@ -1,5 +1,2 @@
 itemcollection_background_veteran,,,
-mechdef_catapult_CPLT-1R,Mech,1,4
-mechdef_orion_ON1-H,Mech,1,4
-mechdef_kingcrab_KGC-0,Mech,1,1
-mechdef_banshee_BNC-1E,Mech,1,1
+itemcollection_random_bushwacker,Reference,1,10

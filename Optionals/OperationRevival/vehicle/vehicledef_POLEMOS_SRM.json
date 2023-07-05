@@ -8,6 +8,7 @@
       "unit_release",
       "unit_lance_vanguard",
       "unit_vehicle_apc",
+      "Unit_Convoy_Troops",
       "unit_vehicle_clan",
       "unit_bracket_low",
       "unit_proxy_model",
@@ -43,7 +44,7 @@
   },
   "ChassisID": "vehiclechassisdef_POLEMOS_SRM",
   "Description": {
-    "Cost": 1615779,
+    "Cost": 1627779,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Polemos (SRM)",

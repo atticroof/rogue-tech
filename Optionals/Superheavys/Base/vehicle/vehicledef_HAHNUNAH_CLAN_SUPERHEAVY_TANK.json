@@ -1,11 +1,10 @@
 {
   "VehicleTags": {
     "items": [
-      "mr-resize-2.37",
+      "mr-resize-1.25",
       "unit_vehicle_clan",
       "unit_superheavy_vehicle",
       "unit_immune_shutdownonhit",
-      "unit_immune_bracetofire",
       "unit_noconvoy",
       "wordofblake",
       "comstar",
@@ -75,7 +74,7 @@
   },
   "ChassisID": "vehiclechassisdef_HAHNUNAH_CLAN_SUPERHEAVY_TANK",
   "Description": {
-    "Cost": 112097148,
+    "Cost": 113606148,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Hahnunah",
@@ -271,14 +270,14 @@
     },
     {
       "MountedLocation": "Front",
-      "ComponentDefID": "Gear_Cockpit_CommandConsole",
+      "ComponentDefID": "Gear_HarJel3",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"
     },
     {
       "MountedLocation": "Front",
-      "ComponentDefID": "Gear_HarJel3",
+      "ComponentDefID": "Gear_Vehicle_Command_Suite",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

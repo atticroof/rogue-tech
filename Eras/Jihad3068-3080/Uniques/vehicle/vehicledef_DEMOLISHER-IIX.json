@@ -2,6 +2,7 @@
   "VehicleTags": {
     "items": [
       "mr-resize-1.68",
+      "unit_release",
       "unit_vehicle",
       "unit_assault",
       "unit_tracks",
@@ -17,7 +18,7 @@
   },
   "ChassisID": "vehiclechassisdef_DEMOLISHER-IIX",
   "Description": {
-    "Cost": 17108500,
+    "Cost": 17428500,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Demolisher II-X",

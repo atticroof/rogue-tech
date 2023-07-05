@@ -2,7 +2,8 @@
   "VehicleTags": {
     "items": [
       "skip_heatcheck",
-      "mr-resize-2.12",
+      "unit_release",
+      "mr-resize-0.9",
       "unit_vehicle",
       "unit_vehicle_clan",
       "unit_light",
@@ -44,7 +45,7 @@
   },
   "ChassisID": "vehiclechassisdef_ASSHUR_RECON_CLAN",
   "Description": {
-    "Cost": 1442638,
+    "Cost": 1589638,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Asshur Recon",
@@ -156,7 +157,7 @@
     },
     {
       "MountedLocation": "Front",
-      "ComponentDefID": "Default_Vehicle_Sensors_Clan",
+      "ComponentDefID": "Gear_Sensors_Identify",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

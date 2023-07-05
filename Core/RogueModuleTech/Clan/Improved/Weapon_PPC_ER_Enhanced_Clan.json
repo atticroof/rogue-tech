@@ -36,23 +36,26 @@
   "StartingAmmoCapacity": 0,
   "HeatGenerated": 55,
   "Damage": 60,
+  "HeatDamage": 0,
+  "Instability": 12,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 1,
   "OverheatedDamageMultiplier": 0,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 0,
-  "AccuracyModifier": 0,
   "CriticalChanceMultiplier": 1,
   "APArmorShardsMod": 0.25,
-  "APMaxArmorThickness": 90.0,
+  "APMaxArmorThickness": 90,
   "APCriticalChanceMultiplier": 0.15,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 1,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
+  "IndirectFireCapable": false,
+  "ClearMineFieldRadius": 16,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
   "AttackRecoil": 3,
-  "Instability": 12,
   "WeaponEffectID": "WeaponEffect-Weapon_PPC",
   "Description": {
     "Cost": 1393000,
@@ -77,38 +80,27 @@
   "AllowedLocations": "All",
   "DisallowedLocations": "All",
   "CriticalComponent": false,
-  "ClearMineFieldRadius": 16,
   "statusEffects": [
     {
       "durationData": {
         "duration": 2,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "AbilityDefPPC",
-        "Name": "SENSORS IMPAIRED",
+        "Name": "Enh. ER PPC (C): Increased Target ECM Jamming",
         "Details": "EM Interference reduces sensor efficiency.",
         "Icon": "uixSvgIcon_status_sensorsImpaired"
       },
-      "nature": "Debuff",
       "statisticData": {
         "statName": "LV_ECM_JAMMED",
         "operation": "Int_Add",
@@ -128,9 +120,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "AAAFactor",
-        "Name": "AA Factor",
+        "Name": "Enh. ER PPC (C): Anti Air Factor",
         "Details": "AA Factor",
         "Icon": "uixSvgIcon_equipment_Gyro"
       },
@@ -139,8 +132,7 @@
         "operation": "Float_Add",
         "modValue": "0.15",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

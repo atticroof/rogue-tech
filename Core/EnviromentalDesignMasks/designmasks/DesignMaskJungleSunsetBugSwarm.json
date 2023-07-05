@@ -7,5 +7,61 @@
   },
   "heatSinkMultiplier": 0.9,
   "visibilityMultiplier": 0.8,
-  "signatureMultiplier": 0.9
+  "signatureMultiplier": 0.9,
+  "stickyEffect": {
+    "durationData": {
+      "duration": -1,
+      "stackLimit": 1
+    },
+    "targetingData": {
+      "effectTriggerType": "Passive",
+      "effectTargetType": "Creator",
+      "showInStatusPanel": false,
+      "showInTargetPreview": false
+    },
+    "effectType": "StatisticEffect",
+    "Description": {
+      "Id": "EDM-JungleBugSwarm-AICooling",
+      "Name": "EDM Jungle Bug Swarm: AI Cooling Buff",
+      "Details": "",
+      "Icon": ""
+    },
+    "statisticData": {
+      "abilifierId": "AI-Weather-Buff",
+      "statName": "HeatGenerated",
+      "operation": "Float_Multiply",
+      "modValue": "0.947",
+      "modType": "System.Single",
+      "targetCollection": "Weapon"
+    },
+    "nature": "Buff"
+  },
+  "additionalStickyEffects": [
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": 1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator",
+        "showInTargetPreview": false,
+        "showInStatusPanel": false
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "EDM_LowVision",
+        "Name": "Biome Low Vision",
+        "Details": "Biome Low Vision conditions flags",
+        "Icon": "uixSvgIcon_status_ECM-ghost"
+      },
+      "statisticData": {
+        "statName": "ADD_ENCOUNTER_TAG_EDM_LowVision_80",
+        "operation": "Float_Add",
+        "modValue": "1",
+        "modType": "System.Single"
+      },
+      "nature": "Buff"
+    }
+  ]
 }

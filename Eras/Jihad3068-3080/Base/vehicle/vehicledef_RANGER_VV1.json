@@ -1,7 +1,7 @@
 {
   "VehicleTags": {
     "items": [
-      "mr-resize-1.50",
+      "mr-resize-2.12",
       "unit_vehicle",
       "unit_medium",
       "unit_tracks",
@@ -32,7 +32,7 @@
   },
   "ChassisID": "vehiclechassisdef_RANGER_VV1",
   "Description": {
-    "Cost": 1625276,
+    "Cost": 1592651,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Ranger VV1 AFV",

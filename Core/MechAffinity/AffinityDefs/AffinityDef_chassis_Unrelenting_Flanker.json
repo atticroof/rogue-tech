@@ -3,7 +3,8 @@
   "affinityType": "Chassis",
   "affinityData": {
     "chassisNames": [
-      "tiburon_35"
+      "tiburon_35",
+      "doomcourser_70"
     ],
     "idType": "AssemblyVariant",
     "altMaps": [],
@@ -19,7 +20,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_UnrelentingFlanker_Signature",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Unrelenting Flanker: Decreased Sensor Signature"
             },
             "durationData": {
               "duration": -1,
@@ -46,7 +47,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_UnrelentingFlanker_Visibility",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Unrelenting Flanker: Decreased Visual Signature"
             },
             "durationData": {
               "duration": -1,
@@ -73,7 +74,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_UnrelentingFlanker_Probe",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Unrelenting Flanker: Active Probe"
             },
             "durationData": {
               "duration": -1,
@@ -100,7 +101,7 @@
               "Details": "Pilot has Mastered the Chassis.",
               "Icon": "UixSvgIcon_specialEquip_System",
               "Id": "Affinity_UnrelentingFlanker_RunSpeed",
-              "Name": "BattleMechAffinity"
+              "Name": "Chassis Affinity Unrelenting Flanker: Increased Run Speed"
             },
             "durationData": {
               "duration": -1,

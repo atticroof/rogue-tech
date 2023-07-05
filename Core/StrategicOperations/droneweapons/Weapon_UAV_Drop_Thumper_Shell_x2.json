@@ -1,0 +1,111 @@
+{
+  "Custom": {
+    "Category": [
+      {
+        "CategoryID": "w/b/b/InternalBombBay"
+      }
+    ],
+    "BonusDescriptions": [
+      "InternalAmmoShots: 2",
+      "WpnCrits: x2",
+      "WpnAccuracy: -2",
+      "NoAA",
+      "AreaOfEffect: 60",
+      "AreaOfEffectDmg: 75",
+      "AreaOfEffectSTABDmg: 15",
+      "MineClearanceBoom: 2",
+      "AmmoCount: Thumper, 15",
+      "AmmoCost: 300",
+      "AmmoBoxExplosionDHS: 75, 18.8, 9.4"
+    ],
+    "Flags": [
+      "not_broken",
+      "no_salvage"
+    ],
+    "InternalAmmoTonnage": {
+      "InternalAmmoTons": 0.1
+    },
+    "AmmoCost": {
+      "PerUnitCost": 300
+    },
+    "IBLS": {
+      "StorageSize": 1
+    }
+  },
+  "weaponCategoryID": "InternalBombBay",
+  "Type": "Autocannon",
+  "WeaponSubType": "AC20",
+  "MinRange": 0,
+  "MaxRange": 180,
+  "RangeSplit": [
+    60,
+    90,
+    120
+  ],
+  "AmmoCategory": "ThumperOS",
+  "StartingAmmoCapacity": 2,
+  "HeatGenerated": 0,
+  "Damage": 75,
+  "HeatDamage": 0,
+  "Instability": 20,
+  "AccuracyModifier": 2,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
+  "OverheatedDamageMultiplier": 0,
+  "EvasiveDamageMultiplier": 0,
+  "CriticalChanceMultiplier": 2,
+  "APArmorShardsMod": 1,
+  "APMaxArmorThickness": 150,
+  "APCriticalChanceMultiplier": 0.5,
+  "MinMissRadius": 5,
+  "MaxMissRadius": 50,
+  "MissInCircle": true,
+  "ShotsWhenFired": 1,
+  "ProjectilesPerShot": 1,
+  "AMSImmune": true,
+  "ImprovedBallistic": true,
+  "CantHitUnaffecedByPathing": true,
+  "IndirectFireCapable": false,
+  "AlwaysIndirectVisuals": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
+  "CanBeBlocked": false,
+  "FireTerrainChance": 0.08,
+  "AttackRecoil": 1,
+  "ProjectileSpeedMultiplier": 0.6,
+  "WeaponEffectID": "WeaponEffect-Weapon_LRM5",
+  "Description": {
+    "Cost": 30000,
+    "Rarity": 0,
+    "Purchasable": true,
+    "Manufacturer": "Someone with a 3d Printer",
+    "Model": "Simple Bomb Rack",
+    "UIName": "Droppable Thumper Shell x2",
+    "Id": "Weapon_UAV_Drop_Thumper_Shell_x2",
+    "Name": "Droppable Thumper Shells",
+    "Details": "It turns out a Thumper Artillery shell weighs less than the launch system of even something as tiny as a Battle Armor SRM. If you're flying right above enemies you can just drop stuff on them. Such simple, often field built, systems are difficult to aim.",
+    "Icon": "Artillery"
+  },
+  "BonusValueA": "",
+  "BonusValueB": "",
+  "ComponentType": "Weapon",
+  "ComponentSubType": "Weapon",
+  "PrefabIdentifier": "lrm5",
+  "BattleValue": 30,
+  "InventorySize": 1,
+  "Tonnage": 0.2,
+  "AllowedLocations": "All",
+  "DisallowedLocations": "All",
+  "CriticalComponent": false,
+  "statusEffects": [],
+  "ComponentTags": {
+    "items": [
+      "range_close",
+      "BLACKLISTED",
+      "WikiWL",
+      "BAIncompatible",
+      "LootMagnetBlacklist"
+    ],
+    "tagSetSourceFile": ""
+  }
+}

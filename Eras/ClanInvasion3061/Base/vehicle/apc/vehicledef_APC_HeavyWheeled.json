@@ -1,12 +1,13 @@
 {
   "VehicleTags": {
     "items": [
-      "mr-resize-1",
+      "mr-resize-1.41",
       "unit_vehicle",
       "unit_light",
       "unit_wheels",
       "unit_noncombatant",
       "unit_vehicle_apc",
+      "Unit_Convoy_Troops",
       "unit_release",
       "unit_generic",
       "unit_rare",
@@ -14,8 +15,10 @@
       "unit_resupply",
       "NoBiome_lunarVacuum",
       "NoBiome_martianVacuum",
+      "clanwidowmaker",
       "RimWorldsRepublic",
       "TerranHegemony",
+      "clanwolverine",
       "SLDF",
       "AmarisEmpire",
       "EscorpionImperio",

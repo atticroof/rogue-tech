@@ -1,4 +1,5 @@
 itemCollection_soldier_LRM20,,,
-Weapon_LRM_15_Delta,Weapon,2,5
-Weapon_LRM_15_LongFire,Weapon,2,5
-Weapon_LRM_15_Zeus,Weapon,2,5
+Weapon_LRM_20,Weapon,1,5
+Weapon_LRM_20_Delta,Weapon,1,5
+Weapon_LRM_20_LongFire,Weapon,1,5
+Weapon_LRM_20_Zeus,Weapon,1,5

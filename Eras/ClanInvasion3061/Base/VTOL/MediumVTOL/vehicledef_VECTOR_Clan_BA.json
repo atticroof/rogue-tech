@@ -11,6 +11,7 @@
       "apply_bomb_drag_tag",
       "unit_vehicle_clan",
       "unit_release",
+      "unit_vehicle_apc",
       "unit_lance_tank",
       "unit_lance_vanguard",
       "unit_advanced",
@@ -44,7 +45,7 @@
   },
   "ChassisID": "vehiclechassisdef_VECTOR_Clan_BA",
   "Description": {
-    "Cost": 3331468,
+    "Cost": 3360068,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Vector V2C-INF",

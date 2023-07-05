@@ -16,12 +16,12 @@
     },
     "BonusDescriptions": [
       "Stealth",
-      "StealthSensors: 15%, 1, 1, 1, 2",
-      "ActiveVisibility: -5%",
-      "ActiveSignature: -5%",
+      "StealthSensors: 20%, 2, 1, 1, 2",
+      "ActiveVisibility: -8%",
+      "ActiveSignature: -8%",
       "StealthReserved: 2",
-      "ActiveHeatGenerated: +10%",
-      "ActiveHeatPerTurn: +9",
+      "ActiveHeatGenerated: +8%",
+      "ActiveHeatPerTurn: +6",
       "ReqECM",
       "ArmorFactor: +15%",
       "ArmorTPCost: x1.7",
@@ -56,14 +56,11 @@
         {
           "durationData": {
             "duration": -1,
-            "stackLimit": 1
+            "stackLimit": -1
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "Creator",
-            "range": 0.0,
-            "forcePathRebuild": false,
             "forceVisRebuild": true,
             "showInTargetPreview": false,
             "showInStatusPanel": false
@@ -71,14 +68,14 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "LV_Stealth_Effect",
-            "Name": "STEALTH",
+            "Name": "Superheavy Stealth Armor Activatable: Stealth",
             "Details": "Makes the carrier much harder to detect with stealth",
             "Icon": "uixSvgIcon_status_ECM-ghost"
           },
           "statisticData": {
             "statName": "LV_STEALTH",
             "operation": "Set",
-            "modValue": "0.85_1_1_1_2",
+            "modValue": "0.8_2_1_1_2",
             "modType": "System.String"
           },
           "nature": "Buff"
@@ -97,7 +94,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Signature_Decrease_Stealth",
-            "Name": "Stealth Signature Decrease",
+            "Name": "Superheavy Stealth Armor Activatable: Decreased Sensor Signature",
             "Details": "Signature Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
@@ -105,7 +102,7 @@
           "statisticData": {
             "statName": "SensorSignatureModifier",
             "operation": "Float_Multiply",
-            "modValue": "0.95",
+            "modValue": "0.92",
             "modType": "System.Single"
           }
         },
@@ -123,7 +120,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Visibility_Decrease_Stealth",
-            "Name": "Stealth Visibility Decrease",
+            "Name": "Superheavy Stealth Armor Activatable: Decreased Visual Signature",
             "Details": "Visibility Statuseffect.",
             "Icon": "uixSvgIcon_equipment_TTS"
           },
@@ -131,7 +128,7 @@
           "statisticData": {
             "statName": "SpottingVisibilityMultiplier",
             "operation": "Float_Multiply",
-            "modValue": "0.95",
+            "modValue": "0.92",
             "modType": "System.Single"
           }
         },
@@ -149,7 +146,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Heat_Generation_Stealth",
-            "Name": "Increased Heat",
+            "Name": "Superheavy Stealth Armor Activatable: Increased Heat Generated",
             "Details": "Heat generation",
             "Icon": "uixSvgIcon_equipment_ThermalExchanger"
           },
@@ -157,7 +154,7 @@
           "statisticData": {
             "statName": "HeatGenerated",
             "operation": "Float_Multiply",
-            "modValue": "1.1",
+            "modValue": "1.08",
             "modType": "System.Single",
             "targetCollection": "Weapon"
           }
@@ -176,7 +173,7 @@
           "effectType": "StatisticEffect",
           "Description": {
             "Id": "Stealth_Heat_Capacity_Stealth",
-            "Name": "Decreased Heat Capacity",
+            "Name": "Superheavy Stealth Armor Activatable: Decreased Cooling",
             "Details": "Heat Capacity Penalty",
             "Icon": "uixSvgIcon_equipment_ThermalExchanger"
           },
@@ -184,7 +181,7 @@
           "statisticData": {
             "statName": "HeatSinkCapacity",
             "operation": "Int_Add",
-            "modValue": "-9",
+            "modValue": "-6",
             "modType": "System.Int32"
           }
         }
@@ -247,7 +244,7 @@
     ]
   },
   "Description": {
-    "Cost": 3785000,
+    "Cost": 1900000,
     "Rarity": 10,
     "Purchasable": true,
     "Manufacturer": "Shengli Arms",

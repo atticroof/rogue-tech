@@ -18,6 +18,7 @@
       "unit_tonnage_40",
       "unit_rt_custom",
       "unit_early_clan",
+      "clanwidowmaker",
       "clanbloodspirit",
       "clanburrock",
       "clancloudcobra",
@@ -45,7 +46,7 @@
       "ai_move_normal",
       "ai_priority_normal",
       "ai_reserve_normal",
-      "ai_shooting_low",
+      "ai_shooting_normal",
       "ai_surrounded_normal"
     ],
     "tagSetSourceFile": ""

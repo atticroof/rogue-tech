@@ -8,29 +8,15 @@
         "CategoryID": "C3Equipment"
       }
     ],
-    "WorkOrderCosts": {
-      "Install": {
-        "TechCost": "0.1 * [[Chassis.Tonnage]]",
-        "CBillCost": "1.15 * [[Chassis.Tonnage]]"
-      }
-    },
     "BonusDescriptions": [
       "C3Master",
       "C3i",
       "C3Bonus: C3 Slave, 10%, 20%, +2",
       "C3BonusNoStack: C3 Slave, +1 Accuracy",
       "C3BonusNoStack: C3 Slave, +1 Initiative",
-      "LanceResolve2: +1",
+      "LanceResolve2: 1",
       "AdvancedSensors: 1",
       "Sharer"
-    ],
-    "DecoratorComponent": [
-      {
-        "Text": "IM",
-        "Color": "#FF9901",
-        "Icon": "ComponentGearIcons_HEXAGON",
-        "Importance": 50
-      }
     ],
     "Flags": [
       "default",
@@ -38,13 +24,24 @@
       "no_salvage",
       "autorepair"
     ],
+    "WorkOrderCosts": {
+      "Install": {
+        "TechCost": "0.1 * [[Chassis.Tonnage]]",
+        "CBillCost": "1.15 * [[Chassis.Tonnage]]"
+      }
+    },
     "IBLS": {
       "StorageSize": 1
-    }
+    },
+    "DecoratorComponent": [
+      {
+        "Text": "IM",
+        "Color": "#FF9901",
+        "Icon": "ComponentGearIcons_HEXAGON",
+        "Importance": 50
+      }
+    ]
   },
-  "StatName": null,
-  "RelativeModifier": 0,
-  "AbsoluteModifier": 0,
   "Description": {
     "Cost": 650000,
     "Rarity": 99,
@@ -62,6 +59,8 @@
   "ComponentType": "Upgrade",
   "ComponentSubType": "NotSet",
   "PrefabIdentifier": "",
+  "RelativeModifier": 0,
+  "AbsoluteModifier": 0,
   "BattleValue": 0,
   "InventorySize": 1,
   "Tonnage": 1,
@@ -82,13 +81,6 @@
       "AllyStealthAffection": "None",
       "EnemyStealthAffection": "None",
       "IsPositiveToAlly": true,
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -97,18 +89,15 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_grant",
-            "Name": "C3 Master Network",
+            "Name": "Prototype C3 / Aura C3 network: C3 Master Network",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
@@ -117,8 +106,7 @@
             "operation": "Float_Add",
             "modValue": "1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -127,28 +115,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus",
-            "Name": "C3 Master Sensors Bonus",
+            "Name": "Prototype C3 / Aura C3 network: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -157,28 +142,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus",
-            "Name": "C3 Master Vision Bonus",
+            "Name": "Prototype C3 / Aura C3 network: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.2",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -187,28 +169,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus",
-            "Name": "C3 Master Sensor Bonus",
+            "Name": "Prototype C3 / Aura C3 network: Increased Allies Advanced Sensor Strength",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "LV_ADVANCED_SENSORS",
             "operation": "Int_Add",
             "modValue": "2",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -217,29 +196,26 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_accuracy",
-            "Name": "C3 Master Accuracy Bonus",
+            "Name": "Prototype C3 / Aura C3 network: Improved Allies Accuracy",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "AccuracyModifier",
             "operation": "Float_Add",
             "modValue": "-1.0",
             "modType": "System.Single",
             "targetCollection": "Weapon"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -248,28 +224,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_ini",
-            "Name": "C3 Master Sensor Bonus",
+            "Name": "Prototype C3 / Aura C3 network: Increased Allies Initiative",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_master_bonus",
             "statName": "SBI_MOD_MISC",
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     },
@@ -289,13 +262,6 @@
       "neededOwnerTags": [
         "unit_npc"
       ],
-      "onlineVFX": [],
-      "targetVFX": [],
-      "removeTargetVFX": [],
-      "ownerSFX": [],
-      "targetSFX": [],
-      "removeOwnerSFX": [],
-      "removeTargetSFX": [],
       "statusEffects": [
         {
           "durationData": {
@@ -304,28 +270,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_grant_AI",
-            "Name": "C3 Master Network AI",
+            "Name": "Prototype C3 AI C3 MAster Aura: C3 Master Network AI",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "ADD_ENCOUNTER_TAG_C3AI_network",
             "operation": "Float_Add",
             "modValue": "1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -334,28 +297,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_AI",
-            "Name": "C3 Master Sensors Bonus AI",
+            "Name": "Prototype C3 AI C3 MAster Aura: Increased Allies Sensor Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "SensorDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.1",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -364,28 +324,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_AI",
-            "Name": "C3 Master Vision Bonus AI",
+            "Name": "Prototype C3 AI C3 MAster Aura: Increased Allies Vision Range",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "SpotterDistanceAbsolute",
             "operation": "Float_Multiply",
             "modValue": "1.2",
             "modType": "System.Single"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -394,28 +351,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_AI",
-            "Name": "C3 Master Sensor Bonus AI",
+            "Name": "Prototype C3 AI C3 MAster Aura: Increased Allies Advanced Sensor Strength",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "LV_ADVANCED_SENSORS",
             "operation": "Int_Add",
             "modValue": "2",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -424,29 +378,26 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_accuracy_AI",
-            "Name": "C3 Master Accuracy Bonus",
+            "Name": "Prototype C3 AI C3 MAster Aura: Improved Allies Accuracy",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "AccuracyModifier",
             "operation": "Float_Add",
             "modValue": "-1.0",
             "modType": "System.Single",
             "targetCollection": "Weapon"
-          },
-          "nature": "Buff"
+          }
         },
         {
           "durationData": {
@@ -455,28 +406,25 @@
           },
           "targetingData": {
             "effectTriggerType": "Passive",
-            "specialRules": "NotSet",
             "effectTargetType": "AlliesWithinRange",
-            "range": 0.0,
-            "forcePathRebuild": false,
-            "forceVisRebuild": false,
             "showInTargetPreview": false,
             "showInStatusPanel": false
           },
           "effectType": "StatisticEffect",
+          "nature": "Buff",
           "Description": {
             "Id": "C3_network_master_bonus_ini_AI",
-            "Name": "C3 Master Sensor Bonus",
+            "Name": "Prototype C3 AI C3 MAster Aura: Increased Allies Initiative",
             "Details": "C3 network",
             "Icon": "uixSvgIcon_status_ECM-missileDef"
           },
           "statisticData": {
+            "abilifierId": "C3_network_AI",
             "statName": "SBI_MOD_MISC",
             "operation": "Int_Add",
             "modValue": "1",
             "modType": "System.Int32"
-          },
-          "nature": "Buff"
+          }
         }
       ]
     }
@@ -494,9 +442,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3i",
-        "Name": "C3i network",
+        "Name": "Prototype C3: C3i network",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -505,8 +454,7 @@
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -520,9 +468,10 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3_master",
-        "Name": "C3 Master",
+        "Name": "Prototype C3: C3 Master",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -531,8 +480,7 @@
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -546,19 +494,20 @@
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "C3_AI",
-        "Name": "C3 AI",
+        "Name": "Prototype C3: C3 AI",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
       "statisticData": {
+        "abilifierId": "C3_network_AI",
         "statName": "ADD_ENCOUNTER_TAG_C3AI_network",
         "operation": "Float_Add",
         "modValue": "1",
         "modType": "System.Single"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
@@ -567,18 +516,16 @@
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_ADVANCED_SENSORS",
-        "Name": "Advanced Sensors",
+        "Name": "Prototype C3: Increased Advanced Sensor Strength",
         "Details": "Provides detailed information on enemy units",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -587,32 +534,26 @@
         "operation": "Int_Add",
         "modValue": "1",
         "modType": "System.Int32"
-      },
-      "nature": "Buff"
+      }
     },
     {
       "durationData": {
         "duration": -1,
-        "stackLimit": -1
+        "stackLimit": 3,
+        "stackId": "LanceResolvePerRound"
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "AllLanceMates",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false
+        "effectTargetType": "AllLanceMates"
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "Echidnae-C3-Resolve",
-        "Name": "Overcharged C3",
+        "Name": "Prototype C3: Increased Lance Base Resolve Generation per Round",
         "Details": "Provides a +1 bonus to Resolve, Initiative and Accuracy for the whole Lance.",
         "Icon": "uixSvgIcon_equipment_Comms"
       },
-      "nature": "Buff",
       "statisticData": {
         "statName": "resolveRoundBaseMod",
         "operation": "Float_Add",
@@ -623,22 +564,20 @@
     {
       "durationData": {
         "duration": -1,
-        "stackLimit": 1
+        "stackLimit": -1
       },
       "targetingData": {
         "effectTriggerType": "Passive",
-        "specialRules": "NotSet",
         "effectTargetType": "Creator",
-        "range": 0.0,
-        "forcePathRebuild": false,
         "forceVisRebuild": true,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Buff",
       "Description": {
         "Id": "LV_Shares_Vision",
-        "Name": "Vision Sharing",
+        "Name": "Prototype C3: Shared Vision",
         "Details": "Shows their vision when lancemates move",
         "Icon": "uixSvgIcon_status_ECM-ghost"
       },
@@ -647,8 +586,7 @@
         "operation": "Set",
         "modValue": "true",
         "modType": "System.Boolean"
-      },
-      "nature": "Buff"
+      }
     }
   ],
   "ComponentTags": {

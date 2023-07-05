@@ -4,7 +4,6 @@
       "mr-resize-1.88",
       "unit_superheavy_vehicle",
       "unit_immune_shutdownonhit",
-      "unit_immune_bracetofire",
       "unit_noconvoy",
       "steiner",
       "republic",
@@ -16,7 +15,7 @@
   },
   "ChassisID": "vehiclechassisdef_DEMOLISHER_2000_SUPERHEAVY_TANK",
   "Description": {
-    "Cost": 14095125,
+    "Cost": 14215124,
     "Rarity": 0,
     "Purchasable": false,
     "UIName": "Demolisher 2000",
@@ -184,7 +183,7 @@
     },
     {
       "MountedLocation": "Rear",
-      "ComponentDefID": "Gear_Probe_BeagleActiveProbe",
+      "ComponentDefID": "Gear_Probe_Active",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"
@@ -212,7 +211,7 @@
     },
     {
       "MountedLocation": "Rear",
-      "ComponentDefID": "Gear_EngineCore_240",
+      "ComponentDefID": "Gear_EngineCore_250",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
       "DamageLevel": "Functional"

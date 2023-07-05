@@ -26,19 +26,19 @@
       "AmmoCost: 770",
       "EjectableWeapon"
     ],
-    "AmmoCost": {
-      "PerUnitCost": 770
-    },
-    "CarryHandUsage": 6,
     "Flags": [
       "not_broken"
     ],
+    "InternalAmmoTonnage": {
+      "InternalAmmoTons": 1.2
+    },
+    "AmmoCost": {
+      "PerUnitCost": 770
+    },
     "IBLS": {
       "StorageSize": 1
     },
-    "InternalAmmoTonnage": {
-      "InternalAmmoTons": 1.2
-    }
+    "CarryHandUsage": 6
   },
   "weaponCategoryID": "SpecialHandHeld",
   "Type": "Flamer",
@@ -54,36 +54,38 @@
   "StartingAmmoCapacity": 8,
   "HeatGenerated": 0,
   "Damage": 30,
+  "HeatDamage": 30,
+  "Instability": 0,
+  "DamageVariance": 0,
+  "AccuracyModifier": 0,
+  "EvasivePipsIgnored": 0,
+  "RefireModifier": 0,
   "OverheatedDamageMultiplier": 1.35,
   "EvasiveDamageMultiplier": 0,
-  "EvasivePipsIgnored": 0,
-  "DamageVariance": 0,
-  "HeatDamage": 30,
-  "AccuracyModifier": 0,
+  "CriticalChanceMultiplier": 0.1,
   "DistantVariance": 0.3,
   "DistantVarianceReversed": false,
   "isHeatVariation": true,
   "isStabilityVariation": true,
   "isDamageVariation": true,
-  "CriticalChanceMultiplier": 0.1,
   "APArmorShardsMod": 0.1,
   "APMaxArmorThickness": 1,
   "APCriticalChanceMultiplier": 0.01,
   "AOECapable": false,
-  "IndirectFireCapable": false,
-  "RefireModifier": 0,
   "ShotsWhenFired": 1,
   "ProjectilesPerShot": 1,
-  "AttackRecoil": 0,
-  "Instability": 0,
-  "FireOnSuccessHit": true,
-  "FireTerrainStrength": 30,
-  "FireTerrainChance": 1,
-  "FireDurationWithoutForest": 5,
   "CantHitUnaffecedByPathing": true,
+  "IndirectFireCapable": false,
+  "GunneryJammingMult": 0.01,
+  "GunneryJammingBase": 1,
+  "CanBeBlocked": false,
   "blockWeaponsInInstalledLocation": true,
   "EjectWeapon": true,
-  "CanBeBlocked": false,
+  "FireTerrainChance": 1,
+  "FireTerrainStrength": 30,
+  "FireDurationWithoutForest": 5,
+  "FireOnSuccessHit": true,
+  "AttackRecoil": 0,
   "WeaponEffectID": "WeaponEffect-Weapon_Flamer",
   "Description": {
     "Cost": 350000,
@@ -112,138 +114,57 @@
     {
       "durationData": {
         "duration": 1,
+        "stackLimit": 1,
         "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "stackLimit": 45
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": false,
         "showInStatusPanel": false
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
-        "Id": "HeatDamageTakenSoftCapMultiplier",
-        "Name": "Heat SoftCap 5%",
-        "Details": "Reduce Heat Damage by 1%",
-        "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+        "Id": "Pirate-NAPALM-Effect",
+        "Name": "Hand Held HandHeld TriFlamer (Sticky): Increased Target Heat Generated",
+        "Details": "This mech is covered in burning napalm, which is keeping it hot.",
+        "Icon": "uixSvgIcon_shipUpgrade_power2"
       },
-      "nature": "Buff",
       "statisticData": {
-        "statName": "CACIncomingHeatMult",
+        "statName": "HeatGenerated",
         "operation": "Float_Multiply",
-        "modValue": "0.95",
-        "modType": "System.Single"
+        "modValue": "1.5",
+        "modType": "System.Single",
+        "targetCollection": "Weapon"
       }
     },
     {
       "durationData": {
         "duration": 1,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
-        "stackLimit": 1,
-        "clearedWhenAttacked": false
-      },
-      "targetingData": {
-        "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
-        "showInTargetPreview": false,
-        "showInStatusPanel": false
-      },
-      "effectType": "StatisticEffect",
-      "Description": {
-        "Id": "Pirate-NAPALM-Effect",
-        "Name": "On Fire",
-        "Details": "This mech is covered in burning napalm, which is keeping it hot.",
-        "Icon": "uixSvgIcon_shipUpgrade_power2"
-      },
-      "nature": "Debuff",
-      "statisticData": {
-        "appliesEachTick": false,
-        "effectsPersistAfterDestruction": false,
-        "statName": "HeatGenerated",
-        "operation": "Float_Multiply",
-        "modValue": "1.5",
-        "modType": "System.Single",
-        "additionalRules": "NotSet",
-        "targetCollection": "Weapon",
-        "targetWeaponCategory": "NotSet",
-        "targetWeaponType": "NotSet",
-        "targetAmmoCategory": "NotSet",
-        "targetWeaponSubType": "NotSet"
-      },
-      "tagData": null,
-      "floatieData": null,
-      "actorBurningData": null,
-      "vfxData": null,
-      "instantModData": null,
-      "poorlyMaintainedEffectData": null
-    },
-    {
-      "durationData": {
-        "duration": 1,
-        "ticksOnActivations": true,
-        "useActivationsOfTarget": true,
-        "ticksOnEndOfRound": false,
-        "ticksOnMovements": false,
         "stackLimit": -1,
-        "clearedWhenAttacked": false
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true
       },
       "targetingData": {
         "effectTriggerType": "OnHit",
-        "triggerLimit": 0,
-        "extendDurationOnTrigger": 0,
-        "specialRules": "NotSet",
-        "effectTargetType": "NotSet",
-        "range": 0,
-        "forcePathRebuild": false,
-        "forceVisRebuild": false,
         "showInTargetPreview": true,
         "showInStatusPanel": true
       },
       "effectType": "StatisticEffect",
+      "nature": "Debuff",
       "Description": {
         "Id": "NAPALM-Burn-Effect",
-        "Name": "Burning",
+        "Name": "Hand Held HandHeld TriFlamer (Sticky): Decreased Target Cooling",
         "Details": "YA BURNING!",
         "Icon": "uixSvgIcon_shipUpgrade_power2"
       },
-      "nature": "Debuff",
       "statisticData": {
-        "appliesEachTick": false,
-        "effectsPersistAfterDestruction": false,
         "statName": "HeatSinkCapacity",
         "operation": "Int_Add",
         "modValue": "-15",
-        "modType": "System.Int32",
-        "additionalRules": "NotSet",
-        "targetCollection": "NotSet",
-        "targetWeaponCategory": "NotSet",
-        "targetWeaponType": "NotSet",
-        "targetAmmoCategory": "NotSet",
-        "targetWeaponSubType": "NotSet"
-      },
-      "tagData": null,
-      "floatieData": null,
-      "actorBurningData": null,
-      "vfxData": null,
-      "instantModData": null,
-      "poorlyMaintainedEffectData": null
+        "modType": "System.Int32"
+      }
     }
   ],
   "ComponentTags": {
